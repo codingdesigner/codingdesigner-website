@@ -1,0 +1,33 @@
+<div class="relationship-block panes-{{count}} {{#vertical}}panes-vertical{{/vertical}} {{#proportion}}{{proportion}}{{/proportion}} {{#division-option}}{{division-option}}{{/division-option}}">
+  {{#panes }}
+    <div class="relationship-block--pane {{bg}} {{#center-content}}center-content{{/center-content}}" {{#bg_image}}style="background-image: url({{bg_image_value}})"{{/bg_image}}>
+      {{#content_heading}}
+        <h2 class="pane-title">{{{content_heading_value}}}</h2>
+      {{/content_heading}}
+      {{#content_text}}
+        <div class="pane-text">{{{content_text_value}}}</div>
+      {{/content_text}}
+      {{#content_stats}}
+        {{> components-stats-alone }}
+      {{/content_stats}}
+      {{#content_success_story}}
+        {{> components-success-story }}
+      {{/content_success_story}}
+      {{#content_excerpt}}
+        <h2>{{headline.tiny}}</h2>
+        <p>{{excerpt.short}}</p>
+      {{/content_excerpt}}
+    </div>
+  {{/panes}}
+  {{#cta-primary-narrow }}
+    {{>components-cta-big-div}}
+  {{/cta-primary-narrow}}
+  {{#cta-primary-wide }}
+    {{>components-cta-big-div-wide}}
+  {{/cta-primary-wide}}
+  {{#cta-standard}}
+    {{>components-cta-div}}
+  {{/cta-standard}}
+</div>
+
+{{>atoms-svg-clip-paths}}

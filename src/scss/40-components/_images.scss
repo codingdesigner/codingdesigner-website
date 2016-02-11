@@ -1,0 +1,35 @@
+img {
+  @include image-auto-size();
+}
+
+svg {
+  @include image-auto-size();
+}
+
+.feature-image {
+  margin-bottom: $base-line-em;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid color(gray, mid);
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @include breakpoint(768px) {
+    float: right;
+    margin-left: 2rem;
+    width: 40%;
+  }
+  @include breakpoint(1024px) {
+    width: 50%;
+  }
+  .columns--2 .column--primary & {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    @include breakpoint($bp--columns-2) {
+      float: right;
+      margin-left: 2rem;
+      width: 45%;
+    }
+  }
+}

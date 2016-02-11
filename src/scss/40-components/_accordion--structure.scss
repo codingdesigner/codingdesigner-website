@@ -1,0 +1,22 @@
+// // Accordion Structure
+// .accordion-set--content {
+//   max-height: 0;
+//   padding: 0 0.5em;
+//   overflow: hidden;
+//   transition-property: max-height, padding-top, padding-bottom;
+//   transition-duration: 0.2s;
+//   transition-timing-function: ease-in-out;
+//   &.is-active {
+//     max-height: 1000em;
+//     padding-top: 0.5em;
+//     padding-bottom: 0.5em;
+//   }
+// }
+
+// .accordion-set--check {
+//   display: none;
+// }
+
+// .accordion-set--label {
+//   display: block;
+// }

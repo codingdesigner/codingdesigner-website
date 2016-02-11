@@ -1,0 +1,96 @@
+form {
+  max-width: 50em;
+}
+
+.form-item {
+  margin-bottom: $base-line-em;
+}
+
+label {
+  @include defaults--form-group-margin();
+  display: block;
+  color: color(blue);
+  font-weight: 600;
+}
+
+fieldset {
+  @include defaults--form-group-margin();
+  margin-left: -0.5em;
+  padding: 0.5em;
+  border: 0;
+  //background-color: rgba(color(gray, light), 0.5);
+  //box-shadow: 0 0 0 1px color(white);
+}
+
+legend {
+  position: relative;
+  top: 1em;
+  margin-bottom: 1em;
+  color: color(blue, dark);
+  font-weight: 600;
+}
+
+input {
+  @include defaults--field();
+  height: 40px;
+  &[type="date"] {
+    min-width: 10em;
+  }
+  &[type="checkbox"] {
+    @include defaults--field--checkboxes-radios();
+  }
+  &[type="radio"] {
+    @include defaults--field--checkboxes-radios();
+  }
+  &[type="submit"] {
+    //@include button();
+    width: auto;
+  }
+}
+
+.form-date {
+  min-width: 10em;
+}
+
+textarea {
+  @include defaults--field();
+}
+
+select {
+  @include defaults--field();
+  max-width: 25em;
+  height: 40px;
+}
+
+.select2-search {
+  input {
+    min-width: auto;
+  }
+}
+
+.form-item-checkbox {
+  @include defaults--field--checkboxes-radios--wrappers();
+}
+.form-type-checkbox {
+  @include defaults--field--checkboxes-radios--wrappers();
+}
+.form-type-radio {
+  @include defaults--field--checkboxes-radios--wrappers();
+}
+
+input:focus {
+  @extend %focus;
+}
+[role="combobox"]:focus {
+  @extend %focus;
+}
+
+.search-form {
+  .search-field {
+    //border-radius: $border-radius 0 0 $border-radius;
+  }
+  .form-submit {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
+

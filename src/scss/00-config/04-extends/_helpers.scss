@@ -1,0 +1,64 @@
+////
+/// @group Helpers
+////
+
+/// Hide from both screenreaders and browsers: h5bp.com/u
+%hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/// Hide only visually, but have it available for screenreaders: h5bp.com/v
+%visuallyhidden {
+  @include visuallyhidden();
+}
+
+/// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+%visuallyhidden--focusable {
+  @extend %visuallyhidden;
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+/// Hide visually and from screenreaders, but maintain 02-layout
+%invisible {
+  visibility: hidden;
+}
+
+// Presentational Classes
+// ========================================================================== */
+
+%hide {
+  display: none;
+}
+
+%show {
+  display: block;
+}
+
+%hide-text {
+  text-indent: -9999px;
+}
+
+/// Clearfix: contain floats
+%clearfix {
+  @include clearfix();
+}
+
+// Basic styles for almost all pseudo
+%pseudo-base {
+  display: block;
+  content: "";
+}
+
+/* hide some stuff temporarily */
+%temp-hide {
+  display: none;
+}

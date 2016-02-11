@@ -1,0 +1,73 @@
+// off-margin-wings
+@mixin off-margin-wings() {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+@mixin apply-off-margin-wings() {
+  .relationship-block--pane {
+    position: relative;
+    &.green {
+      &:before {
+        background-color: color(green, light);
+      }
+    }
+    &.blue {
+      &:before {
+        background-color: color(blue);
+      }
+    }
+    &.blue-light {
+      &:before {
+        background-color: color(blue, light);
+      }
+    }
+    &.blue-dark {
+      &:before {
+        background-color: color(blue, dark);
+      }
+    }
+    &.gray {
+      &:before {
+        background-color: color(gray);
+      }
+    }
+    &.image,
+    &.gray-dark {
+      &:before {
+        background-color: color(gray, dark);
+      }
+    }
+    &:nth-of-type(1) {
+      &:before {
+        @include off-margin-wings()
+        right: 100%;
+      }
+    }
+  }
+  .panes-2 {
+    .relationship-block--pane {
+      &:nth-of-type(2) {
+        &:before {
+          @include off-margin-wings()
+          left: 100%;
+        }
+      }
+    }
+  }
+  .panes-3 {
+    .relationship-block--pane {
+      &:nth-of-type(3) {
+        &:before {
+          @include off-margin-wings()
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+

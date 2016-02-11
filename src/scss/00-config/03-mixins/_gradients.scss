@@ -1,0 +1,6 @@
+@mixin background-gradient($color, $color2: null, $direction: to bottom right, $saturation: 15%, $lightness: 25%, $alpha: 0) {
+  @if ($color2 == null) {
+    $color2: scale-color($color, $saturation: $saturation, $lightness: $lightness, $alpha: $alpha);
+  }
+  background-image: linear-gradient($direction, $color, $color2);
+}

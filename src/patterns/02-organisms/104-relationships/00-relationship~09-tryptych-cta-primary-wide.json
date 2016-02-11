@@ -1,0 +1,19 @@
+{
+  "count": 3,
+  "panes": [
+    {
+      "bg": "blue",
+      "content_excerpt": true
+    },
+    {
+      "bg": "image",
+      "bg_image": true,
+      "bg_image_value": "http://unsplash.it/1600/900/?random"
+    },
+    {
+      "bg": "green",
+      "content_excerpt": true
+    }
+  ],
+  "cta-primary-wide": true
+}

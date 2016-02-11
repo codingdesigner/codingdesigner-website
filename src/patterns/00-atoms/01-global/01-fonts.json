@@ -1,0 +1,8 @@
+{
+  "fonts": [
+    {
+      "name": "$font--gotham",
+      "value": "font(gotham)"
+    }
+  ]
+}

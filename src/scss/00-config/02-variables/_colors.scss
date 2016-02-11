@@ -1,0 +1,82 @@
+////
+/// @group Colors
+////
+
+/// Color Palette Maps
+/// @type Map
+$palettes: (
+  red: (
+    base: red
+  ),
+  orange: (
+    base: orange
+  ),
+  yellow: (
+    base: yellow
+  ),
+  green: (
+    base: green
+  ),
+  blue: (
+    base: blue
+  ),
+  indigo: (
+    base: indigo
+  ),
+  violet: (
+    base: violet
+  ),
+  gray: (
+    base: grey,
+    light: lightgray,
+    dark: darkgray
+  ),
+  white: (
+    base: white,
+    transparent: hsla(0, 0%, 100%, 0),
+    semitrans: hsla(0, 0%, 100%, 0.15)
+  ),
+  black: (
+    base: black,
+    light: hsl(0, 0%, 8%)
+  )
+);
+
+// Semantic Colors
+$color-text: color(black, light);
+$color-link: color(blue);
+$color-border: color(gray, light);
+$color-border-active: color(gray);
+$color-background: color(white);
+
+// Emphasis Colors
+$color-information: color(blue);
+$color-success: color(green);
+$color-error: color(red);
+$color-warning: color(orange);
+
+// Links
+$cs-link-normal: color(blue);
+$cs-link-hover: color(indigo);
+$cs-link-active: color(blue);
+$cs-link-visited: color(blue);
+$cs-link-focus: color(indigo);
+$cs-link-underline-normal: color(blue);
+$cs-link-underline-hover: color(indigo);
+$cs-link-underline-active: color(blue);
+$cs-link-underline-visited: color(blue);
+$cs-link-underline-focus: color(indigo);
+//
+$cs-link-background-normal: color(blue);
+$cs-link-background-hover: color(indigo);
+$cs-link-background-active: color(blue);
+$cs-link-background-visited: color(blue);
+$cs-link-background-focus: color(indigo);
+$cs-link-background-bkg: $color-background;
+
+
+
+
+// Colors for PL
+// @todo better solution?
+// @todo update with colors from palette

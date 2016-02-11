@@ -1,0 +1,283 @@
+////
+/// @group SVG Clip Paths
+////
+
+/// Calculate values for a jagged right edge in an svg clip path
+/// @param $height
+/// @param $direction
+/// @param $depth
+/// @param $count
+@function jag-right-edge($height, $direction, $depth, $count) {
+  $right-edge: '';
+  $x: 0;
+  $y: 0;
+  $comma: ', ';
+  @for $i from 0 through $count {
+    @if ($i % 2 == 0) {
+      @if $direction == left {
+        $x: '100%';
+      } @else {
+        $x: 100% - $depth;
+      }
+    }
+    @else {
+      @if $direction == left {
+        $x: 100% - $depth;
+      } @else {
+        $x: '100%';
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $y: 100%;
+    }
+    @if $i == $count {
+      $comma: '';
+    }
+    $right-edge: #{$right-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $right-edge;
+}
+
+/// Calculate values for a jagged left edge in an svg clip path
+/// @param $height
+/// @param $direction
+/// @param $depth
+/// @param $count
+@function jag-left-edge($height, $direction, $depth, $count) {
+  $left-edge: '';
+  $x: 0;
+  $y: 0;
+  $comma: ', ';
+  @for $i from $count through 0 {
+    @if ($i % 2 == 0) {
+      @if $direction == left {
+        $x: $depth;
+      } @else {
+        $x: '0';
+      }
+    } @else {
+      @if $direction == left {
+        $x: '0';
+      } @else {
+        $x: $depth;
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $y: 100%;
+    }
+    @if $i == 0 {
+      $comma: '';
+    }
+    $left-edge: #{$left-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $left-edge;
+}
+
+/// Calculate values for a jagged right edge in an svg clip path with an offset
+/// @param $height
+/// @param $direction
+/// @param $depth
+/// @param $count
+/// @param $edge-offset
+@function jag-right-edge-offset($height, $direction, $depth, $count, $edge-offset) {
+  $right-edge: '';
+  $x: 0;
+  $y: 0;
+  $direction-switch: true;
+  $comma: ', ';
+  @for $i from 0 through $count {
+    @if ($i % 2 == 0) {
+      $x: $edge-offset;
+    }
+    @else {
+      @if $direction == left {
+        @if ($direction-switch == true) {
+          $x: 100% - $depth;
+        } @else {
+          $x: 100%;
+        }
+      } @else {
+        @if ($direction-switch == true) {
+          $x: 100%;
+        } @else {
+          $x: 100% - $depth;
+        }
+      }
+      @if ($direction-switch == true) {
+        $direction-switch: false;
+      } @else {
+        $direction-switch: true;
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $y: 100%;
+    }
+    @if $i == $count {
+      $comma: '';
+    }
+    $right-edge: #{$right-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $right-edge;
+}
+
+/// Calculate values for a jagged left edge in an svg clip path with an offset
+/// @param $height
+/// @param $direction
+/// @param $depth
+/// @param $count
+/// @param $edge-offset
+@function jag-left-edge-offset($height, $direction, $depth, $count, $edge-offset) {
+  $left-edge: '';
+  $x: 0;
+  $y: 0;
+  $direction-switch: true;
+  $comma: ', ';
+  @for $i from $count through 0 {
+    @if ($i % 2 == 0) {
+      $x: $edge-offset;
+    } @else {
+      @if $direction == left {
+        @if ($direction-switch == true) {
+          $x: $depth;
+        } @else {
+          $x: 0;
+        }
+      } @else {
+        @if ($direction-switch == true) {
+          $x: 0;
+        } @else {
+          $x: $depth;
+        }
+      }
+      @if ($direction-switch == true) {
+        $direction-switch: false;
+      } @else {
+        $direction-switch: true;
+      }
+    }
+    $y: $i * ($height / $count);
+    @if $y == $height {
+      $x: $edge-offset;
+      $y: 100%;
+    }
+    @if $i == 0 {
+      $comma: '';
+    }
+    $left-edge: #{$left-edge} #{$x} #{$y}#{$comma};
+  }
+
+  @return $left-edge;
+}
+
+/// Calculate values for a jagged top edge in an svg clip path with an offset
+/// @param $height
+/// @param $direction
+/// @param $depth
+/// @param $count
+/// @param $edge-offset
+@function jag-top-edge-offset($height, $direction, $depth, $count, $edge-offset) {
+  $top-edge: '';
+  $x: 0;
+  $y: 0;
+  $direction-switch: true;
+  $comma: ', ';
+  @for $i from 0 through $count {
+    @if ($i % 2 == 0) {
+      $y: $edge-offset;
+    } @else {
+      @if $direction == down {
+        @if ($direction-switch == true) {
+          $y: $depth;
+        } @else {
+          $y: 0;
+        }
+      } @else {
+        @if ($direction-switch == true) {
+          $y: 0;
+        } @else {
+          $y: $depth;
+        }
+      }
+      @if ($direction-switch == true) {
+        $direction-switch: false;
+      } @else {
+        $direction-switch: true;
+      }
+    }
+    $x: $i * ($height / $count);
+    @if $x == $height {
+      $y: $edge-offset;
+      $x: 100%;
+    }
+    @if $i == $count {
+      $comma: '';
+    }
+    $top-edge: #{$top-edge} #{$x} #{$y}#{$comma};
+  }
+  @return $top-edge;
+}
+
+
+/// Create an SVG clip path with a jagged edge on one side
+/// @param {string} $side [right] - allowed values: right, left, top
+/// @param {string} $direction [left] - allowed values: right, left
+/// @param {bool} $center-edge [false] - true will offset the jagged edge
+/// @param {percentage} $height [100%]
+/// @param {percentage} $depth [5%]
+/// @param {integer} $count [10] - must be an even number
+@mixin jag-edge($side: right, $direction: left, $center-edge: false, $height: 100%, $depth: 5%, $count: 10) {
+  @if ($center-edge == true) {
+    @if ($count % 2 != 0) {
+      @warn '$count needs to be an even number when using $center-edge';
+    }
+  }
+  @if $side == right {
+    @if (unit($depth) != '%') {
+      @error "$depth unit needs to be % when using $side: right";
+    }
+    @if ($center-edge == true) {
+      $edge-offset: 100% - ($depth / 2);
+      $right-edge: jag-right-edge-offset($height, $direction, $depth, $count, $edge-offset);
+    } @else {
+      $edge-offset: 100%;
+      $right-edge: jag-right-edge($height, $direction, $depth, $count);
+    }
+    @if $direction == left {
+      @include add-prefix(clip-path, polygon(0 0, #{$right-edge}, 0 100%));
+    } @else {
+      @include add-prefix(clip-path, polygon(0 0, #{100% - $depth} 0, #{$right-edge}, 0 100%));
+    }
+  }
+  @if $side == left {
+    @if ($center-edge == true) {
+      $edge-offset: $depth / 2;
+      $left-edge: jag-left-edge-offset($height, $direction, $depth, $count, $edge-offset);
+    } @else {
+      $edge-offset: 0;
+      $left-edge: jag-left-edge($height, $direction, $depth, $count);
+    }
+    @include add-prefix(clip-path, polygon(100% 0, 100% 100%, #{$left-edge}));
+  }
+  @if $side == both {
+    $right-edge: jag-right-edge($height, $direction, $depth, $count);
+    $left-edge: jag-left-edge($height, $direction, $depth, $count);
+    @if $direction == left {
+      @include add-prefix(clip-path, polygon(#{$depth} 0, 100% 0, #{$right-edge}, 0 100%, #{$left-edge}));
+    } @else {
+      @include add-prefix(clip-path, polygon(0 0, #{100% - $depth} 0, #{$right-edge}, 0 100%, #{$left-edge}));
+    }
+  }
+  @if $side == top {
+    @if ($center-edge == true) {
+      $edge-offset: $depth / 2;
+      $top-edge: jag-top-edge-offset($height, $direction, $depth, $count, $edge-offset);
+    } @else {
+      $edge-offset: 0;
+      $top-edge: jag-top-edge($height, $direction, $depth, $count);
+    }
+    @include add-prefix(clip-path, polygon(#{$top-edge}, 100% 100%, 0 100%));
+  }
+}

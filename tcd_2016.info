@@ -1,0 +1,13 @@
+name = tcd_2016
+description = The Coding Designer
+core = 7.x
+
+stylesheets[screen][] = css/style.css
+
+;bower:css
+;endbower
+
+;bower:js
+;endbower
+
+scripts[] = js/script.js

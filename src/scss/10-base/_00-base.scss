@@ -1,0 +1,50 @@
+// ==========================================================================
+// Base - Base Styles
+// ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $color-text;
+  font-family: $font-body;
+  font-size: $root-typesize;
+  line-height: $base-line-height-unitless;
+  height: 100%;
+}
+
+body {
+  background-color: $color-background;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  //padding: 0 1em;
+  //overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  @include fontsize-rem($root-typesize);
+  color: $color-text;
+  font-family: $font-body;
+  line-height: $base-line-height-unitless;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $base-line-em;
+  widows: 3;
+  orphans: 3;
+}
+
+a {
+  @include link-standard();
+}
+
+.hidden {
+  @extend %hidden;
+}

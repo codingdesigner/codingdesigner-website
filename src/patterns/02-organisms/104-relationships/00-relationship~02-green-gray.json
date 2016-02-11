@@ -1,0 +1,13 @@
+{
+  "count": 2,
+  "panes": [
+    {
+      "bg": "green",
+      "content_excerpt": true
+    },
+    {
+      "bg": "gray-dark",
+      "content_excerpt": true
+    }
+  ]
+}

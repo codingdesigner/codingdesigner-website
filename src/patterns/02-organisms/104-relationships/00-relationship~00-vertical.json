@@ -1,0 +1,22 @@
+{
+  "vertical": true,
+  "count": 3,
+  "panes": [
+    {
+      "bg": "blue",
+      "content_text": true,
+      "content_text_value": "<h2><a>Learn</a></h2>"
+    },
+    {
+      "bg": "gray-dark",
+      "content_text": true,
+      "content_text_value": "<h2><a>Ask</a></h2>"
+    },
+    {
+      "bg": "green",
+      "content_text": true,
+      "content_text_value": "<h2><a>Ask</a></h2>"
+    }
+
+  ]
+}

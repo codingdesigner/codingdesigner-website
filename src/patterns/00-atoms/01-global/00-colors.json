@@ -1,0 +1,56 @@
+{
+  "colors": [
+    {
+      "name": "color(red)",
+      "value": "red"
+    },
+    {
+      "name": "color(orange)",
+      "value": "orange"
+    },
+    {
+      "name": "color(yellow)",
+      "value": "yellow"
+    },
+    {
+      "name": "color(green)",
+      "value": "green"
+    },
+    {
+      "name": "color(blue)",
+      "value": "blue"
+    },
+    {
+      "name": "color(indigo)",
+      "value": "indigo"
+    },
+    {
+      "name": "color(violet)",
+      "value": "violet"
+    },
+    {
+      "name": "color(gray)",
+      "value": "gray"
+    },
+    {
+      "name": "color(gray, light)",
+      "value": "lightgray"
+    },
+    {
+      "name": "color(gray, dark)",
+      "value": "darkgray"
+    },
+    {
+      "name": "color(white)",
+      "value": "white"
+    },
+    {
+      "name": "color(black)",
+      "value": "black"
+    },
+    {
+      "name": "color(black, light)",
+      "value": "hsl(0, 0%, 8%)"
+    }
+  ]
+}

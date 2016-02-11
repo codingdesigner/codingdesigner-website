@@ -1,0 +1,35 @@
+////
+/// @group Getters
+////
+
+/// @param $color
+/// @param $tone [base]
+@function color($color, $tone: 'base') {
+  $c: map-get(map-get($palettes, $color), $tone);
+  @return $c;
+}
+
+/// @param $color
+/// @param $tone [base]
+/// @param $saturation [15%]
+@function color-saturate($color, $tone: 'base', $saturation: 15%) {
+  $c: map-get(map-get($palettes, $color), $tone);
+  $c: adjust-color($c, $saturation: $saturation);
+  @return $c;
+}
+
+/// @param $font
+@function font($font) {
+  @return map-get($font-map, $font);
+}
+
+/// z-index getter
+/// @param $key
+/// @example scss
+///   .class {
+///     z-index: z("modal");
+///   }
+@function z($key) {
+  @return map-get($z-index, $key)
+}
+

@@ -1,0 +1,55 @@
+////
+/// @group breakpoints
+////
+
+// Breakpoint will output fallback selectors in this stylesheet
+@include breakpoint-set('no query fallbacks', true);
+
+// @TODO CLEANUP BOILERPLATE
+// Sign posts
+//$width-xsmall  : 400px;
+//$width-small   : 480px;
+//$width-medium  : 640px;
+//$width-large   : 768px;
+//$width-xlarge  : 1024px;
+//$width-xxlarge : 1280px;
+//$width-xxxlarge : 1600px;
+
+// Mobile-first queries
+// Breakpoint variables are prefixed with "$bp--"
+
+//$bp--xsmall-up  : $width-xsmall;   // 400px
+//$bp--small-up   : $width-small;    // 480px
+//$bp--medium-up  : $width-medium;   // 640px
+//$bp--large-up   : $width-large;    // 768px
+//$bp--xlarge-up  : $width-xlarge;   // 1024px
+//$bp--xxlarge-up : $width-xxlarge;  // 1280px
+//$bp--xxxlarge-up: $width-xxxlarge; // 1600px
+
+// responsive table
+$bp--responsive-table: 500px;
+
+// Breakpoints
+$bp--global--inline-title: 480px;
+
+// @todo CLEANUP SCORE STUFF
+$bp-typography-narrow: 500px;
+//$bp-navigation-logo-left: 540px;
+//$bp-navigation-search-right: 540px;
+//$bp-navigation-search-full-view: 715px;
+//$bp-navigation-nav-secondary-not-full: 540px;
+//$bp-navigation-nav-secondary-full-view: 715px;
+//$bp-navigation-nav-primary-wide: 715px;
+//$bp-navigation-nav-tool-wide: 715px;
+//$bp-navigation-nav-primary-full: 900px;
+//$bp-logo-full-width: 800px;
+$bp-relationship-block-horizontal-2-pane: 630px;
+$bp-relationship-block-horizontal-3-pane: 930px;
+$bp-relationship-block-pane-1-2: 750px;
+//$bp-block-hero-bump-1: 480px;
+//$bp-block-hero-solid-color: 580px;
+//$bp-content-trio-break-1: 580px;
+//$bp-content-trio-break-2: 800px;
+$bp--columns-2: 1000px;
+//$bp--page-padding-increase: 1000px;
+//$success-story-image-max-width: 14rem;

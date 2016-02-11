@@ -1,0 +1,130 @@
+// ==========================================================================
+// Components Atoms - Headings
+// ========================================================================== */
+
+// Header Element Default Variables
+// see ~/scss/00-global/02-variables/_typography.scss
+// for final 02-variables
+$heading-sizes: 2.25em 2em 1.75em 1.5em 1.25em 1em !default;
+$heading-line-heights: 1 1 1 1 1 1 !default;
+$heading-color-default: color(black) !default;
+$font-headline: sans !default;
+
+
+// Mixin - Heading Base
+// ========================================================================== */
+@mixin heading-base($heading-color) {
+  @if ($heading-color == null) {
+    $heading-color: $heading-color-default;
+  }
+  font-family: $font-headline;
+  font-weight: 400;
+  margin-top: 0;
+  color: $heading-color;
+}
+
+// Mixin - Heading Size
+// ========================================================================== */
+//
+// @params
+//  $size
+//  $line-height
+//
+@mixin heading-size($size, $line-height: false) {
+  @include fontsize-rem($size);
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
+
+// Mixin - H1
+// ========================================================================== */
+@mixin h1($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 1), nth($heading-line-heights, 1));
+  margin-bottom: base-line-calc(0.5, nth($heading-sizes, 1));
+  margin-top: base-line-calc(0.5, nth($heading-sizes, 1));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 1), nth($heading-line-heights, 1));
+  }
+}
+
+// Mixin - H2
+// ========================================================================== */
+@mixin h2($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 2), nth($heading-line-heights, 2));
+  margin-bottom: base-line-calc(0.5, nth($heading-sizes, 2));
+  margin-top: base-line-calc(0.5, nth($heading-sizes, 2));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 2), nth($heading-line-heights, 2));
+  }
+}
+
+// Mixin - H3
+// ========================================================================== */
+@mixin h3($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 3), nth($heading-line-heights, 3));
+  margin-bottom: base-line-calc(0.5, nth($heading-sizes, 3));
+  margin-top: base-line-calc(0.5, nth($heading-sizes, 3));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 3), nth($heading-line-heights, 3));
+  }
+}
+
+// Mixin - H4
+// ========================================================================== */
+@mixin h4($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 4), nth($heading-line-heights, 4));
+  margin-bottom: base-line-calc(0.25, nth($heading-sizes, 4));
+  margin-top: base-line-calc(0.25, nth($heading-sizes, 4));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 4), nth($heading-line-heights, 4));
+  }
+}
+
+// Mixin - H5
+// ========================================================================== */
+@mixin h5($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 5), nth($heading-line-heights, 5));
+  margin-bottom: base-line-calc(0.25, nth($heading-sizes, 5));
+  margin-top: base-line-calc(0.25, nth($heading-sizes, 5));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 5), nth($heading-line-heights, 5));
+  }
+}
+
+// Mixin - H6
+// ========================================================================== */
+@mixin h6($heading-color: null) {
+  @include heading-base($heading-color);
+  @include heading-size(nth($heading-sizes-narrow, 6), nth($heading-line-heights, 6));
+  margin-bottom: base-line-calc(0.25, nth($heading-sizes, 6));
+  margin-top: base-line-calc(0.25, nth($heading-sizes, 6));
+  @include breakpoint($bp-typography-narrow) {
+    @include heading-size(nth($heading-sizes, 6), nth($heading-line-heights, 6));
+  }
+}
+
+// Heading Element Styles
+h1 {
+  @include h1();
+}
+h2 {
+  @include h2();
+}
+h3 {
+  @include h3();
+}
+h4 {
+  @include h4();
+}
+h5 {
+  @include h5();
+}
+h6 {
+  @include h6();
+}

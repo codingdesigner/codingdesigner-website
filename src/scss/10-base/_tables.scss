@@ -1,0 +1,77 @@
+// table {
+//   width: 100%;
+//   .viewer--content & {
+//     margin-bottom: $base-line-em * 2;
+//   }
+// }
+
+// td {
+//   @include table-cell-defaults();
+//   vertical-align: baseline;
+// }
+
+// th {
+//   @include table-cell-defaults();
+//   vertical-align: bottom;
+// }
+
+// thead {
+//   border-bottom: 2px solid color(gray);
+// }
+
+// tbody {
+//   tr {
+//     border-bottom: 1px solid color(gray, light);
+//     &:nth-of-type(even) {
+//       background-color: rgba(color(white), 0.5);
+//     }
+//   }
+//   td {
+//     border-right: 1px solid color(gray, light);
+//     &:last-of-type {
+//       border-right: 0;
+//     }
+//   }
+// }
+
+// .responsive-table {
+//   thead {
+//     @extend %visuallyhidden;
+//     @include breakpoint($bp--responsive-table) {
+//       @include visuallyhidden-undo();
+//       border-bottom: 2px solid color(gray);
+//     }
+//   }
+//   tr {
+//     display: block;
+//     padding-top: 1em;
+//     padding-bottom: 1em;
+//     border-bottom: 0;
+//     @include breakpoint($bp--responsive-table) {
+//       display: table-row;
+//       border-bottom: 1px solid color(gray, light);
+//     }
+//   }
+//   td {
+//     display: flex;
+//     border-right: 0;
+//     border-bottom: 1px solid color(gray, x-light);
+//     @include breakpoint($bp--responsive-table) {
+//       display: table-cell;
+//       border-right: 1px solid color(gray, light);
+//       border-bottom: 0;
+//     }
+//     &:before {
+//       display: inline-block;
+//       min-width: 8em;
+//       margin-right: 0.5em;
+//       padding-right: 0.5em;
+//       border-right: 1px solid color(gray, dark);
+//       font-weight: bold;
+//       content: attr(data-th)' ';
+//       @include breakpoint($bp--responsive-table) {
+//         content: none;
+//       }
+//     }
+//   }
+// }
