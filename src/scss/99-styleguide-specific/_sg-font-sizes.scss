@@ -1,0 +1,48 @@
+// MODULAR SCALE
+// scss-lint:disable NestingDepth
+.sg-ms {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: lightgray;
+  line-height: 1;
+  li {
+    list-style: none;
+    @for $i from 0 through 12 {
+      &:nth-of-type(#{$i + 1}) {
+        font-size: ms($i);
+        &:before {
+          font-size: ms(0);
+          content: 'ms(#{$i}): ';
+        }
+      }
+    }
+  }
+}
+// scss-lint:enable NestingDepth
+
+.sg-ms-fonts {
+  display: flex;
+}
+
+
+//.sg-font-sizes {
+//  thead {
+//    font-weight: bold;
+//    text-transform: uppercase;
+//    border-bottom: 2px solid black;
+//  }
+//  th,
+//  td {
+//    text-align: left;
+//    white-space: nowrap;
+//    line-height: 1.5em;
+//    &:first-child {
+//      padding-right: 12px;
+//    }
+//  }
+//}
+

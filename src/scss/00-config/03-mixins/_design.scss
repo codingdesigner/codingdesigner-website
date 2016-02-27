@@ -124,6 +124,19 @@
   }
 }
 
+/// Try line-height.
+/// Writes values as commented-out css you can turn on and off in your browser inspector
+/// @link https://github.com/at-import/try
+/// @param {number} $end [1] - last line-height value
+/// @param {number} $increment [0.1] - how much to increase the line-height with each advance
+@mixin try-line-height($end: 2, $increment: 0.1) {
+  $count: 1;
+  @while($count < $end) {
+    /* line-height: #{$count}; */
+    $count: $count + $increment;
+  }
+}
+
 /// Try all the "Try" mixins at once.
 /// Writes values as commented-out css you can turn on and off in your browser inspector
 /// @link https://github.com/at-import/try
@@ -136,4 +149,16 @@
   @include try-blend-modes();
   @include try-background-gradients();
   @include try-letter-spacing();
+  @include try-line-height();
+}
+
+/// Try all typography mixins at once
+/// Writes values as commented-out css you can turn on and off in your browser inspector
+/// @link https://github.com/at-import/try
+@mixin try-all-type() {
+  @include try-fonts();
+  @include try-font-weights();
+  @include try-ms();
+  @include try-letter-spacing();
+  @include try-line-height();
 }

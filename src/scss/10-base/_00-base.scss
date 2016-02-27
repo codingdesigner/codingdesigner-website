@@ -12,6 +12,8 @@ html {
   font-size: $root-typesize;
   line-height: $base-line-height-unitless;
   height: 100%;
+  @include try-fonts();
+  @include try-font-weights();
 }
 
 body {
@@ -20,7 +22,7 @@ body {
   height: 100%;
   margin: 0;
   position: relative;
-  //padding: 0 1em;
+  padding: 0 0.5em;
   //overflow-x: hidden;
 }
 

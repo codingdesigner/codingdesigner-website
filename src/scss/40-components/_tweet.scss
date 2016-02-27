@@ -1,0 +1,9 @@
+blockquote {
+  &.twitter-tweet {
+    p {}
+    a {
+      &:hover {}
+      &:focus {}
+    }
+  }
+}

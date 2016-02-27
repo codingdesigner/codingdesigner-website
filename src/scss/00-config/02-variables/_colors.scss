@@ -28,11 +28,12 @@ $palettes: (
   ),
   gray: (
     base: grey,
-    light: lightgray,
+    light: #e5e5e5,
     dark: darkgray
   ),
   white: (
     base: white,
+    warm: hsl(48, 20%, 95%),
     transparent: hsla(0, 0%, 100%, 0),
     semitrans: hsla(0, 0%, 100%, 0.15)
   ),
@@ -47,7 +48,7 @@ $color-text: color(black, light);
 $color-link: color(blue);
 $color-border: color(gray, light);
 $color-border-active: color(gray);
-$color-background: color(white);
+$color-background: color(white, warm);
 
 // Emphasis Colors
 $color-information: color(blue);

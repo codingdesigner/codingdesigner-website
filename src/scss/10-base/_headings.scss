@@ -13,12 +13,12 @@ $font-headline: sans !default;
 
 // Mixin - Heading Base
 // ========================================================================== */
-@mixin heading-base($heading-color) {
+@mixin heading-base($heading-color, $heading-font: $font-headline, $weight: 800) {
   @if ($heading-color == null) {
     $heading-color: $heading-color-default;
   }
-  font-family: $font-headline;
-  font-weight: 400;
+  font-family: $heading-font;
+  font-weight: $weight;
   margin-top: 0;
   color: $heading-color;
 }
@@ -41,7 +41,7 @@ $font-headline: sans !default;
 // ========================================================================== */
 @mixin h1($heading-color: null) {
   @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 1), nth($heading-line-heights, 1));
+  @include heading-size(nth($heading-sizes-narrow, 1), nth($heading-line-heights-narrow, 1));
   margin-bottom: base-line-calc(0.5, nth($heading-sizes, 1));
   margin-top: base-line-calc(0.5, nth($heading-sizes, 1));
   @include breakpoint($bp-typography-narrow) {
@@ -53,9 +53,10 @@ $font-headline: sans !default;
 // ========================================================================== */
 @mixin h2($heading-color: null) {
   @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 2), nth($heading-line-heights, 2));
+  @include heading-size(nth($heading-sizes-narrow, 2), nth($heading-line-heights-narrow, 2));
   margin-bottom: base-line-calc(0.5, nth($heading-sizes, 2));
   margin-top: base-line-calc(0.5, nth($heading-sizes, 2));
+  @include try-font-weights();
   @include breakpoint($bp-typography-narrow) {
     @include heading-size(nth($heading-sizes, 2), nth($heading-line-heights, 2));
   }
@@ -64,10 +65,12 @@ $font-headline: sans !default;
 // Mixin - H3
 // ========================================================================== */
 @mixin h3($heading-color: null) {
-  @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 3), nth($heading-line-heights, 3));
+  @include heading-base($heading-color, $weight: 500);
+  @include heading-size(nth($heading-sizes-narrow, 3), nth($heading-line-heights-narrow, 3));
   margin-bottom: base-line-calc(0.5, nth($heading-sizes, 3));
   margin-top: base-line-calc(0.5, nth($heading-sizes, 3));
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
   @include breakpoint($bp-typography-narrow) {
     @include heading-size(nth($heading-sizes, 3), nth($heading-line-heights, 3));
   }
@@ -76,34 +79,41 @@ $font-headline: sans !default;
 // Mixin - H4
 // ========================================================================== */
 @mixin h4($heading-color: null) {
-  @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 4), nth($heading-line-heights, 4));
+  @include heading-base($heading-color, $heading-font: font(surveyor), $weight: 300);
+  @include heading-size(nth($heading-sizes-narrow, 4), nth($heading-line-heights-narrow, 4));
   margin-bottom: base-line-calc(0.25, nth($heading-sizes, 4));
   margin-top: base-line-calc(0.25, nth($heading-sizes, 4));
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
   @include breakpoint($bp-typography-narrow) {
     @include heading-size(nth($heading-sizes, 4), nth($heading-line-heights, 4));
+    font-family: font(surveyor-fine);
   }
 }
 
 // Mixin - H5
 // ========================================================================== */
 @mixin h5($heading-color: null) {
-  @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 5), nth($heading-line-heights, 5));
+  @include heading-base($heading-color, $heading-font: font(surveyor), $weight: 500);
+  @include heading-size(nth($heading-sizes-narrow, 5), nth($heading-line-heights-narrow, 5));
   margin-bottom: base-line-calc(0.25, nth($heading-sizes, 5));
   margin-top: base-line-calc(0.25, nth($heading-sizes, 5));
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
   @include breakpoint($bp-typography-narrow) {
     @include heading-size(nth($heading-sizes, 5), nth($heading-line-heights, 5));
+    font-family: font(surveyor-fine);
   }
 }
 
 // Mixin - H6
 // ========================================================================== */
 @mixin h6($heading-color: null) {
-  @include heading-base($heading-color);
-  @include heading-size(nth($heading-sizes-narrow, 6), nth($heading-line-heights, 6));
+  @include heading-base($heading-color, $heading-font: font(surveyor), $weight: 500);
+  @include heading-size(nth($heading-sizes-narrow, 6), nth($heading-line-heights-narrow, 6));
   margin-bottom: base-line-calc(0.25, nth($heading-sizes, 6));
   margin-top: base-line-calc(0.25, nth($heading-sizes, 6));
+  text-transform: uppercase;
   @include breakpoint($bp-typography-narrow) {
     @include heading-size(nth($heading-sizes, 6), nth($heading-line-heights, 6));
   }

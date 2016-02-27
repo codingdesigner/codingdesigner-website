@@ -1,0 +1,51 @@
+// Icons
+.icons-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.icons-demo {
+  margin-bottom: 40px;
+  @media all and (min-width: 600px) {
+    column-count: 3;
+    column-gap: 20px;
+  }
+  @media all and (min-width: 800px) {
+    column-count: 5;
+  }
+}
+.icons__item,
+.icons__item i {
+  line-height: 2em;
+  cursor: pointer;
+  overflow: hidden;
+}
+.icons__item:hover {
+  color: #3c90be;
+}
+.icons__item i {
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  &:hover i {
+    transform: scale(1.5);
+  }
+}
+.icons-demo__footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #999;
+}
+.demo-random-icon {
+  @include icon("facebook");
+}
+.demo-text-replace-icon {
+  @include icon("twitter", $text-replace: true);
+  height: 16px;
+  width: 16px;
+}
+
+.demo .g .gi {
+  text-align: center;
+  outline: dotted 1px #ccc;
+}

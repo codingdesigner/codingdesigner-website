@@ -5,27 +5,20 @@
 
 // @todo refactor font names
 $font-map: (
-  gotham: #{'Gotham SSm A', 'Gotham SSm B', sans-serif},
-  font--surveyor: #{'Surveyor SSm A', 'Surveyor SSm B', serif},
-  font--whitney: #{'Whitney SSm A', 'Whitney SSm B', sans-serif},
-  font--landmark: #{'Landmark Regular A', 'Landmark Regular B', sans-serif},
-  font--landmark-inline: #{'Landmark Inline A', 'Landmark Inline B', sans-serif},
-  font--landmark-shadow: #{'Landmark Shadow A', 'Landmark Shadow B', sans-serif},
-  font--landmark-dimensional: #{'Landmark Dimensional A', 'Landmark Dimensional B', sans-serif},
-  font--sans: #{sans-serif},
-  font--serif: #{serif}
+  surveyor: #{'Surveyor SSm A', 'Surveyor SSm B', serif},
+  surveyor-fine: #{'"Surveyor Fine A", "Surveyor Fine B"', serif}
+//,
+//  whitney: #{'Whitney SSm A', 'Whitney SSm B', sans-serif}
 );
 
-$font-body: font(font--surveyor);
-$font-headline: font(font--surveyor);
+$font-body: font(surveyor);
+//$font-body: font(whitney);
+$font-headline: font(surveyor-fine);
 $font--font-awesome: FontAwesome;
 
-* {
-  font-family: 'Surveyor SSm A', 'Surveyor SSm B', serif;
-}
 
 // Font size and line-height
-$root-typesize: 20px;
+$root-typesize: 18px;
 $base-font-size: $root-typesize;
 $base-line-px: $root-typesize * 1.5;
 $base-line-em: em($base-line-px);
@@ -34,16 +27,21 @@ $base-line-height-unitless:  unitless-convert($base-line-em);
 
 // Sassy Modular-scale
 $ms-base: $root-typesize;
-$ms-ratio: $minor-third $golden;
+//$ms-ratio: $minor-third $golden;
+$ms-ratio: $minor-third;
+$ms-ratio: $major-third;
 //$ms-ratio: 1.2; // too big?
 //$ms-ratio: 1.125;
 //$ms-ratio: 1.15;
 
 // Heading sizes
-$heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1);
-$heading-line-heights: 1.5 1.5 1.5 1.5 1.5 1.5;
 $heading-sizes-narrow: ms(4) ms(3) ms(2) ms(1) ms(0) ms(0);
+$heading-line-heights-narrow: 1.1 1.1 1.1 1.3 1.5 1.5;
+$heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1);
+$heading-line-heights: 1.1 1.1 1.1 1.3 1.5 1.5;
 
 
 // FOR PL
-$font--gotham: font(gotham);
+$font--surveyor: font(surveyor);
+$font--surveyor-fine: font(surveyor-fine);
+//$font--whitney: font(whitney);
