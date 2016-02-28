@@ -33,9 +33,12 @@
   .word-1 {
     float: left;
     font-size: 0.5em;
-    transform: translateX(39px) translateY(-8px);
+    transform: translateX(32px) translateY(-6px);
     position: absolute;
     font-weight: 100;
+    @include breakpoint($bp-typography-narrow) {
+      transform: translateX(51px) translateY(-8px);
+    }
   }
   .word-2 {
     //    -webkit-transform: translateX(4px) translateY(3px);
@@ -51,7 +54,7 @@
   font-variant: small-caps;
   margin-top: -19px;
   //  margin-left: 166px;
-  border-top: 4px solid black;
+  border-top: 4px solid color(black);
   display: inline-block;
   line-height: 1;
   //  margin-left: 20px;

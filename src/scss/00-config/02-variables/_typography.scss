@@ -6,13 +6,14 @@
 // @todo refactor font names
 $font-map: (
   surveyor: #{'Surveyor SSm A', 'Surveyor SSm B', serif},
-  surveyor-fine: #{'"Surveyor Fine A", "Surveyor Fine B"', serif}
-//,
-//  whitney: #{'Whitney SSm A', 'Whitney SSm B', sans-serif}
+  surveyor-fine: #{'"Surveyor Fine A", "Surveyor Fine B"', serif},
+  //whitney: #{'Whitney SSm A', 'Whitney SSm B', sans-serif},
+  archer: #{'Archer SSm A', 'Archer SSm B', sans-serif}
 );
 
-$font-body: font(surveyor);
+//$font-body: font(surveyor);
 //$font-body: font(whitney);
+$font-body: font(archer);
 $font-headline: font(surveyor-fine);
 $font--font-awesome: FontAwesome;
 
@@ -35,7 +36,7 @@ $ms-ratio: $major-third;
 //$ms-ratio: 1.15;
 
 // Heading sizes
-$heading-sizes-narrow: ms(4) ms(3) ms(2) ms(1) ms(0) ms(0);
+$heading-sizes-narrow: ms(3) ms(2) ms(2) ms(1) ms(0) ms(0);
 $heading-line-heights-narrow: 1.1 1.1 1.1 1.3 1.5 1.5;
 $heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1);
 $heading-line-heights: 1.1 1.1 1.1 1.3 1.5 1.5;

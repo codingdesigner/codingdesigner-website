@@ -44,11 +44,12 @@ $palettes: (
 );
 
 // Semantic Colors
+$color-background: color(white, warm);
 $color-text: color(black, light);
-$color-link: color(blue);
+//$color-link: color(red);
+$heading-color-default: $color-text;
 $color-border: color(gray, light);
 $color-border-active: color(gray);
-$color-background: color(white, warm);
 
 // Emphasis Colors
 $color-information: color(blue);
@@ -57,22 +58,24 @@ $color-error: color(red);
 $color-warning: color(orange);
 
 // Links
-$cs-link-normal: color(blue);
-$cs-link-hover: color(indigo);
-$cs-link-active: color(blue);
-$cs-link-visited: color(blue);
-$cs-link-focus: color(indigo);
-$cs-link-underline-normal: color(blue);
-$cs-link-underline-hover: color(indigo);
-$cs-link-underline-active: color(blue);
-$cs-link-underline-visited: color(blue);
-$cs-link-underline-focus: color(indigo);
+$cs--link-a: color(gray);
+$cs--link-b: color(red);
+$cs-link-normal: $cs--link-a;
+$cs-link-hover: $cs--link-b;
+$cs-link-active: $cs--link-a;
+$cs-link-visited: $cs--link-a;
+$cs-link-focus: $cs--link-b;
+$cs-link-underline-normal: $cs--link-a;
+$cs-link-underline-hover: $cs--link-b;
+$cs-link-underline-active: $cs--link-a;
+$cs-link-underline-visited: $cs--link-a;
+$cs-link-underline-focus: $cs--link-b;
 //
-$cs-link-background-normal: color(blue);
-$cs-link-background-hover: color(indigo);
-$cs-link-background-active: color(blue);
-$cs-link-background-visited: color(blue);
-$cs-link-background-focus: color(indigo);
+$cs-link-background-normal: $cs--link-a;
+$cs-link-background-hover: $cs--link-b;
+$cs-link-background-active: $cs--link-a;
+$cs-link-background-visited: $cs--link-a;
+$cs-link-background-focus: $cs--link-b;
 $cs-link-background-bkg: $color-background;
 
 

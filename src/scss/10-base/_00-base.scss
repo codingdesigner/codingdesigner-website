@@ -9,11 +9,12 @@
 html {
   color: $color-text;
   font-family: $font-body;
-  font-size: $root-typesize;
+  font-size: ms(1);
   line-height: $base-line-height-unitless;
   height: 100%;
-  @include try-fonts();
-  @include try-font-weights();
+  @include breakpoint($bp-typography-narrow) {
+    font-size: $root-typesize;
+  }
 }
 
 body {
@@ -41,6 +42,7 @@ p {
   margin-bottom: $base-line-em;
   widows: 3;
   orphans: 3;
+  max-width: 40em;
 }
 
 a {

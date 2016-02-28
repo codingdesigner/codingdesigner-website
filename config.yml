@@ -27,7 +27,7 @@ css:
     enabled: true
     dest: dest/sassdoc
     verbose: false
-    basePath: https://github.com/phase2/pattern-lab-starter/blob/master/scss
+    basePath: https://github.com/codingdesigner/codingdesigner-website/tree/master/src/scss
 #    exclude:
 #      - file.scss
     theme: default
