@@ -1,0 +1,28 @@
+.monogram {
+  @include fontsize-rem(ms(6));
+  background-color: color(black, light);
+  color: color(white, warm);
+  font-family: font(surveyor-fine);
+  line-height: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: relative;
+  //font-style: italic;
+}
+
+.monogram--initial {
+  flex-basis: 100%;
+  text-align: center;
+  $vertical-adjust: 0.202898551em;
+  &.word-1 {
+    transform: translateY($vertical-adjust);
+  }
+  &.word-2 {
+    transform: translateY(-$vertical-adjust);
+  }
+}
