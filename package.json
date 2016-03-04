@@ -46,6 +46,7 @@
     "singularitygs": "^1.6.2"
   },
   "dependencies": {
-    "modularscale-sass": "^2.1.1"
+    "modularscale-sass": "^2.1.1",
+    "sassdoc-theme-vulcan": "^0.2.0"
   }
 }

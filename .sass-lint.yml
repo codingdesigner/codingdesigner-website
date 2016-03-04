@@ -33,6 +33,9 @@ rules:
     - 1
   no-vendor-prefixes: 1
   placeholder-in-extend: 2
+  property-sort-order:
+    - 1
+    - order: concentric
   quotes:
     - 0
     - style: single

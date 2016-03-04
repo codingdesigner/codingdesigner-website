@@ -3,37 +3,53 @@
   <div class="pi--overview">
     Engage and create <em>relationships</em> with <em>entrpreneurs</em>.
   </div>
+  <div class="pi--details">
+    <input type="checkbox" class="pi--details--trigger hidden" id="pi--details--trigger--score">
+    <label for="pi--details--trigger--score" class="pi--details--trigger-label">Details</label>
+    <div class="pi--details--offside">
+      <div class="pi--item-description">
+        <h3 class="pi--item-label--client">Client:</h3>
+        <div class="pi--client">SCORE</div>
+      </div>
+      <div class="pi--item-description">
+        <h3 class="pi--item-label--about">About:</h3>
+        <div class="pi--about">{{excerpt.medium}}</div>
+      </div>
+      <div class="pi--item-description">
+        <h3 class="pi--item-label--responsibilities">Responsibilities:</h3>
+        <ul class="pi--responsibilities">
+          <li>Art Direction</li>
+          <li>Lead Designer</li>
+          <li>Presentations</li>
+          <li>Kick-off lead</li>
+          <li>Front End Development</li>
+          <li>Prototyping</li>
+        </ul>
+      </div>
+      <div class="pi--item-description">
+        <h3 class="pi--item-label--agency">Agency:</h3>
+        <div class="pi--agency"><a href="">Phase2</a></div>
+      </div>
+    </div>
+  </div>
   <div class="pi--images">
     <picture class="pi--image">
-      <img
-          sizes="(max-width: 500px) 100vw, 500px"
-          srcset="
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_200.png 200w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_252.png 252w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_296.png 296w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_338.png 338w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_373.png 373w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_413.png 413w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_444.png 444w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_479.png 479w,
-{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_500.png 500w"
-          src="{{img-portfolio-url}}score/score-home-wide-thumb_vdq1tr_ar_1_1,c_fill__c_scale,w_500.png"
-          alt="">
+      <img src="{{img-portfolio-url}}originals/score-home-devices.png" alt="Screenshots of Score.org">
     </picture>
-    <picture class="pi--image">
-      <img
-          sizes="(max-width: 340px) 100vw, 340px"
-          srcset="
-{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_200.png 200w,
-{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_261.png 261w,
-{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_313.png 313w,
-{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_340.png 340w"
-          src="{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_340.png"
-          alt="">
-    </picture>
-    <div class="more-link">
-      <a href="">More</a>
-    </div>
+    <!--<picture class="pi--image">-->
+      <!--<img-->
+          <!--sizes="(max-width: 340px) 100vw, 340px"-->
+          <!--srcset="-->
+<!--{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_200.png 200w,-->
+<!--{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_261.png 261w,-->
+<!--{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_313.png 313w,-->
+<!--{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_340.png 340w"-->
+          <!--src="{{img-portfolio-url}}score/score-home-narrow-thumb_ualj5w_ar_1_1,c_fill__c_scale,w_340.png"-->
+          <!--alt="">-->
+    <!--</picture>-->
+    <!--<div class="more-link">-->
+      <!--<a href="">More</a>-->
+    <!--</div>-->
 
     <!--<picture class="pi--image">-->
       <!--<img-->
@@ -107,29 +123,5 @@
           <!--alt="">-->
     <!--</picture>-->
   </div>
-  <div class="pi--details">
-    <div class="pi--item-description">
-      <h3 class="pi--item-label--client">Client:</h3>
-      <div class="pi--client">SCORE</div>
-    </div>
-    <div class="pi--item-description">
-      <h3 class="pi--item-label--about">About:</h3>
-      <div class="pi--about">{{excerpt.medium}}</div>
-    </div>
-    <div class="pi--item-description">
-      <h3 class="pi--item-label--responsibilities">Responsibilities:</h3>
-      <ul class="pi--responsibilities">
-        <li>Art Direction</li>
-        <li>Lead Designer</li>
-        <li>Presentations</li>
-        <li>Kick-off lead</li>
-        <li>Front End Development</li>
-        <li>Prototyping</li>
-      </ul>
-    </div>
-    <div class="pi--item-description">
-      <h3 class="pi--item-label--agency">Agency:</h3>
-      <div class="pi--agency"><a href="">Phase2</a></div>
-    </div>
-  </div>
+
 </div>

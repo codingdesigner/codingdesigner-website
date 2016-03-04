@@ -9,7 +9,7 @@ form {
 label {
   @include defaults--form-group-margin();
   display: block;
-  color: color(blue);
+  //color: color(blue);
   font-weight: 600;
 }
 
@@ -26,7 +26,7 @@ legend {
   position: relative;
   top: 1em;
   margin-bottom: 1em;
-  color: color(blue, dark);
+  //color: color(blue, dark);
   font-weight: 600;
 }
 

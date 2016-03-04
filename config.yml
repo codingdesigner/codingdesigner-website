@@ -13,6 +13,7 @@ css:
       - '!src/scss/00-config/03-mixins/_helpers.scss'
       - '!src/scss/00-config/02-variables/_typography.scss'
       - '!src/scss/40-components/_relationship-blocks.scss'
+      - '!src/scss/99-styleguide-specific/_sg-font-sizes.scss'
   # enables additional debugging information in the output file as CSS comments - only use when necessary
   sourceComments: false
   sourceMapEmbed: false
