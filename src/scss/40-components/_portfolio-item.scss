@@ -32,6 +32,8 @@ $flag-color: color(black);
   position: relative;
   max-width: 20em;
   margin-bottom: 1.5em;
+  transform: perspective(600px) rotateX(-12deg) rotateY(20deg) rotateZ(5deg);
+  transform-origin: center;
   &:before {
     position: absolute;
     content: '';
