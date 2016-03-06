@@ -6,7 +6,7 @@ $bp--portfolio--overview-padding: 400px;
 $bp--portfolio--details-limit-width: $bp-typography-narrow;
 
 
-//$flag-color: color(red);
+//$flag-color: #84C759;
 $flag-color: color(black);
 
 .portfolio-item_pi {
@@ -87,13 +87,16 @@ $flag-color: color(black);
   background-color: color(white);
   padding: 1em;
   width: 95vw;
-  border-left: 0.5em solid color(black);
+  border-left: 0.5em solid $flag-color;
   height: 100vh;
-  overflow-y: auto;
+  //overflow-y: auto;
   z-index: 100;
   transition-property: left;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   @include breakpoint($bp--portfolio--details-limit-width) {
     width: 30em;
     transition-property: transform;
@@ -129,15 +132,19 @@ $flag-color: color(black);
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1.5em;
+
+  font-family: font(surveyor-fine);
+  font-style: italic;
+  @include fontsize-rem(ms(2));
   @include breakpoint($bp--portfolio--show-details) {
     display: none;
   }
-  &:hover {
-    color: color(gray);
-    &:after {
-      border-color: transparent color(gray);
-    }
-  }
+  //&:hover {
+  //  color: color(gray);
+  //  &:after {
+  //    border-color: transparent color(gray);
+  //  }
+  //}
   &:after {
     content: "";
     width: 0;
@@ -145,7 +152,7 @@ $flag-color: color(black);
     margin-left: 0.5em;
     border-width: 0.5em 0.66em 0.5em 0;
     border-style: solid;
-    border-color: transparent color(black);
+    border-color: transparent $flag-color;
   }
 }
 .pi--details--trigger-label--close {
@@ -167,6 +174,17 @@ $flag-color: color(black);
   }
 }
 
+.pi--details--title {
+  @include fontsize-rem(ms(3));
+  font-style: italic;
+  width: auto;
+  display: block;
+  margin-bottom: 1em;
+  border-bottom: 0.125em solid $flag-color;
+  // @todo look into header inconsistancies and overrides
+  text-transform: none;
+  font-weight: 800;
+}
 .pi--item-description {
   margin-bottom: 2em;
 }
