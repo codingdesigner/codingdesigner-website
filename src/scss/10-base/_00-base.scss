@@ -49,6 +49,10 @@ a {
   @include link-standard();
 }
 
+abbr {
+  font-variant: small-caps;
+}
+
 .hidden {
   @extend %hidden;
 }
