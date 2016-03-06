@@ -1,3 +1,8 @@
+$bp--portfolio-images-small: 600px;
+$bp--portfolio-images-mid: 800px;
+$bp--portfolio-images-large: 1200px;
+$bp--portfolio--show-details: 950px;
+
 //$flag-color: color(red);
 $flag-color: color(black);
 
@@ -9,17 +14,31 @@ $flag-color: color(black);
   //flex-direction: column;
   //align-items: flex-start;
   border-top: 0.5em dashed color(black);
+  @include breakpoint($bp--portfolio--show-details) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
 .pi--project-name {
+  @include h1();
   font-weight: 800;
   font-style: italic;
   z-index: 2;
   position: relative;
-  @include h1();
   margin-bottom: 0.75em;
+  @include breakpoint($bp--portfolio--show-details) {
+    flex-basis: 100vw;
+  }
 }
 
 .pi--overview {
+  @include breakpoint($bp--portfolio--show-details) {
+    flex-basis: 100vw;
+  }
+}
+.pi--overview--text {
   @include fontsize-rem(ms(1));
   line-height: 1.4;
   font-weight: 800;
@@ -32,8 +51,9 @@ $flag-color: color(black);
   position: relative;
   max-width: 20em;
   margin-bottom: 1.5em;
-  transform: perspective(600px) rotateX(-12deg) rotateY(20deg) rotateZ(5deg);
-  transform-origin: center;
+  //transform: perspective(600px) rotateX(-12deg) rotateY(20deg) rotateZ(5deg);
+  //transform-origin: center;
+  //transform-style: preserve-3d;
   &:before {
     position: absolute;
     content: '';
@@ -43,38 +63,21 @@ $flag-color: color(black);
     width: 1em;
     height: 1em;
   }
+  @include breakpoint($bp--portfolio--show-details) {
+    flex-basis: 100vw;
+  }
   em {
     font-family: font(surveyor);
     font-weight: 200;
   }
 }
 
-.pi--images {
-  //display: flex;
-  //overflow: auto;
-  //border-width: 0.25em 0;
-  //border-style: solid;
-  //border-color: color(black);
-  //margin-left: -0.5em;
-  //margin-right: -0.5em;
-  margin-bottom: 1em;
-}
-.pi--image {
-  //max-width: 90%;
-  //flex: none;
-  //@include jagged-item-to-my-right();
-  //box-shadow: 0 0 0px 0.5rem rgba(165, 165, 165, 0.28);
-  //transform: skew(-5deg);
-  //overflow: hidden;
-  //margin-right: 1em;
-  //&:nth-of-type(1n+2) {
-    //@include jagged-left-edge();
-    //@include slant-left-edge();
-  //}
-  //img {
-  //  display: block;
-  //  transform: skew(5deg);
-  //}
+.pi--details {
+  max-width: 30em;
+  @include breakpoint($bp--portfolio--show-details) {
+    flex-basis: 33%;
+    order: 4;
+  }
 }
 
 .pi--details--offside {
@@ -92,6 +95,12 @@ $flag-color: color(black);
   transition-property: left;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  @include breakpoint($bp--portfolio--show-details) {
+    position: static;
+    width: auto;
+    border-left: 0;
+    height: auto;
+  }
 }
 
 .pi--details--trigger {
@@ -126,6 +135,9 @@ $flag-color: color(black);
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1.5em;
+  @include breakpoint(950px) {
+    display: none;
+  }
   &:hover {
     color: color(gray);
     &:after {
@@ -199,6 +211,85 @@ $flag-color: color(black);
 .pi--agency {
   display: inline;
 }
+
+
+.pi--images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -1em 1em;
+  @include breakpoint($bp--portfolio-images-small) {
+    margin: 0 -3em 1em;
+  }
+  @include breakpoint($bp--portfolio--show-details) {
+    flex-basis: 66%;
+    order: 3;
+  }
+}
+.pi--image {
+  margin-bottom: 3em;
+  padding: 0 1em;
+  flex-basis: 100%;
+  text-align: center;
+  flex-grow: 1;
+  img {
+    width: 100%;
+  }
+  &.pi--image--narrow {
+    img {
+      max-width: 400px;
+    }
+  }
+  &.pi--image--medium {
+    img {
+      max-width: 800px;
+    }
+  }
+  &.pi--image--wide {
+    img {
+      max-width: 1500px;
+    }
+  }
+  //@include breakpoint($bp--portfolio-images-small) {
+  //@include eq-contains('small') {
+  [data-eq-state$='small'] & {
+    margin-bottom: 6em;
+    padding: 0 3em;
+    &.pi--image--narrow {
+      flex-basis: 50%;
+    }
+  }
+  //@include breakpoint($bp--portfolio-images-mid) {
+  //@include eq-contains('mid') {
+  [data-eq-state$='mid'] & {
+    &.pi--image--narrow {
+      flex-basis: 33%;
+    }
+    &.pi--image--medium {
+      flex-basis: 50%;
+    }
+    &.pi--image--wide {
+      flex-basis: 66%;
+      flex-grow: 1;
+    }
+  }
+  //@include breakpoint($bp--portfolio-images-large) {
+  //@include eq-contains('large') {
+  [data-eq-state$='large'] & {
+    &.pi--image--narrow {
+      flex-basis: 25%;
+    }
+    &.pi--image--medium {
+      flex-basis: 50%;
+    }
+    &.pi--image--wide {
+      flex-basis: 75%;
+    }
+  }
+}
+
+
 
 //img {
 //  filter: grayscale(100%) contrast(125%);
