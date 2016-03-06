@@ -2,6 +2,8 @@ $bp--portfolio-images-small: 600px;
 $bp--portfolio-images-mid: 800px;
 $bp--portfolio-images-large: 1200px;
 $bp--portfolio--show-details: 950px;
+$bp--portfolio--overview-padding: 400px;
+
 
 //$flag-color: color(red);
 $flag-color: color(black);
@@ -9,11 +11,7 @@ $flag-color: color(black);
 .portfolio-item_pi {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  //position: relative;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: flex-start;
-  border-top: 0.5em dashed color(black);
+  //border-top: 0.5em dashed color(black);
   @include breakpoint($bp--portfolio--show-details) {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +32,9 @@ $flag-color: color(black);
 }
 
 .pi--overview {
+  @include breakpoint($bp--portfolio--overview-padding) {
+    padding-left: 2em;
+  }
   @include breakpoint($bp--portfolio--show-details) {
     flex-basis: 100vw;
   }
@@ -43,9 +44,6 @@ $flag-color: color(black);
   line-height: 1.4;
   font-weight: 800;
   background-image: linear-gradient(-45deg, transparent 0.5rem, $flag-color 0);
-  //background-image: linear-gradient(to right, $flag-color 1em, transparent), linear-gradient(-45deg, transparent 0.5rem, $flag-color 0, color(gray));
-  //background-size: 50% 100%, 100%;
-  //background-repeat: no-repeat;
   padding: 1em;
   color: color(white);
   position: relative;
@@ -80,6 +78,7 @@ $flag-color: color(black);
   }
 }
 
+$bp--portfolio--details-limit-width: $bp-typography-narrow;
 .pi--details--offside {
   position: fixed;
   top: 0;
@@ -95,6 +94,10 @@ $flag-color: color(black);
   transition-property: left;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  @include breakpoint($bp--portfolio--details-limit-width) {
+    width: 30em;
+    transition-property: transform;
+  }
   @include breakpoint($bp--portfolio--show-details) {
     position: static;
     width: auto;
@@ -105,25 +108,12 @@ $flag-color: color(black);
 
 .pi--details--trigger {
   &:checked {
-    & + .pi--details--trigger-label {
-      &:after {
-        //transform: translateX(calc(-95vw + 1.1em)) rotateY(180deg);
-        transform: translateX(-95vw);
-        //border-color: transparent color(red);
-        //box-shadow: 15px 0px 0px 0 color(red), 30px 0px 0px 0 color(red);
-        content: "x";
-        border-width: 0 1px 1px 0;
-        border-color: color(black);
-        width: 0.66em;
-        height: 0.66em;
-        padding: 4px;
-        line-height: 0.66em;
-        top: 0;
-        position: fixed;
-      }
-    }
     & ~ .pi--details--offside {
       left: 5vw;
+      @include breakpoint($bp--portfolio--details-limit-width) {
+        left: 100vw;
+        transform: translateX(-30em);
+      }
     }
   }
 }
@@ -135,7 +125,7 @@ $flag-color: color(black);
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1.5em;
-  @include breakpoint(950px) {
+  @include breakpoint($bp--portfolio--show-details) {
     display: none;
   }
   &:hover {
@@ -152,10 +142,24 @@ $flag-color: color(black);
     border-width: 0.5em 0.66em 0.5em 0;
     border-style: solid;
     border-color: transparent color(black);
-    z-index: 200;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+  }
+}
+.pi--details--trigger-label--close {
+  border-width: 0 1px 1px 1px;
+  border-color: color(black);
+  border-style: solid;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 4px;
+  line-height: 0.66em;
+  top: -1em;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint($bp--portfolio--show-details) {
+    display: none;
   }
 }
 
@@ -176,7 +180,6 @@ $flag-color: color(black);
 .pi--client {
   display: inline;
   font-weight: 200;
-  //letter-spacing: 0.8px;
 }
 .pi--responsibilities {
   margin-top: 0;
@@ -219,7 +222,7 @@ $flag-color: color(black);
   justify-content: space-between;
   align-items: center;
   margin: 0 -1em 1em;
-  @include breakpoint($bp--portfolio-images-small) {
+  &[data-eq-state$='small'] {
     margin: 0 -3em 1em;
   }
   @include breakpoint($bp--portfolio--show-details) {
