@@ -36,9 +36,9 @@
 }
 
 /// Convert em to unitless
-/// @param $value
-
-@function unitless-convert($value) {
+/// @param {number} $value
+/// @param {number} $root [$root-typesize]
+@function unitless-convert($value, $root: $root-typesize) {
   @if unit($value) == '' {
     $value: $value;
   }
@@ -46,7 +46,7 @@
     $value: $value / 1em;
   }
   @if unit($value) == 'px' {
-    $value: $value / $root-typesize;
+    $value: $value / $root;
   }
   @return $value;
 }

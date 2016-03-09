@@ -9,12 +9,11 @@
 html {
   color: $color-text;
   font-family: $font-body;
-  font-size: ms(1);
+  font-size: unitless-convert(ms(1), 16px) * 100%;
   line-height: $base-line-height-unitless;
   height: 100%;
   @include breakpoint($bp-typography-narrow) {
-    font-size: ms(0);
-    font-size: unitless-convert(ms(0));
+    font-size: unitless-convert(ms(0), 16px) * 100%;
   }
 }
 
