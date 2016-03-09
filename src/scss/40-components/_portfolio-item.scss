@@ -21,27 +21,37 @@ $flag-color: color(black);
   }
 }
 .pi--project-name {
+  // @todo look into type size inconsistancies and overrides
   @include h1();
   font-weight: 800;
   font-style: italic;
   z-index: 2;
   position: relative;
-  margin-bottom: 0.75em;
+  //margin-bottom: 0.75em;
+  margin-bottom: 0.33em;
+  @include breakpoint($bp-typography-narrow) {
+    margin-left: 2vw;
+  }
   @include breakpoint($bp--portfolio--show-details) {
     flex-basis: 100vw;
+    margin-left: 3vw;
   }
 }
 
 .pi--overview {
+  padding-left: 0.66em;
   @include breakpoint($bp--portfolio--overview-padding) {
     padding-left: 2em;
   }
   @include breakpoint($bp--portfolio--show-details) {
     flex-basis: 100vw;
+    padding-left: 10vw;
   }
 }
 .pi--overview--text {
+  // @todo look into type size inconsistancies and overrides
   @include fontsize-rem(ms(1));
+  font-size: 1.27778em;
   line-height: 1.4;
   font-weight: 800;
   background-image: linear-gradient(-45deg, transparent 0.5rem, $flag-color 0);
@@ -64,6 +74,7 @@ $flag-color: color(black);
   }
   @include breakpoint($bp--portfolio--show-details) {
     flex-basis: 100vw;
+    margin-bottom: 3em;
   }
   em {
     font-family: font(surveyor);
