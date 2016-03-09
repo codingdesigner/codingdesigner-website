@@ -50,7 +50,7 @@ $flag-color: color(black);
 }
 .pi--overview--text {
   // @todo look into type size inconsistancies and overrides
-  @include fontsize-rem(ms(1));
+  font-size: fontsize-rem(ms(1));
   font-size: 1.27778em;
   line-height: 1.4;
   font-weight: 800;
@@ -146,7 +146,7 @@ $flag-color: color(black);
 
   font-family: font(surveyor-fine);
   font-style: italic;
-  @include fontsize-rem(ms(2));
+  font-size: fontsize-rem(ms(2));
   @include breakpoint($bp--portfolio--show-details) {
     display: none;
   }
@@ -186,7 +186,7 @@ $flag-color: color(black);
 }
 
 .pi--details--title {
-  @include fontsize-rem(ms(3));
+  font-size: fontsize-rem(ms(3));
   font-style: italic;
   width: auto;
   display: block;

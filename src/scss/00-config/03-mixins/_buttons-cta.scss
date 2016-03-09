@@ -21,7 +21,7 @@
   @include unset-background-links();
   @include set-link-colors($link-normal: $text-color, $link-hover: $text-color-hover, $link-active: $text-color-hover, $link-visited: $text-color, $link-focus: $text-color-hover);
   @include background-gradient($bg-color);
-  @include fontsize-rem($font-size);
+  font-size: fontsize-rem($font-size);
   display: inline-block;
   padding: 0.5em;
   background-color: $bg-color;

@@ -11,6 +11,13 @@
   @return (($value * $px) / 1em) * 1px;
 }
 
+/// Calculate Rem
+/// @param {pixel} $px
+/// @param {pixel} $root-px [$root-typesize] - root typesize in pixels
+@function fontsize-rem($px, $root-px: $root-typesize) {
+  @return #{$px / $root-px}rem;
+}
+
 /// Calculate ems
 /// @param $value
 /// @param $context

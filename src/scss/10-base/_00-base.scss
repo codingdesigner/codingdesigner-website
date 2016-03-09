@@ -13,7 +13,8 @@ html {
   line-height: $base-line-height-unitless;
   height: 100%;
   @include breakpoint($bp-typography-narrow) {
-    font-size: $root-typesize;
+    font-size: ms(0);
+    font-size: unitless-convert(ms(0));
   }
 }
 
@@ -31,7 +32,7 @@ button,
 input,
 select,
 textarea {
-  @include fontsize-rem($root-typesize);
+  font-size: fontsize-rem($root-typesize);
   color: $color-text;
   font-family: $font-body;
   line-height: $base-line-height-unitless;

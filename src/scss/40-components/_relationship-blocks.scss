@@ -1,295 +1,295 @@
-// Relationship styles
-.relationship-block {
-  margin-bottom: 2em;
-  .block-hero & {
-    margin-bottom: 0;
-    width: 100%;
-
-    .pane-title {
-      @include fontsize-rem(ms(3));
-    }
-
-    .pane-text {
-      @include fontsize-rem(ms(1));
-      font-weight: 200;
-    }
-  }
-  &.panes-2 {
-    @include breakpoint($bp-relationship-block-horizontal-2-pane) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      .no-flexbox & {
-        display: table;
-      }
-    }
-  }
-  &.panes-3 {
-    @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-  &.panes-vertical {
-    display: flex;
-    flex-direction: column;
-  }
-  &.proportion-1-2 {
-    .relationship-block--pane {
-      transition-property: flex;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-in-out;
-      flex: 1;
-      @include breakpoint($bp-relationship-block-pane-1-2) {
-        &:nth-of-type(2n + 1) {
-          flex: 1;
-        }
-        &:nth-of-type(2n + 2) {
-          flex: 2;
-        }
-      }
-    }
-  }
-  .nav-jagged & {
-    @include eq(small) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-bottom: 0;
-    }
-  }
-}
-.relationship-block--pane {
-  flex: 1;
-  padding: 4em 2em;
-  background-color: $color-background;
-  position: relative;
-  &.center-content {
-    display: flex;
-    align-items: center;
-  }
-  .nav-jagged & {
-    padding: 0.5em;
-    flex: auto;
-  }
-  &.image {
-    background-size: cover;
-    background-position: 50%;
-    min-height: 22rem;
-  }
-  &.green {
-    color: color(white);
-    background-color: color(green, light);
-  }
-  &.green-dark {
-    color: color(white);
-    background-color: color(green);
-  }
-  &.blue {
-    color: color(white);
-    background-color: color(blue);
-  }
-  &.blue-light {
-    color: color(white);
-    background-color: color(blue, light);
-  }
-  &.blue-dark {
-    color: color(white);
-    background-color: color(blue, dark);
-  }
-  &.gray {
-    color: color(white);
-    background-color: color(gray);
-  }
-  &.gray-dark {
-    color: color(white);
-    background-color: color(gray, dark);
-  }
-  &.gray-light {
-    //color: color(white);
-    background-color: color(gray, light);
-  }
-  &.gray-light-2 {
-    //color: color(white);
-    background-color: color(gray, light-2);
-  }
-  &:nth-of-type(1) {
-    @include jagged-item-to-my-right-reset();
-    .svgclippaths & {
-      @include jagged-item-below-me();
-    }
-    .svgclippaths .nav-jagged & {
-      @include jagged-item-below-me(small);
-    }
-    .panes-2 & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
-          @include jagged-item-to-my-right();
-          @include jagged-item-below-me-reset();
-        }
-      }
-      .no-flexbox & {
-        @include relationship-no-flex-reset(50%);
-      }
-    }
-    .panes-2.relationship-block[data-eq-state$="small"] & {
-      .svgclippaths .nav-jagged  & {
-        @include jagged-item-to-my-right(small);
-      }
-    }
-    .panes-3 & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-          @include jagged-item-to-my-right();
-          @include jagged-item-below-me-reset();
-        }
-      }
-      .no-flexbox & {
-        @include relationship-no-flex-reset(33%);
-      }
-    }
-    .panes-3.relationship-block[data-eq-state$="small"] & {
-      .svgclippaths .nav-jagged & {
-        @include jagged-item-to-my-right(small);
-      }
-    }
-    .panes-vertical & {
-      @include jagged-item-to-my-right-reset();
-      .svgclippaths & {
-        @include jagged-item-below-me();
-      }
-    }
-  }
-  &:nth-of-type(2) {
-    .svgclippaths & {
-      @include jagged-top-edge();
-    }
-    .svgclippaths .nav-jagged & {
-      @include jagged-top-edge(small);
-    }
-    .panes-2 & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
-          @include jagged-left-edge();
-        }
-      }
-      .no-flexbox & {
-        @include relationship-no-flex-reset(50%);
-      }
-    }
-    // slant option--
-    .panes-2.slant & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
-          @include slant-left-edge();
-        }
-      }
-    }
-    // --slant option
-    .panes-2.relationship-block[data-eq-state$="small"] & {
-      .svgclippaths .nav-jagged & {
-        @include jagged-left-edge(small);
-      }
-    }
-    .panes-3 & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-          @include jagged-left-edge();
-        }
-      }
-      .no-flexbox & {
-        @include relationship-no-flex-reset(33%);
-      }
-    }
-    .panes-3.relationship-block[data-eq-state$="small"] & {
-      .svgclippaths .nav-jagged & {
-        @include jagged-left-edge(small);
-        @include jagged-item-to-my-right(small);
-      }
-    }
-    // slant option--
-    .panes-3.slant & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-          @include slant-left-edge();
-        }
-      }
-    }
-    // --slant option
-    .panes-vertical & {
-      .svgclippaths & {
-        @include jagged-top-edge();
-      }
-    }
-    .panes-3.panes-vertical & {
-      .svgclippaths & {
-        @include jagged-item-to-my-right-reset();
-        @include jagged-item-below-me();
-      }
-    }
-  }
-  &:nth-of-type(3) {
-    .svgclippaths & {
-      @include jagged-top-edge();
-    }
-    .svgclippaths .nav-jagged & {
-      @include jagged-top-edge(small);
-    }
-    .panes-3 & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-          @include jagged-left-edge();
-        }
-      }
-      .no-flexbox & {
-        @include relationship-no-flex-reset(33%);
-      }
-    }
-    .panes-3.relationship-block[data-eq-state$="small"] & {
-      .svgclippaths .nav-jagged & {
-        @include jagged-left-edge(small);
-      }
-    }
-    // slant option--
-    .panes-3.slant & {
-      .svgclippaths & {
-        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
-          @include slant-left-edge();
-        }
-      }
-    }
-    // --slant option
-    .panes-vertical & {
-      .svgclippaths & {
-        @include jagged-top-edge();
-      }
-    }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: color(white);
-    border-bottom-color: color(white, semitrans);
-    //text-transform: uppercase;
-  }
-  a {
-    @include link-knockout();
-  }
-}
-
-.pane-title {
-  @include h4();
-  font-weight: 800;
-  .option-blue & {
-    color: color(white);
-  }
-}
-
-.svg-clip-paths {
-  @extend %visuallyhidden;
-}
-
+//// Relationship styles
+//.relationship-block {
+//  margin-bottom: 2em;
+//  .block-hero & {
+//    margin-bottom: 0;
+//    width: 100%;
+//
+//    .pane-title {
+//      @include fontsize-rem(ms(3));
+//    }
+//
+//    .pane-text {
+//      @include fontsize-rem(ms(1));
+//      font-weight: 200;
+//    }
+//  }
+//  &.panes-2 {
+//    @include breakpoint($bp-relationship-block-horizontal-2-pane) {
+//      display: flex;
+//      flex-direction: row;
+//      flex-wrap: wrap;
+//      .no-flexbox & {
+//        display: table;
+//      }
+//    }
+//  }
+//  &.panes-3 {
+//    @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//      display: flex;
+//      flex-direction: row;
+//      flex-wrap: wrap;
+//    }
+//  }
+//  &.panes-vertical {
+//    display: flex;
+//    flex-direction: column;
+//  }
+//  &.proportion-1-2 {
+//    .relationship-block--pane {
+//      transition-property: flex;
+//      transition-duration: 0.3s;
+//      transition-timing-function: ease-in-out;
+//      flex: 1;
+//      @include breakpoint($bp-relationship-block-pane-1-2) {
+//        &:nth-of-type(2n + 1) {
+//          flex: 1;
+//        }
+//        &:nth-of-type(2n + 2) {
+//          flex: 2;
+//        }
+//      }
+//    }
+//  }
+//  .nav-jagged & {
+//    @include eq(small) {
+//      display: flex;
+//      flex-direction: row;
+//      flex-wrap: wrap;
+//      margin-bottom: 0;
+//    }
+//  }
+//}
+//.relationship-block--pane {
+//  flex: 1;
+//  padding: 4em 2em;
+//  background-color: $color-background;
+//  position: relative;
+//  &.center-content {
+//    display: flex;
+//    align-items: center;
+//  }
+//  .nav-jagged & {
+//    padding: 0.5em;
+//    flex: auto;
+//  }
+//  &.image {
+//    background-size: cover;
+//    background-position: 50%;
+//    min-height: 22rem;
+//  }
+//  &.green {
+//    color: color(white);
+//    background-color: color(green, light);
+//  }
+//  &.green-dark {
+//    color: color(white);
+//    background-color: color(green);
+//  }
+//  &.blue {
+//    color: color(white);
+//    background-color: color(blue);
+//  }
+//  &.blue-light {
+//    color: color(white);
+//    background-color: color(blue, light);
+//  }
+//  &.blue-dark {
+//    color: color(white);
+//    background-color: color(blue, dark);
+//  }
+//  &.gray {
+//    color: color(white);
+//    background-color: color(gray);
+//  }
+//  &.gray-dark {
+//    color: color(white);
+//    background-color: color(gray, dark);
+//  }
+//  &.gray-light {
+//    //color: color(white);
+//    background-color: color(gray, light);
+//  }
+//  &.gray-light-2 {
+//    //color: color(white);
+//    background-color: color(gray, light-2);
+//  }
+//  &:nth-of-type(1) {
+//    @include jagged-item-to-my-right-reset();
+//    .svgclippaths & {
+//      @include jagged-item-below-me();
+//    }
+//    .svgclippaths .nav-jagged & {
+//      @include jagged-item-below-me(small);
+//    }
+//    .panes-2 & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
+//          @include jagged-item-to-my-right();
+//          @include jagged-item-below-me-reset();
+//        }
+//      }
+//      .no-flexbox & {
+//        @include relationship-no-flex-reset(50%);
+//      }
+//    }
+//    .panes-2.relationship-block[data-eq-state$="small"] & {
+//      .svgclippaths .nav-jagged  & {
+//        @include jagged-item-to-my-right(small);
+//      }
+//    }
+//    .panes-3 & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//          @include jagged-item-to-my-right();
+//          @include jagged-item-below-me-reset();
+//        }
+//      }
+//      .no-flexbox & {
+//        @include relationship-no-flex-reset(33%);
+//      }
+//    }
+//    .panes-3.relationship-block[data-eq-state$="small"] & {
+//      .svgclippaths .nav-jagged & {
+//        @include jagged-item-to-my-right(small);
+//      }
+//    }
+//    .panes-vertical & {
+//      @include jagged-item-to-my-right-reset();
+//      .svgclippaths & {
+//        @include jagged-item-below-me();
+//      }
+//    }
+//  }
+//  &:nth-of-type(2) {
+//    .svgclippaths & {
+//      @include jagged-top-edge();
+//    }
+//    .svgclippaths .nav-jagged & {
+//      @include jagged-top-edge(small);
+//    }
+//    .panes-2 & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
+//          @include jagged-left-edge();
+//        }
+//      }
+//      .no-flexbox & {
+//        @include relationship-no-flex-reset(50%);
+//      }
+//    }
+//    // slant option--
+//    .panes-2.slant & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-2-pane) {
+//          @include slant-left-edge();
+//        }
+//      }
+//    }
+//    // --slant option
+//    .panes-2.relationship-block[data-eq-state$="small"] & {
+//      .svgclippaths .nav-jagged & {
+//        @include jagged-left-edge(small);
+//      }
+//    }
+//    .panes-3 & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//          @include jagged-left-edge();
+//        }
+//      }
+//      .no-flexbox & {
+//        @include relationship-no-flex-reset(33%);
+//      }
+//    }
+//    .panes-3.relationship-block[data-eq-state$="small"] & {
+//      .svgclippaths .nav-jagged & {
+//        @include jagged-left-edge(small);
+//        @include jagged-item-to-my-right(small);
+//      }
+//    }
+//    // slant option--
+//    .panes-3.slant & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//          @include slant-left-edge();
+//        }
+//      }
+//    }
+//    // --slant option
+//    .panes-vertical & {
+//      .svgclippaths & {
+//        @include jagged-top-edge();
+//      }
+//    }
+//    .panes-3.panes-vertical & {
+//      .svgclippaths & {
+//        @include jagged-item-to-my-right-reset();
+//        @include jagged-item-below-me();
+//      }
+//    }
+//  }
+//  &:nth-of-type(3) {
+//    .svgclippaths & {
+//      @include jagged-top-edge();
+//    }
+//    .svgclippaths .nav-jagged & {
+//      @include jagged-top-edge(small);
+//    }
+//    .panes-3 & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//          @include jagged-left-edge();
+//        }
+//      }
+//      .no-flexbox & {
+//        @include relationship-no-flex-reset(33%);
+//      }
+//    }
+//    .panes-3.relationship-block[data-eq-state$="small"] & {
+//      .svgclippaths .nav-jagged & {
+//        @include jagged-left-edge(small);
+//      }
+//    }
+//    // slant option--
+//    .panes-3.slant & {
+//      .svgclippaths & {
+//        @include breakpoint($bp-relationship-block-horizontal-3-pane) {
+//          @include slant-left-edge();
+//        }
+//      }
+//    }
+//    // --slant option
+//    .panes-vertical & {
+//      .svgclippaths & {
+//        @include jagged-top-edge();
+//      }
+//    }
+//  }
+//  h1,
+//  h2,
+//  h3,
+//  h4,
+//  h5,
+//  h6 {
+//    color: color(white);
+//    border-bottom-color: color(white, semitrans);
+//    //text-transform: uppercase;
+//  }
+//  a {
+//    @include link-knockout();
+//  }
+//}
+//
+//.pane-title {
+//  @include h4();
+//  font-weight: 800;
+//  .option-blue & {
+//    color: color(white);
+//  }
+//}
+//
+//.svg-clip-paths {
+//  @extend %visuallyhidden;
+//}
+//

@@ -1,5 +1,5 @@
 .monogram {
-  @include fontsize-rem(ms(6));
+  font-size: fontsize-rem(ms(6));
   background-color: color(black, light);
   color: color(white, warm);
   font-family: font(surveyor-fine);
