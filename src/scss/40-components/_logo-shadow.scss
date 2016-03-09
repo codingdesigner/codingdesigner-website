@@ -1,0 +1,28 @@
+.logo-shadow {
+  $background-color: color(black) ;
+  $foreground-color: color(white);
+  font-size: fontsize-rem(ms(5));
+  background-color: $background-color;
+  color: $background-color;
+  font-family: font(surveyor);
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  padding: 2em;
+  border-radius: 50%;
+  position: relative;
+  font-style: italic;
+  font-weight: 800;
+  text-shadow: 1px 1px 0 $foreground-color, 2px 2px 0 $foreground-color, 3px 3px 0 $foreground-color, 4px 4px 0 $foreground-color, 5px 5px 0 $foreground-color, 6px 6px 0 $foreground-color, 7px 7px 0 $foreground-color, 8px 8px 0 $foreground-color, 9px 9px 0 $foreground-color, 10px 10px 0 $foreground-color, 11px 11px 0 $foreground-color, 12px 12px 0 $foreground-color, 13px 13px 0 $foreground-color, 14px 14px 0 $foreground-color, 15px 15px 0 $foreground-color, 16px 16px 0 $foreground-color;
+  transform:  rotate(-10deg);
+}
+
+.logo-shadow--word {
+  $vertical-adjust: 50px;
+  text-align: center;
+  transform: skewY(-10deg) translateY(-0.25em) translateX(-0.125em);
+}
