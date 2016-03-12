@@ -1,0 +1,115 @@
+$button-logo-background-color: color(black) ;
+$button-logo-foreground-color: color(white);
+
+
+
+@mixin button-logo--base($background-color: color(black), $foreground-color: color(white)) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: $background-color;
+  //background-image: url(https://unsplash.it/400/400?image=961);
+  background-image: url(https://unsplash.it/400/400?random);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $background-color;
+  font-size: fontsize-rem(ms(4));
+  font-family: font(surveyor);
+  line-height: 1.2;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  position: relative;
+  //transform:  rotate(-10deg); // @todo debug: rotation transforms break multiple text shadows on ios
+  //transform: scale(0.7);
+  //transform-origin: 0 0;
+  @include breakpoint($bp-typography-narrow) {
+    font-size: fontsize-rem(ms(5));
+  }
+}
+
+
+.button-logo {
+  @include button-logo--base();
+}
+
+.button-logo--words-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  left: -8px;
+  top: 5px;
+}
+
+.button-logo--word {
+  font-style: italic;
+  font-weight: 800;
+  //text-shadow: 1px 1px 0 $foreground-color, 2px 2px 0 $foreground-color, 3px 3px 0 $foreground-color, 4px 4px 0 $foreground-color, 5px 5px 0 $foreground-color, 6px 6px 0 $foreground-color, 7px 7px 0 $foreground-color, 8px 8px 0 $foreground-color, 9px 9px 0 $foreground-color, 10px 10px 0 $foreground-color, 11px 11px 0 $foreground-color, 12px 12px 0 $foreground-color, 13px 13px 0 $foreground-color, 14px 14px 0 $foreground-color, 15px 15px 0 $foreground-color, 16px 16px 0 $foreground-color;
+  text-shadow: long-shadow(
+    $direction: 30deg,
+    $length: 0.3em,
+    $color: $button-logo-foreground-color,
+    $fade: $button-logo-foreground-color
+  );
+  mix-blend-mode: screen;
+  //transform: rotate(-10deg) translateY(-0.25em) translateX(-0.125em); // @todo debug: rotation transforms break multiple text shadows on ios
+  //transform: rotate(10deg) ;
+  &.word-0 {
+    font-weight: 200;
+    font-size: fontsize-rem(ms(1));
+    text-shadow: none;
+    color: $button-logo-foreground-color;
+    align-self: center;
+    //transform: rotate(-10deg) translateY(10px) translateX(-5px); // @todo debug: rotation transforms break multiple text shadows on ios
+    transform: translateY(10px);
+  }
+}
+
+.title-curve {
+  font-family: font(archer);
+  font-weight: 700;
+  font-size: fontsize-rem(ms(0));
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: $button-logo-foreground-color;
+  transform: translateX(-50%) translateY(-50%);
+  width: 0;
+  height: 0;
+  @include breakpoint($bp-typography-narrow) {
+    font-size: fontsize-rem(ms(1));
+  }
+  @include rotate-line-of-text(
+    $num-letters: 19,
+    $angle-span: 180deg,
+    $angle-offset: -140deg
+  );
+  [class^='char'] {
+    //outline: 1px solid red;
+    position: absolute;
+    $height: 7em;
+    $width: 1em;
+    height: $height;
+    left: -#{$width / 2};
+    top: -$height;
+    width: $width;
+    text-align: center;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: rgba(color(white), 0.15);
+    transform-origin: 50% 100%;
+    //@include breakpoint($bp-typography-narrow) {
+    //  $height: 7em;
+    //  height: $height;
+    //  top: -$height;
+    //}
+  }
+}
+
+
+
+

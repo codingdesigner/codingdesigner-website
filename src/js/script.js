@@ -40,7 +40,7 @@
 
   Drupal.behaviors.before_after = {
     attach: function(context, settings) {
-      $('.logo-curve').lettering();
+      $('.title-curve').lettering();
     }
   };
 
