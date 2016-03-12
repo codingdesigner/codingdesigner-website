@@ -72,6 +72,15 @@
   }
 }
 
+/// Try text-transformations
+/// Writes values as commented-out css you can turn on and off in your browser inspector
+/// @link https://github.com/at-import/try
+@mixin try-text-transform() {
+  @each $text-transform in (capitalize, lowercase, none, uppercase) {
+    /* text-transform: #{$text-transform}; */
+  }
+}
+
 /// Try font sizes using Modular Scale.
 /// Writes values as commented-out css you can turn on and off in your browser inspector
 /// @link https://github.com/at-import/try
@@ -156,6 +165,7 @@
   @include try-font-weights();
   @include try-font-styles();
   @include try-ms();
+  @include try-text-transform();
   @include try-blend-modes();
   @include try-background-gradients();
   @include try-letter-spacing();
@@ -170,6 +180,7 @@
   @include try-font-weights();
   @include try-font-styles();
   @include try-ms();
-  @include try-letter-spacing();
   @include try-line-height();
+  @include try-text-transform();
+  @include try-letter-spacing();
 }
