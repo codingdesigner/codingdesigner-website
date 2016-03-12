@@ -5,8 +5,8 @@
 
 /// Rotate a line of text in an arc
 /// @param {integer} $num-letters [100] - how many characters
-/// @param {degrees} $angle-span [180deg] - how far around the circle to rotate
-/// @param {degrees} $angle-offset [0deg] - where to start the circle
+/// @param {deg} $angle-span [180deg] - how far around the circle to rotate
+/// @param {deg} $angle-offset [0deg] - where to start the circle
 /// @param {deg} $angle-per-char [$angle-span / $num-letters] - how far apart to space the characters
 @mixin rotate-line-of-text(
   $num-letters: 100,
@@ -16,6 +16,24 @@
   @for $i from 1 through $num-letters {
     .char#{$i} {
       transform: rotate($angle-offset + $angle-per-char * $i);
+    }
+  }
+}
+
+
+/// Spread a line of text in an line
+/// @param {integer} $num-letters [100] - how many characters
+/// @param {number} $width-span [20em] - how far along the line to go
+/// @param {number} $width-offset [0deg] - where to start the line
+/// @param {number} $width-per-char [$width-span / $num-letters] - how far apart to space the characters
+@mixin spread-line-of-text(
+  $num-letters: 100,
+  $width-span: 20em,
+  $width-offset: 0em,
+  $width-per-char: $width-span / $num-letters) {
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: translateX($width-offset + $width-per-char * $i);
     }
   }
 }
