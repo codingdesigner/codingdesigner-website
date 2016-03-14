@@ -30,6 +30,10 @@ $button-logo-foreground-color: color(white);
     border-radius: 50%;
     width: 6em;
   }
+  &.rectangle {
+    width: auto;
+    border-radius: 0;
+  }
 }
 
 .button-logo {
@@ -80,6 +84,10 @@ $button-logo-foreground-color: color(white);
   transform: translateX(-50%) translateY(-50%);
   width: 0;
   height: 0;
+  .rectangle & {
+    left: auto;
+    right: 10em;
+  }
   @include breakpoint($bp-typography-narrow) {
     font-size: fontsize-rem(ms(1));
   }
