@@ -17,19 +17,23 @@ $bp--navigation--wide: 700px;
     position: relative;
     top: -1em;
   }
-  label {
-    @include nav-primary--item();
-    margin: 0;
-  }
   .nav-item {}
   .site-header & {}
+}
+
+.nav-primary-trigger--label {
+  @include nav-primary--item();
+  @include icon(menu, $text-replace: true);
+  margin: 0;
+  //font-family: font(adobe-blank);
 }
 
 .site-header {
   @include breakpoint($bp--navigation--wide) {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 1.5em 1em;
+    margin: 1.5em 1em 5em;
   }
   .button-logo {
     z-index: 1;
@@ -66,10 +70,6 @@ $bp--navigation--wide: 700px;
       opacity: 1;
     }
   }
-}
-
-.nav-primary-trigger--label {
-  @include icon(menu, $text-replace: true);
 }
 
 #nav-primary-trigger {

@@ -38,15 +38,7 @@ $font-icons: (<% _.each(glyphs, function(glyph) { %>
 
 
 @mixin font-icon-replace($pseudo) {
-  position: relative;
-  right: 9999px;
-  &:#{$pseudo} {
-    position: absolute;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    right: -9999px;
-  }
+  font-family: font(adobe-blank);
 }
 
 /*
