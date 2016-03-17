@@ -31,9 +31,18 @@ $bp--navigation--wide: 700px;
 .site-header {
   @include breakpoint($bp--navigation--wide) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 1.5em 1em 5em;
+    min-width: 40em;
+    //padding-left: 5%;
+  }
+  @include breakpoint(870px) {
+    padding-left: 15%;
+  }
+  @include breakpoint(1100px) {
+    justify-content: center;
+    padding-left: 0;
   }
   .button-logo {
     z-index: 1;
