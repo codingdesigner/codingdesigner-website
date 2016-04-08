@@ -1,4 +1,5 @@
 $bp--navigation--wide: 700px;
+$bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
 
 @mixin nav-primary--item {
   font-family: font(surveyor);
@@ -13,6 +14,8 @@ $bp--navigation--wide: 700px;
 
 
 .nav-primary {
+  display: flex;
+  flex-direction: column;
   @include breakpoint($bp--navigation--wide) {
     position: relative;
     top: -1em;
@@ -25,7 +28,7 @@ $bp--navigation--wide: 700px;
   @include nav-primary--item();
   @include icon(menu, $text-replace: true);
   margin: 0;
-  //font-family: font(adobe-blank);
+  letter-spacing: 0;
 }
 
 .site-header {
@@ -43,6 +46,7 @@ $bp--navigation--wide: 700px;
   @include breakpoint(1100px) {
     justify-content: center;
     padding-left: 0;
+    margin-left: -10%;
   }
   .button-logo {
     z-index: 1;
@@ -51,6 +55,77 @@ $bp--navigation--wide: 700px;
 
 .nav-primary--fan {
   @include nav-primary--item();
+  @include breakpoint($bp--navigation--narrow) {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    padding-right: 0.5em;
+    padding-bottom: 0;
+    padding-left: 0.5em;
+    margin-top: -0.5em;
+    font-weight: 800;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-property: max-height, padding, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    $nav-rotate-amount: 1.5deg;
+    &:nth-of-type(odd) {
+      //align-self: flex-end;
+      transform: rotate(-$nav-rotate-amount);
+      a {
+        transform: rotate($nav-rotate-amount);
+        text-shadow: long-shadow(
+          $direction: $nav-rotate-amount * 10,
+          $length: 3em,
+          $color: white,
+          $fade: white
+        );
+      }
+    }
+    &:nth-of-type(even) {
+      //align-self: flex-start;
+      transform: rotate($nav-rotate-amount);
+      a {
+        transform: rotate(-$nav-rotate-amount);
+        text-shadow: long-shadow(
+          $direction: -$nav-rotate-amount * 10,
+          $length: 3em,
+          $color: white,
+          $fade: white
+        )
+      }
+    }
+    &:nth-of-type(1) {
+      //align-self: flex-end;
+      text-align: right;
+      transform: rotate(0deg);
+      color: white;
+      margin-top: -2.5em;
+      z-index: 1;
+      max-height: 10em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      opacity: 1;
+    }
+    a {
+      @include unset-background-links();
+      display: block;
+    }
+    $nav-bg-color: color(gray);
+    @for $i from 2 through 6 {
+      &:nth-of-type(#{$i}) {
+        background-color: tint($nav-bg-color, $i * 12);
+      }
+    }
+    #nav-primary-trigger:checked ~ & {
+      max-height: 10em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      opacity: 1;
+    }
+  }
   @include breakpoint($bp--navigation--wide) {
     position: absolute;
     list-style-type: none;
