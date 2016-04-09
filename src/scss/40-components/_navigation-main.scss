@@ -57,7 +57,7 @@ $bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
   @include nav-primary--item();
   @include breakpoint($bp--navigation--narrow) {
     width: 100%;
-    text-align: center;
+    text-align: right;
     padding-top: 0;
     padding-right: 0.5em;
     padding-bottom: 0;
@@ -72,34 +72,18 @@ $bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
     transition-timing-function: ease-in-out;
     $nav-rotate-amount: 1.5deg;
     &:nth-of-type(odd) {
-      //align-self: flex-end;
       transform: rotate(-$nav-rotate-amount);
       a {
-        transform: rotate($nav-rotate-amount);
-        text-shadow: long-shadow(
-          $direction: $nav-rotate-amount * 10,
-          $length: 3em,
-          $color: white,
-          $fade: white
-        );
+        transform: rotate($nav-rotate-amount) translateX(0.5em);
       }
     }
     &:nth-of-type(even) {
-      //align-self: flex-start;
       transform: rotate($nav-rotate-amount);
       a {
-        transform: rotate(-$nav-rotate-amount);
-        text-shadow: long-shadow(
-          $direction: -$nav-rotate-amount * 10,
-          $length: 3em,
-          $color: white,
-          $fade: white
-        )
+        transform: rotate(-$nav-rotate-amount) translateX(0.5em);
       }
     }
     &:nth-of-type(1) {
-      //align-self: flex-end;
-      text-align: right;
       transform: rotate(0deg);
       color: white;
       margin-top: -2.5em;
@@ -109,15 +93,12 @@ $bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
       padding-bottom: 0.5em;
       opacity: 1;
     }
+    &:nth-of-type(1n+2) {
+      border-bottom: 1px solid color(gray, light);
+    }
     a {
       @include unset-background-links();
       display: block;
-    }
-    $nav-bg-color: color(gray);
-    @for $i from 2 through 6 {
-      &:nth-of-type(#{$i}) {
-        background-color: tint($nav-bg-color, $i * 12);
-      }
     }
     #nav-primary-trigger:checked ~ & {
       max-height: 10em;
