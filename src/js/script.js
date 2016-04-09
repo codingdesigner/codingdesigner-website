@@ -38,9 +38,17 @@
     }
   };
 
-  Drupal.behaviors.before_after = {
+  Drupal.behaviors.title_curve = {
     attach: function(context, settings) {
       $('.title-curve').lettering();
+    }
+  };
+
+  Drupal.behaviors.menu_auto_show = {
+    attach: function(context, settings) {
+      if ($('.nav-primary').css("position") == "relative") {
+        $('#nav-primary-trigger').click();
+      }
     }
   };
 
