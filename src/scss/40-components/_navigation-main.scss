@@ -1,13 +1,15 @@
-$bp--navigation--wide: 700px;
-$bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
+
 
 @mixin nav-primary--item {
   font-family: font(surveyor);
   font-weight: 200;
-  font-size: fontsize-rem(ms(1));
+  font-size: fontsize-rem(ms(0));
   text-transform: uppercase;
   letter-spacing: 0.5em;
   @include breakpoint($bp--navigation--wide) {
+    font-size: fontsize-rem(ms(1));
+  }
+  @include breakpoint($bp--navigation--fully-wide) {
     letter-spacing: 1em;
   }
 }

@@ -28,6 +28,9 @@
     border-radius: 50%;
     width: 6em;
   }
+  @include breakpoint($bp--title-curve--shrink) {
+    font-size: fontsize-rem(ms(3));
+  }
   &.rectangle {
     width: auto;
     border-radius: 0;

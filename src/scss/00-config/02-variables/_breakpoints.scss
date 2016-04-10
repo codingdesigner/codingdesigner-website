@@ -53,3 +53,7 @@ $bp-relationship-block-pane-1-2: 750px;
 $bp--columns-2: 1000px;
 //$bp--page-padding-increase: 1000px;
 //$success-story-image-max-width: 14rem;
+$bp--title-curve--shrink: max-width 360px;
+$bp--navigation--wide: $bp-typography-narrow;
+$bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
+$bp--navigation--fully-wide: 740px;
