@@ -3,6 +3,18 @@ $button-logo-foreground-color: color(white);
 
 .button-logo {
   @include button-logo--base();
+  //@include button-logo-image('https://unsplash.it/400/400?random');
+  //@include button-logo-image('https://unsplash.it/400/400?image=961');
+  //@include button-logo-image('../../src/images/headers/aligator-skull.jpg');
+  //@include button-logo-image('../../src/images/headers/antler-skull.jpg');
+  //@include button-logo-image('../../src/images/headers/moon-landing.jpg');
+  //@include button-logo-image('../../src/images/headers/rockies-1.jpg');
+  //@include button-logo-image('../../src/images/headers/rockies-2.jpg');
+  //@include button-logo-image('../../src/images/headers/roofs.jpg');
+  //@include button-logo-image('../../src/images/headers/sc-sky.jpg');
+  //@include button-logo-image('../../src/images/headers/snake-skeleton.jpg');
+  //@include button-logo-image('../../src/images/headers/train-kiss.jpg');
+  @include button-logo-image('../../src/images/headers/space-helmet.jpg');
 }
 
 .button-logo--words-wrapper {
