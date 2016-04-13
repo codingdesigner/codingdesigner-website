@@ -7,7 +7,7 @@ $button-logo-foreground-color: color(white);
   //@include button-logo-image('https://unsplash.it/400/400?image=961');
   //@include button-logo-image('../../src/images/headers/aligator-skull.jpg');
   //@include button-logo-image('../../src/images/headers/antler-skull.jpg');
-  //@include button-logo-image('../../src/images/headers/moon-landing.jpg');
+  //@include button-logo-image('../../src/images/headers/moon-landing.jpg', $background-color: #EFE07A);
   //@include button-logo-image('../../src/images/headers/rockies-1.jpg');
   //@include button-logo-image('../../src/images/headers/rockies-2.jpg');
   //@include button-logo-image('../../src/images/headers/roofs.jpg');
@@ -38,7 +38,7 @@ $button-logo-foreground-color: color(white);
     $color: $button-logo-foreground-color,
     $fade: $button-logo-foreground-color
   );
-  mix-blend-mode: screen;
+  //mix-blend-mode: screen;
   //transform: rotate(-10deg) translateY(-0.25em) translateX(-0.125em); // @todo debug: rotation transforms break multiple text shadows on ios
   //transform: rotate(10deg) ;
   &.word-0 {

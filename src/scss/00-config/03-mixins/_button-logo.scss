@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-color: $background-color;
+  background-color: currentColor;
   color: $background-color;
   font-size: fontsize-rem(ms(4));
   font-family: font(surveyor);
@@ -32,11 +32,15 @@
   }
 }
 
-@mixin button-logo-image($background-image, $background-color: #BBBBBB, $background-blend: multiply) {
+@mixin button-logo-image($background-image, $background-color: #BBBBBB, $background-blend: multiply, $word-color: black) {
   background-color: $background-color;
   background-blend-mode: $background-blend;
   background-image: url($background-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  .button-logo--word {
+    color: $word-color;
+    mix-blend-mode: screen;
+  }
 }
