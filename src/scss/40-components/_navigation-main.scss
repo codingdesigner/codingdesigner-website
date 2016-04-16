@@ -1,4 +1,4 @@
-
+$navigation-count: 7;
 
 @mixin nav-primary--item {
   font-family: font(surveyor);
@@ -35,11 +35,13 @@
 }
 
 .site-header {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
   @include breakpoint($bp--navigation--wide) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1.5em 1em 5em;
+    margin: 1.5em 0 5em;
     min-width: 40em;
     border-bottom: 0.25em double currentColor;
     padding-bottom: 5em;
@@ -111,16 +113,16 @@
     &:nth-of-type(1n + 2) {
       opacity: 0;
     }
-    @for $i from 1 through 6 {
+    @for $i from 1 through $navigation-count {
       &:nth-of-type(#{$i}) {
-        z-index: 6 - $i;
+        z-index: $navigation-count - $i;
       }
     }
     #nav-primary-trigger:checked ~ & {
       @include fan-items(
-        $num-items: 6,
-        $angle-span: 60deg,
-        $angle-offset: -35deg
+        $num-items: $navigation-count,
+        $angle-span: 65deg,
+        $angle-offset: -40deg
       );
       opacity: 1;
     }

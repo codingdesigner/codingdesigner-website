@@ -15,7 +15,6 @@
 //  }
 //}
 
-
 //body {
 //  background-image:
 //    radial-gradient($color-background 0.125em, transparent 0),
@@ -26,3 +25,123 @@
 //  background-position: 0, 0, 1em 0, 1em 0;
 //}
 
+.intro {
+  margin-bottom: 4em;
+  .page--speaking & {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(720px) {
+      justify-content: space-between;
+    }
+  }
+}
+.intro--text {
+  .page--speaking & {
+    background-image: url('../../src/images/speaking/sass-conf--speaker-panel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    background-color: #0F0F0F;
+    color: color(white);
+    //max-width: 42em;
+    padding: 1em 1em 25em;
+    @include breakpoint($bp-typography-narrow) {
+      padding-bottom: 18em;
+    }
+    @include breakpoint(720px) {
+      flex-basis: calc(60% - 1.5em);
+      padding-bottom: 25em;
+    }
+    @include breakpoint(960px) {
+      padding-bottom: 20em;
+    }
+    @include breakpoint(1400px) {
+      padding-bottom: 18em;
+    }
+  }
+}
+.intro-image {
+  margin-bottom: 2em;
+  @include breakpoint(650px) {
+    //float: right;
+    //margin-left: 2em;
+    //max-width: 50%;
+  }
+  @include breakpoint(800px) {
+    //max-width: 468px;
+  }
+  @include breakpoint(720px) {
+    flex-basis: calc(40% - 1.5em);
+  }
+
+  img {
+    border: 1px solid color(black);
+  }
+}
+
+.intro-image-2 {
+  margin-bottom: 2em;
+  //@include breakpoint(650px) {
+  //  float: right;
+  //  margin-left: 2em;
+  //  max-width: 50%;
+  //}
+  //@include breakpoint(720px) {
+    max-width: 468px;
+  //}
+  img {
+    border: 1px solid color(black);
+  }
+}
+
+
+
+.talk--sample-slide {
+  margin-bottom: 2em;
+  @include breakpoint(650px) {
+    float: right;
+    margin-left: 2em;
+    max-width: 50%;
+  }
+  @include breakpoint(800px) {
+    max-width: 468px;
+  }
+  img {
+    border: 1px solid color(black);
+  }
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-size: ms(-1);
+}
+
+h2 {
+  .width-limiter {
+    display: block;
+    max-width: 20em;
+  }
+}
+
+.talk {
+  clear: both;
+}
+
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0 0 2em;
+}
+
+
+.talk {
+  margin-bottom: 4em;
+}
+
+.talk--title {
+  border-bottom: 0.125em solid currentColor;
+  @include try-borders(0 0 1px 0);
+}
