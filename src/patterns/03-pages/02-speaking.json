@@ -2,6 +2,7 @@
   "intro": [
     {
       "intro-graphs": "<p>I've been speaking at meetups, bar camps, and regional and national conferences for the last six years.</p><p>I often speak about Designing in the Browser, Sass, Drupal, and Responsive Web Design. I produced a video podcast that teaches people about how they can use these tools and techniques creatively. I also blog at The Coding Designer and The Sass Way.</p>",
+      "intro-graphs-caption": "SassConf Speakers Panel. l-r: Una Kravets, Rachel Ober, Elise Holladay, Mason Wendell, Jina Bolton, Natalie Weizenbaum",
       "intro-image": {
         "src": "../../../../src/images/speaking/devsigner-2015-keynote.jpg",
         "alt": "Mason Wendell speaking at Devsigner in Portland, Oregon",
@@ -48,7 +49,7 @@
         "slide-url": "http://codingdesigner.github.io/box/#/main-title",
         "slide-img-src": "../../../../src/images/speaking/box--sample-slide.png",
         "slide-img-alt": "Sample slide from presentation",
-        "slide-figcaption": "Sample slide from presentation. All slides are based on classic Jazz album covers from the 50's and 60's, and built using cutting edge CSS and SVG. "
+        "slide-figcaption": "Sample slide from presentation. All slides are based on classic Jazz album covers from the 50's and 60's, and built using HTML and cutting edge CSS and SVG. "
       },
       "talk-video": {
         "talk-video-youtube-embed-url": "https://www.youtube-nocookie.com/embed/SG9ZU5ZJgbw?rel=0&amp;showinfo=0"
@@ -80,7 +81,7 @@
         },
         {
           "reaction-type-quote": true,
-          "reaction-content": "<blockquote class=\"comment\">\n        <p>This session was hands-down my most productive hour at Drupalcon. Not only did it open my mind to a completely different approach to design, but it streamlined my development process as well. I now have a brand new mindset going into my current projects.</p>\n        <p>drupalatx via <a href=\"https://austin2014.drupal.org/comment/2513.html#comment-2513\">Drupalcon</a></p>\n      </blockquote>"
+          "reaction-content": "<blockquote class=\"comment\">\n<p>This session was hands-down my most productive hour at Drupalcon. Not only did it open my mind to a completely different approach to design, but it streamlined my development process as well. I now have a brand new mindset going into my current projects.</p><footer>\n<cite>drupalatx via <a href=\"https://austin2014.drupal.org/comment/2513.html#comment-2513\">Drupalcon</a></cite>\n</footer></blockquote>"
         }
       ]
     },
@@ -98,7 +99,7 @@
         "slide-url": "http://codingdesigner.github.io/managing-rwd-presentation/#/main-title",
         "slide-img-src": "../../../../src/images/speaking/managing-responsive-screen.png",
         "slide-img-alt": "Sample slide from presentation.",
-        "slide-figcaption": "Sample slide from presentation."
+        "slide-figcaption": "Sample slide from presentation. Slides are created with HTML and CSS. "
       },
       "talk-video": {
         "talk-video-youtube-embed-url": "https://www.youtube-nocookie.com/embed/fgmXVxYnoWo?rel=0"
@@ -106,7 +107,7 @@
       "talk-reactions": [
         {
           "reaction-type-quote": true,
-          "reaction-content": "<blockquote class=\"comment\">\n        <p>Doing mostly backend development, over time I've shied away from front end development. Mason as a coding designer has made me more interested in bridging those. One of the things I like about Sass is how reusable style rules can help the process become really simplified and more logical. But one of the questions I've had is how to keep it all manageable - media queries for example. A tool to help with that sounds like something I'd like to hear about.</p>\n        <p>scottrigby via <a href=\"https://portland2013.drupal.org/comment/928.html#comment-928\">Drupalcon</a></p>\n      </blockquote>"
+          "reaction-content": "<blockquote class=\"comment\">\n<p>Doing mostly backend development, over time I've shied away from front end development. Mason as a coding designer has made me more interested in bridging those. One of the things I like about Sass is how reusable style rules can help the process become really simplified and more logical. But one of the questions I've had is how to keep it all manageable - media queries for example. A tool to help with that sounds like something I'd like to hear about.</p><footer>\n<cite>scottrigby via <a href=\"https://portland2013.drupal.org/comment/928.html#comment-928\">Drupalcon</a></cite>\n</footer></blockquote>"
         }
       ]
     },

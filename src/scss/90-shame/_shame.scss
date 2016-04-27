@@ -43,9 +43,9 @@
     background-position: 50% 100%;
     background-color: #0F0F0F;
     color: color(white);
-    //max-width: 42em;
     padding: 0.5em 0.5em 34em;
     margin-bottom: 1.5em;
+    // @todo refactor to use eq.js
     @include breakpoint(400px) {
       padding-bottom: 25em;
     }
@@ -62,18 +62,30 @@
     @include breakpoint(1400px) {
       padding-bottom: 18em;
     }
+    .intro-graphs-caption {
+      position: relative;
+      font-style: italic;
+      top: 34em;
+      @include breakpoint(400px) {
+        top: 25em;
+      }
+      @include breakpoint($bp-typography-narrow) {
+        top: 18em;
+      }
+      @include breakpoint(720px) {
+        top: 25em;
+      }
+      @include breakpoint(960px) {
+        top: 20em;
+      }
+      @include breakpoint(1400px) {
+        top: 18em;
+      }
+    }
   }
 }
 .intro-image {
   margin-bottom: 2em;
-  @include breakpoint(650px) {
-    //float: right;
-    //margin-left: 2em;
-    //max-width: 50%;
-  }
-  @include breakpoint(800px) {
-    //max-width: 468px;
-  }
   @include breakpoint(720px) {
     flex-basis: calc(#{phi-b(100%)} - 1.5em);
   }
@@ -85,14 +97,7 @@
 
 .intro-image-2 {
   margin-bottom: 2em;
-  //@include breakpoint(650px) {
-  //  float: right;
-  //  margin-left: 2em;
-  //  max-width: 50%;
-  //}
-  //@include breakpoint(720px) {
-    max-width: 468px;
-  //}
+  max-width: 468px;
   img {
     border: 1px solid color(black);
   }
@@ -102,14 +107,6 @@
 
 .talk--sample-slide {
   margin-bottom: 2em;
-  //@include breakpoint(650px) {
-  //  float: right;
-  //  margin-left: 2em;
-  //  max-width: 50%;
-  //}
-  //@include breakpoint(800px) {
-  //  max-width: 468px;
-  //}
   img {
     border: 1px solid color(black);
   }
@@ -163,6 +160,34 @@ h2 {
 .talk--sample-slide {
   flex-basis: calc(50% - 1.5em);
 }
+
+.talk--slides-link {
+  margin: 1em 0;
+  a {
+    @include unset-background-links();
+    display: inline-block;
+    border-bottom: 5px solid color(black);
+    padding: 0 1em 0.25em 0;
+    font-weight: 800;
+    font-style: italic;
+    font-size: fontsize-rem(ms(1));
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      bottom: -5px;
+      right: -0.5em;
+      border-width: 0.33em;
+      border-style: solid;
+      border-color: transparent transparent color(black) color(black);
+      transform: skewX(30deg);
+      transform-origin: 100% 100%;
+    }
+  }
+}
+
 .talk--video {
   flex-basis: calc(50% - 1.5em);
 }
@@ -182,12 +207,8 @@ h2 {
     height: 100%;
   }
 }
-.talk--description {
-  //order: 2;
-}
+.talk--description {}
 .talk--events {
-  //@include flex-layout--2(1);
-  //order: 4;
   ul {
     list-style-type: none;
     padding-left: 0.5em;
@@ -212,8 +233,8 @@ h2 {
 }
 
 .talk--reactions {
+  margin-top: 2em;
   flex-basis: 100%;
-  //order: 5;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -221,6 +242,20 @@ h2 {
   > * {
     margin-right: 1em;
     flex-basis: 22em;
+  }
+  .comment {
+    margin: 0;
+    border: 1px solid color(gray);
+    padding: 1em;
+    footer {
+      color: color(white);
+      background: color(black);
+      margin: 0 -1em -1em;
+      padding: 0.25em 1em 1em;
+      a {
+        @include link-knockout-underline();
+      }
+    }
   }
 }
 

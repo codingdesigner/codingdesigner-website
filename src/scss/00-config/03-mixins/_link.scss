@@ -203,62 +203,62 @@ $link-background-bkg-default: $cs-link-background-bkg !default;
   );
 }
 
-@mixin link-on-light-gray() {
-  @include set-link-defaults();
-  @include set-link-colors (
-    $link-normal: color(gray, dark),
-    $link-hover: color(gray, mid-dark),
-    $link-active: color(gray, dark),
-    $link-visited: color(gray, dark),
-    $link-focus: color(gray, mid-dark)
-  );
-  @include unset-background-links();
-  @include set-underline-links(
-    $link-underline-normal: color(gray, dark),
-    $link-underline-hover: color(gray, mid-dark),
-    $link-underline-active: color(gray, dark),
-    $link-underline-visited: color(gray, dark),
-    $link-underline-focus: color(gray, mid-dark)
-  );
-}
+//@mixin link-on-light-gray() {
+//  @include set-link-defaults();
+//  @include set-link-colors (
+//    $link-normal: color(gray, dark),
+//    $link-hover: color(gray, mid-dark),
+//    $link-active: color(gray, dark),
+//    $link-visited: color(gray, dark),
+//    $link-focus: color(gray, mid-dark)
+//  );
+//  @include unset-background-links();
+//  @include set-underline-links(
+//    $link-underline-normal: color(gray, dark),
+//    $link-underline-hover: color(gray, mid-dark),
+//    $link-underline-active: color(gray, dark),
+//    $link-underline-visited: color(gray, dark),
+//    $link-underline-focus: color(gray, mid-dark)
+//  );
+//}
 
-@mixin link-green() {
-  @include set-link-defaults();
-  @include set-link-colors (
-    $link-normal: color(green),
-    $link-hover: color(green, light),
-    $link-active: color(green),
-    $link-visited: color(green),
-    $link-focus: color(green, light)
-  );
-  @include unset-background-links();
-  @include set-underline-links(
-    $link-underline-normal: color(green),
-    $link-underline-hover: color(green, light),
-    $link-underline-active: color(green),
-    $link-underline-visited: color(green),
-    $link-underline-focus: color(green, light)
-  );
-}
+//@mixin link-green() {
+//  @include set-link-defaults();
+//  @include set-link-colors (
+//    $link-normal: color(green),
+//    $link-hover: color(green, light),
+//    $link-active: color(green),
+//    $link-visited: color(green),
+//    $link-focus: color(green, light)
+//  );
+//  @include unset-background-links();
+//  @include set-underline-links(
+//    $link-underline-normal: color(green),
+//    $link-underline-hover: color(green, light),
+//    $link-underline-active: color(green),
+//    $link-underline-visited: color(green),
+//    $link-underline-focus: color(green, light)
+//  );
+//}
 
-@mixin link-blue() {
-  @include set-link-defaults();
-  @include set-link-colors (
-    $link-normal: color(blue),
-    $link-hover: color(blue, light),
-    $link-active: color(blue),
-    $link-visited: color(blue),
-    $link-focus: color(blue, light)
-  );
-  @include unset-background-links();
-  @include set-underline-links(
-    $link-underline-normal: color(blue),
-    $link-underline-hover: color(blue, light),
-    $link-underline-active: color(blue),
-    $link-underline-visited: color(blue),
-    $link-underline-focus: color(blue, light)
-  );
-}
+//@mixin link-blue() {
+//  @include set-link-defaults();
+//  @include set-link-colors (
+//    $link-normal: color(blue),
+//    $link-hover: color(blue, light),
+//    $link-active: color(blue),
+//    $link-visited: color(blue),
+//    $link-focus: color(blue, light)
+//  );
+//  @include unset-background-links();
+//  @include set-underline-links(
+//    $link-underline-normal: color(blue),
+//    $link-underline-hover: color(blue, light),
+//    $link-underline-active: color(blue),
+//    $link-underline-visited: color(blue),
+//    $link-underline-focus: color(blue, light)
+//  );
+//}
 
 //@mixin link-on-blue() {
 //  @include set-background-links (
