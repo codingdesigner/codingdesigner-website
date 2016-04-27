@@ -95,10 +95,10 @@
         }
       ],
       "talk-sample-slide": {
-        "slide-url": "#",
-        "slide-img-src": "../../../../src/images/fpo_16x9.png",
-        "slide-img-alt": "Lorem ipsum dolor sit amet consectetur",
-        "slide-figcaption": "Lorem ipsum dolor sit amet consectetur"
+        "slide-url": "http://codingdesigner.github.io/managing-rwd-presentation/#/main-title",
+        "slide-img-src": "../../../../src/images/speaking/managing-responsive-screen.png",
+        "slide-img-alt": "Sample slide from presentation.",
+        "slide-figcaption": "Sample slide from presentation."
       },
       "talk-video": {
         "talk-video-youtube-embed-url": "https://www.youtube-nocookie.com/embed/fgmXVxYnoWo?rel=0"
@@ -112,7 +112,7 @@
     },
     {
       "talk-title": "Designing with a Living Style Guide",
-      "talk-description": "Lorum Imsum dolor sit amet",
+      "talk-description": "<p>An introduction to designing a styleguide as you create a new design language. </p>",
       "talk-events": [
         {
           "event-url": "http://www.meetup.com/gothamsass/events/86565842/",
@@ -121,15 +121,14 @@
         }
       ],
       "talk-sample-slide": {
-        "slide-url": "#",
-        "slide-img-src": "../../../../src/images/fpo_16x9.png",
-        "slide-img-alt": "Lorem ipsum dolor sit amet consectetur",
-        "slide-figcaption": "Lorem ipsum dolor sit amet consectetur"
+        "slide-img-src": "../../../../src/images/speaking/designing-living-style-guide.png",
+        "slide-img-alt": "Sample slide from presentation.",
+        "slide-figcaption": "Sample slide from presentation."
       }
     },
     {
-      "talk-title": "Responsive Web Design",
-      "talk-description": "Lorum Imsum dolor sit amet",
+      "talk-title": "Responsive Web Design<br/> – Shrinking Websites on Phones",
+      "talk-description": "<p>An introduction to mobile-first responsive web design.</p>",
       "talk-events": [
         {
           "event-url": "http://www.meetup.com/rwd-nyc/events/79888832/",
@@ -138,15 +137,14 @@
         }
       ],
       "talk-sample-slide": {
-        "slide-url": "#",
-        "slide-img-src": "../../../../src/images/fpo_16x9.png",
-        "slide-img-alt": "Lorem ipsum dolor sit amet consectetur",
-        "slide-figcaption": "Lorem ipsum dolor sit amet consectetur"
+        "slide-img-src": "../../../../src/images/speaking/rwd-meetup-nyc.png",
+        "slide-img-alt": "Sample slide from presentation.",
+        "slide-figcaption": "Sample slide from presentation."
       }
     },
     {
       "talk-title": "Mobile and Responsive Design with Sass",
-      "talk-description": "Lorum Imsum dolor sit amet",
+      "talk-description": "<p>Approaches for doing mobile-first responsive web design, with an emphasis on advances Sass techniques.</p>",
       "talk-events": [
         {
           "event-name": "Drupaldelphia 2012",
@@ -167,25 +165,15 @@
       ],
       "talk-sample-slide": {
         "slides-slideshare": true,
-        "slides-slideshare-embed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/7cBnnjjONAa60R\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/canarymason/designing-in-the-browser-mason-wendell-drupaldelphia\" title=\"Designing in the Browser - Mason Wendell, Drupaldelphia\" target=\"_blank\">Designing in the Browser - Mason Wendell, Drupaldelphia</a> </strong> from <strong><a href=\"//www.slideshare.net/canarymason\" target=\"_blank\">canarymason</a></strong> </div>"
+        "slides-slideshare-embed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/4oW4K3JJM5NCPp\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/nyccamp/mobile-and-responsive-design-with-sass\" title=\"Mobile and Responsive Design with Sass\" target=\"_blank\">Mobile and Responsive Design with Sass</a> </strong> from <strong><a href=\"//www.slideshare.net/nyccamp\" target=\"_blank\">nyccamp</a></strong> </div>"
       },
       "talk-video": {
         "talk-video-vimeo-embed": "<iframe src=\"https://player.vimeo.com/video/44889054\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n      <p><a href=\"https://vimeo.com/44889054\">Mobile and Responsive Design with Sass by Mason Wendell</a> from <a href=\"https://vimeo.com/drupaldelphia\">Drupaldelphia</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p></iframe>"
       }
     },
     {
-      "talk-title": "Intro to Sass",
-      "talk-description": "Lorum Imsum dolor sit amet",
-      "talk-events": [
-        {
-          "event-name": "Bar Camp Philly, 2011",
-          "event-location": "Philadelphia, PA"
-        }
-      ]
-    },
-    {
       "talk-title": "The Coding Designer’s Survival Kit",
-      "talk-description": "Lorum Imsum dolor sit amet",
+      "talk-description": "<p>Markup, CSS, and JavaScript tools for Designing in the Browser. I outlined the philosophy and reasoning behind the in-browser approach. </p>",
       "talk-events": [
         {
           "event-name": "Drupaldelphia, 2011",
@@ -203,11 +191,15 @@
           "event-name": "Capital Camp 2011",
           "event-location": "Washington, DC"
         }
-      ]
+      ],
+      "talk-sample-slide": {
+        "slides-slideshare": true,
+        "slides-slideshare-embed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/LMISSbxFPwDMFC\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/canarymason/the-coding-designers-survival-kit-capital-camp\" title=\"The Coding Designer&#x27;s Survival Kit - Capital Camp\" target=\"_blank\">The Coding Designer&#x27;s Survival Kit - Capital Camp</a> </strong> from <strong><a href=\"//www.slideshare.net/canarymason\" target=\"_blank\">canarymason</a></strong> </div>"
+      }
     },
     {
       "talk-title": "Design in the Browser",
-      "talk-description": "Lorum Imsum dolor sit amet",
+      "talk-description": "<p>Designing in the browser was very new. I made my case for it.</p>",
       "talk-events": [
         {
           "event-url": "http://chicago2011.drupal.org/sessions/design-browser-use-css-stop-lying-ourselves-and-our-clients",
@@ -234,7 +226,12 @@
           "event-name": "Drupaldelphia 2010",
           "event-location": "Philadelphia, PA"
         }
-      ]
+      ],
+      "talk-sample-slide": {
+        "slide-img-src": "../../../../src/images/speaking/design-in-browser-css-stop-lying.png",
+        "slide-img-alt": "Sample slide from presentation",
+        "slide-figcaption": "Sample slide from presentation."
+      }
     }
   ]
 }
