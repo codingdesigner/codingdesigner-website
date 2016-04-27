@@ -1,0 +1,8 @@
+{
+  "talk-sample-slide": {
+    "slide-url": false,
+    "slide-img-src": false,
+    "slide-figcaption": false,
+    "slides-slideshare-embed": "<iframe src=\"//www.slideshare.net/slideshow/embed_code/key/7cBnnjjONAa60R\" width=\"595\" height=\"485\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;\" allowfullscreen> </iframe> <div style=\"margin-bottom:5px\"> <strong> <a href=\"//www.slideshare.net/canarymason/designing-in-the-browser-mason-wendell-drupaldelphia\" title=\"Designing in the Browser - Mason Wendell, Drupaldelphia\" target=\"_blank\">Designing in the Browser - Mason Wendell, Drupaldelphia</a> </strong> from <strong><a href=\"//www.slideshare.net/canarymason\" target=\"_blank\">canarymason</a></strong> </div>"
+  }
+}

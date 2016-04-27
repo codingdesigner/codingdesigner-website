@@ -1,0 +1,19 @@
+{
+  "talk-events": [
+    {
+      "event-url": "#",
+      "event-name": "Lorum Ipsum",
+      "event-emphasis": "[KEYNOTE]",
+      "event-location": "Lorem ipsum, consectetur"
+    },
+    {
+      "event-url": "#",
+      "event-name": "Lorum Ipsum",
+      "event-location": "Lorem ipsum, consectetur"
+    },
+    {
+      "event-name": "Lorum Ipsum",
+      "event-location": "Lorem ipsum, consectetur"
+    }
+  ]
+}

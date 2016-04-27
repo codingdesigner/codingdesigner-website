@@ -1,0 +1,8 @@
+{
+  "intro-graphs": "<p>Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p><p>Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+  "intro-image": {
+    "src": "../../../../src/images/fpo_16x9.png",
+    "alt": "16x9 Image",
+    "caption": "16x9 Image"
+  }
+}

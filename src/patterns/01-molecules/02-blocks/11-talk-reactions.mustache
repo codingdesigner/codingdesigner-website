@@ -1,0 +1,11 @@
+<div class="talk--reactions">
+  {{#talk-reactions}}
+    {{#reaction-type-tweet}}
+      {{{reaction-content}}}
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {{/reaction-type-tweet}}
+    {{#reaction-type-quote}}
+      {{{reaction-content}}}
+    {{/reaction-type-quote}}
+  {{/talk-reactions}}
+</div>

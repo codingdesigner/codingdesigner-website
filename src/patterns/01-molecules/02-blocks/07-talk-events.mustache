@@ -1,0 +1,20 @@
+<div class="talk--events">
+  <h3>Events</h3>
+  <ul>
+    {{#talk-events}}
+      <li class="talk--event"><span class="talk--event-name">
+        {{#event-url}}
+          <a href="{{even08-t-url}}">{{event-name}}</a>
+        {{/event-url}}
+        {{^event-url}}
+          {{event-name}}
+        {{/event-url}}
+        </span>
+        {{#event-emphasis}}
+          <em>{{event-emphasis}}</em>
+        {{/event-emphasis}}
+        - {{event-location}}
+      </li>
+    {{/talk-events}}
+  </ul>
+</div>

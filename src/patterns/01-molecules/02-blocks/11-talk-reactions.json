@@ -1,0 +1,12 @@
+{
+  "talk-reactions": [
+    {
+      "reaction-type-tweet": true,
+      "reaction-content": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">just setting up my twttr</p>&mdash; Jack (@jack) <a href=\"https://twitter.com/jack/status/20\">March 21, 2006</a></blockquote>"
+    },
+    {
+      "reaction-type-quote": true,
+      "reaction-content": "<p>Lorum ipsum dolor site amet</p>\n<p>some_dude via <a href=\"#\">Some Site</a></p>"
+    }
+  ]
+}

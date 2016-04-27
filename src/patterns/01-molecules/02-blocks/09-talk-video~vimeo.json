@@ -1,0 +1,6 @@
+{
+  "talk-video": {
+    "talk-video-youtube-embed-url": false,
+    "talk-video-vimeo-embed": "<iframe src=\"https://player.vimeo.com/video/44889054\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n      <p><a href=\"https://vimeo.com/44889054\">Mobile and Responsive Design with Sass by Mason Wendell</a> from <a href=\"https://vimeo.com/drupaldelphia\">Drupaldelphia</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p></iframe>"
+  }
+}

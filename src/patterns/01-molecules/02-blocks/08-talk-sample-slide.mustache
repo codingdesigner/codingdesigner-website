@@ -1,0 +1,29 @@
+{{#talk-sample-slide}}
+  <figure class="talk--sample-slide">
+    {{#slide-url}}
+      <a href="{{slide-url}}">
+        {{#slide-img-src}}
+          <img src="{{slide-img-src}}" alt="{{slide-img-alt}}">
+        {{/slide-img-src}}
+      </a>
+    {{/slide-url}}
+    {{^slide-url}}
+      {{#slide-img-src}}
+        <img src="{{slide-img-src}}" alt="{{slide-img-alt}}">
+      {{/slide-img-src}}
+    {{/slide-url}}
+    {{#slides-slideshare-embed}}
+      {{{slides-slideshare-embed}}}
+    {{/slides-slideshare-embed}}
+    {{#slide-figcaption}}
+      <figcaption>
+        {{{slide-figcaption}}}
+        {{#slide-url}}
+          <div class="talk--slides-link">
+            <a href="{{slide-url}}">View slides online</a>
+          </div>
+        {{/slide-url}}
+      </figcaption>
+    {{/slide-figcaption}}
+  </figure>
+{{/talk-sample-slide}}

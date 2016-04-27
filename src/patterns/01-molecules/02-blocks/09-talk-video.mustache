@@ -1,0 +1,13 @@
+{{#talk-video}}
+  <div class="talk--video">
+    {{#talk-video-youtube-embed-url}}
+      <div class="video-container--youtube">
+        <iframe width="960" height="720" src="{{talk-video-youtube-embed-url}}&amp;showinfo=0"
+                frameborder="0" allowfullscreen></iframe>
+      </div>
+    {{/talk-video-youtube-embed-url}}
+    {{#talk-video-vimeo-embed}}
+      {{{talk-video-vimeo-embed}}}
+    {{/talk-video-vimeo-embed}}
+  </div>
+{{/talk-video}}
