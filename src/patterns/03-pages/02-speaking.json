@@ -51,9 +51,15 @@
         "slide-img-alt": "Sample slide from presentation",
         "slide-figcaption": "Sample slide from presentation. All slides are based on classic Jazz album covers from the 50's and 60's, and built using HTML and cutting edge CSS and SVG. "
       },
-      "talk-video": {
-        "talk-video-youtube-embed-url": "https://www.youtube-nocookie.com/embed/SG9ZU5ZJgbw?rel=0&amp;showinfo=0"
-      },
+      "talk-video": [
+        {
+          "talk-video-youtube-embed-url": "https://www.youtube-nocookie.com/embed/SG9ZU5ZJgbw?rel=0&amp;showinfo=0"
+        },
+        {
+          "talk-video-youtube-embed-url": "https://www.youtube.com/embed/jenoiaPwDHk?list=PLV7474yy8FTYHQ5Fk6v2vUQxWeeiqClRH"
+        }
+      ],
+
       "talk-reactions": [
         {
           "reaction-type-tweet": true,
