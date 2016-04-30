@@ -128,6 +128,41 @@
   }
 }
 
+/// Try background images.
+/// Writes values as commented-out css you can turn on and off in your browser inspector
+/// Images pulled from https://unsplash.it
+/// @link https://github.com/at-import/try
+/// @param {integer} $width [1600] - width
+/// @param {integer} $height [900] - height
+/// @param {boolean} $random [true] - pull a random image from the service
+/// @param {integer} $image [null] - pick a specific image from the service
+/// @param {boolean} $grayscale [false] - convert the image to grayscale
+/// @param {boolean} $blue [false] - blur the image
+/// @param {string} $crop-gravity [null] - where to anchor the image when it's cropped
+@mixin try-background-image($width: 1600, $height: 900, $random: true, $image: null, $grayscale: false, $blur: false, $crop-gravity: null) {
+  $params: ();
+  @if ($grayscale == true) {
+    $params: append($params, "/g");
+  }
+  $params: append($params, "/#{$width}");
+  $params: append($params, "/#{$height}");
+  $args: ();
+  @if ($image != null) {
+    $args: append($args, "image=#{$image}");
+    $random: false;
+  }
+  @if ($random == true) {
+    $args: append($args, "random");
+  }
+  @if ($blur == true) {
+    $args: append($args, "blur");
+  }
+  @if ($crop-gravity != null) {
+    $args: append($args, "gravity=#{$crop-gravity}");
+  }
+  /* background-image: url('http://unsplash.it#{to-string($params)}?#{to-string($args, "&")}'); */
+}
+
 /// Try letter spacing.
 /// Writes values as commented-out css you can turn on and off in your browser inspector
 /// @link https://github.com/at-import/try
@@ -167,7 +202,9 @@
   @include try-ms();
   @include try-text-transform();
   @include try-blend-modes();
+  @include try-background-blend-modes();
   @include try-background-gradients();
+  @include try-background-image();
   @include try-letter-spacing();
   @include try-line-height();
 }
