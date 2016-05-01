@@ -1,6 +1,6 @@
 {
   "name": "PatternLabStarter",
-  "version": "6.0.0",
+  "version": "6.1.2",
   "description": "Pattern Lab Starter",
   "main": "gulpfile.js",
   "author": {
@@ -26,7 +26,7 @@
     "start": "gulp clean && gulp compile && gulp",
     "precompile": "npm run checkDeps",
     "compile": "gulp clean && gulp compile",
-    "test": "gulp compile && gulp validate",
+    "test": "gulp validate",
     "checkDeps": "node scripts/dependency-version-checker.js",
     "postinstall": "find node_modules/ -name \"*.info\" -type f -delete && bower install --allow-root"
   },
@@ -41,12 +41,9 @@
     "js-yaml": "^3.4.6",
     "lodash.merge": "^3.3.2",
     "normalize.scss": "^0.1.0",
-    "p2-theme-core": "^6.3.7",
+    "p2-theme-core": "6.4.5",
     "semver": "^5.1.0",
-    "singularitygs": "^1.6.2"
-  },
-  "dependencies": {
-    "modularscale-sass": "^2.1.1",
-    "sassdoc-theme-vulcan": "^0.2.0"
+    "singularitygs": "^1.6.2",
+    "modularscale-sass": "^2.1.1"
   }
 }

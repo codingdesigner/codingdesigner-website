@@ -15,15 +15,15 @@
     "test",
     "tests"
   ],
+  "dependencies": {
+    "lodash": "~3.6.0",
+    "modernizr": "~2.8.3",
+    "eq.js": "~1.7.1"
+  },
   "devDependencies": {
     "highlightjs": "~8.8.0",
-    "lodash": "~3.6.0",
     "drupal": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x",
     "jquery": "~1.10.2",
     "letteringjs": ""
-  },
-  "dependencies": {
-    "eq.js": "~1.7.1",
-    "modernizr": "~2.8.3"
   }
 }

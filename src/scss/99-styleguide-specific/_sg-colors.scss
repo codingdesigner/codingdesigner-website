@@ -8,6 +8,8 @@
   flex-wrap: wrap;
   > li {
     display: block;
+    width: auto;
+    padding: 0;
     .sg-swatch {
       display: block;
       min-height: 15em;

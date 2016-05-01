@@ -6,7 +6,7 @@ css:
   dest: dest/
   flattenDestOutput: true
   lint:
-    enabled: false
+    enabled: true
     failOnError: false
     # Add to the main src glob - useful for exclusions with `!`
     extraSrc:
@@ -56,7 +56,6 @@ patternLab:
     data: src/data/
     patternLabFiles: src/patternlab-files/
     patterns: src/patterns/
-    patternLabCss: src/patternlab-css/
   dest: dest/pattern-lab/
   injectFiles:
     - bower_components/modernizr/modernizr.js
@@ -97,7 +96,7 @@ browserSync:
     - Google Chrome
   # Tunnel the Browsersync server through a random Public URL
   # -> http://randomstring23232.localtunnel.me
-  tunnel: true
+  tunnel: false
   reloadDelay: 50
   reloadDebounce: 750
 drupal:

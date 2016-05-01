@@ -1,0 +1,17 @@
+name: tcd_2016_b_upgrade
+description: Designing The Coding Designer
+type: theme
+screenshot: screenshot.png
+base theme: classy
+core: 8.x
+# Defines libraries group in which we can add css/js.
+libraries:
+  - tcd_2016_b_upgrade/global-styling
+# Regions
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer
