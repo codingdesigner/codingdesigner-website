@@ -5,55 +5,55 @@
 // Breakpoint will output fallback selectors in this stylesheet
 @include breakpoint-set('no query fallbacks', true);
 
-// @TODO CLEANUP BOILERPLATE
-// Sign posts
-//$width-xsmall  : 400px;
-//$width-small   : 480px;
-//$width-medium  : 640px;
-//$width-large   : 768px;
-//$width-xlarge  : 1024px;
-//$width-xxlarge : 1280px;
-//$width-xxxlarge : 1600px;
-
 // Mobile-first queries
 // Breakpoint variables are prefixed with "$bp--"
-
-//$bp--xsmall-up  : $width-xsmall;   // 400px
-//$bp--small-up   : $width-small;    // 480px
-//$bp--medium-up  : $width-medium;   // 640px
-//$bp--large-up   : $width-large;    // 768px
-//$bp--xlarge-up  : $width-xlarge;   // 1024px
-//$bp--xxlarge-up : $width-xxlarge;  // 1280px
-//$bp--xxxlarge-up: $width-xxxlarge; // 1600px
-
 // responsive table
 $bp--responsive-table: 500px;
 
 // Breakpoints
+///
 $bp--global--inline-title: 480px;
-
-// @todo CLEANUP SCORE STUFF
+///
 $bp-typography-narrow: 650px;
-//$bp-navigation-logo-left: 540px;
-//$bp-navigation-search-right: 540px;
-//$bp-navigation-search-full-view: 715px;
-//$bp-navigation-nav-secondary-not-full: 540px;
-//$bp-navigation-nav-secondary-full-view: 715px;
-//$bp-navigation-nav-primary-wide: 715px;
-//$bp-navigation-nav-tool-wide: 715px;
-//$bp-navigation-nav-primary-full: 900px;
-//$bp-logo-full-width: 800px;
+///
 $bp-relationship-block-horizontal-2-pane: 630px;
+///
 $bp-relationship-block-horizontal-3-pane: 930px;
+///
 $bp-relationship-block-pane-1-2: 750px;
-//$bp-block-hero-bump-1: 480px;
-//$bp-block-hero-solid-color: 580px;
-//$bp-content-trio-break-1: 580px;
-//$bp-content-trio-break-2: 800px;
+///
 $bp--columns-2: 1000px;
-//$bp--page-padding-increase: 1000px;
-//$success-story-image-max-width: 14rem;
+///
+$bp--portfolio-images-small: 600px;
+///
+$bp--portfolio-images-mid: 800px;
+///
+$bp--portfolio-images-large: 1200px;
+///
+$bp--portfolio--show-details: 950px;
+///
+$bp--portfolio--overview-padding: 400px;
+///
+$bp--portfolio--details-limit-width: $bp-typography-narrow;
+///
 $bp--title-curve--shrink: max-width 360px;
+///
 $bp--navigation--wide: $bp-typography-narrow;
+///
 $bp--navigation--narrow: max-width ($bp--navigation--wide - 1);
+///
 $bp--navigation--fully-wide: 740px;
+///
+$bp--page-speaking-1: 400px;
+///
+$bp--page-speaking-2: $bp-typography-narrow;
+///
+$bp--page-speaking-3: 720px;
+///
+$bp--page-speaking-4: 960px;
+///
+$bp--page-speaking-5: 1400px;
+///
+$bp--talk-columns: 830px;
+///
+$bp--talk-event--wide: $bp-typography-narrow;

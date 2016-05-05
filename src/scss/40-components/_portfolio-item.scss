@@ -1,11 +1,3 @@
-$bp--portfolio-images-small: 600px;
-$bp--portfolio-images-mid: 800px;
-$bp--portfolio-images-large: 1200px;
-$bp--portfolio--show-details: 950px;
-$bp--portfolio--overview-padding: 400px;
-$bp--portfolio--details-limit-width: $bp-typography-narrow;
-
-
 //$flag-color: #84C759;
 $flag-color: color(black);
 
@@ -21,20 +13,7 @@ $flag-color: color(black);
   }
 }
 .pi--project-name {
-  @include h1();
-  font-weight: 800;
-  font-style: italic;
-  z-index: 2;
-  position: relative;
-  //margin-bottom: 0.75em;
-  margin-bottom: 0.33em;
-  @include breakpoint($bp-typography-narrow) {
-    margin-left: 2vw;
-  }
-  @include breakpoint($bp--portfolio--show-details) {
-    flex-basis: 100vw;
-    margin-left: 3vw;
-  }
+  //
 }
 
 .pi--overview {

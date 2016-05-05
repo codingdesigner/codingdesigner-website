@@ -123,9 +123,15 @@ $font-headline: sans !default;
 h1 {
   @include h1();
 }
+
 h2 {
   @include h2();
+  .width-limiter {
+    display: block;
+    max-width: 20em;
+  }
 }
+
 h3 {
   @include h3();
 }

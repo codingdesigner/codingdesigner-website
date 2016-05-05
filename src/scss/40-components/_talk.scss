@@ -1,0 +1,137 @@
+.talk {
+  clear: both;
+  margin-bottom: 6em;
+  @include breakpoint($bp--talk-columns) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.talk--title {
+  flex-basis: 100%;
+  border-bottom: 0.25em solid currentColor;
+  margin-bottom: 0.5em;
+  padding-bottom: 4px;
+}
+
+.talk--sample-slide {
+  margin-bottom: 2em;
+  img {
+    border: 1px solid color(black);
+  }
+}
+
+.talk--description-and-events {
+  @include flex-layout--2(1);
+}
+.talk--slides {
+  @include flex-layout--2(2);
+  &[data-eq-state*='medium'] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.talk--sample-slide {
+  flex-basis: calc(50% - 1.5em);
+}
+
+.talk--slides-link {
+  margin: 1em 0;
+  a {
+    @include unset-background-links();
+    display: inline-block;
+    border-bottom: 5px solid color(black);
+    padding: 0 1em 0.25em 0;
+    font-weight: 800;
+    font-style: italic;
+    font-size: fontsize-rem(ms(1));
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      bottom: -5px;
+      right: -0.5em;
+      border-width: 0.33em;
+      border-style: solid;
+      border-color: transparent transparent color(black) color(black);
+      transform: skewX(30deg);
+      transform-origin: 100% 100%;
+    }
+  }
+}
+
+.talk--video {
+  flex-basis: calc(50% - 1.5em);
+}
+.video-container--youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.talk--description {}
+.talk--events {
+  ul {
+    list-style-type: none;
+    padding-left: 0.5em;
+    li {
+      padding-left: 1em;
+      &:before {
+        content: "—";
+        content: "» ";
+        margin-left: -1em;
+      }
+    }
+  }
+}
+
+.talk--event {
+  margin-bottom: 0.5em;
+  @include breakpoint($bp--talk-event--wide) {
+    font-size: fontsize-rem(ms(1));
+  }
+}
+.talk--event-name {
+  font-weight: 600;
+}
+
+.talk--reactions {
+  margin-top: 2em;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  > * {
+    margin-right: 1em;
+    flex-basis: 22em;
+  }
+  .comment {
+    margin: 0;
+    border: 1px solid color(gray);
+    padding: 1em;
+    footer {
+      color: color(white);
+      background: color(black);
+      margin: 0 -1em -1em;
+      padding: 0.25em 1em 1em;
+      a {
+        @include link-knockout-underline();
+      }
+    }
+  }
+}
