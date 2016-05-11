@@ -35,16 +35,17 @@ $navigation-count: 7;
 }
 
 .site-header {
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  @include margin-compensation();
   @include breakpoint($bp--navigation--wide) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 1.5em 0 5em;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
     min-width: 40em;
     border-bottom: 0.25em double currentColor;
     padding-bottom: 5em;
+    padding-left: $side-margin--wide;
   }
   @include breakpoint(870px) {
     padding-left: 15%;
