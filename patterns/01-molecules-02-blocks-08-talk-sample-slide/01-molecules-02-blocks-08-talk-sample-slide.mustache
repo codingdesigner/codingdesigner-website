@@ -1,0 +1,29 @@
+{{#talk-sample-slide}}
+  &lt;figure class=&quot;talk--sample-slide&quot;&gt;
+    {{#slide-url}}
+      &lt;a href=&quot;{{slide-url}}&quot;&gt;
+        {{#slide-img-src}}
+          &lt;img src=&quot;{{slide-img-src}}&quot; alt=&quot;{{slide-img-alt}}&quot;&gt;
+        {{/slide-img-src}}
+      &lt;/a&gt;
+    {{/slide-url}}
+    {{^slide-url}}
+      {{#slide-img-src}}
+        &lt;img src=&quot;{{slide-img-src}}&quot; alt=&quot;{{slide-img-alt}}&quot;&gt;
+      {{/slide-img-src}}
+    {{/slide-url}}
+    {{#slides-slideshare-embed}}
+      {{{slides-slideshare-embed}}}
+    {{/slides-slideshare-embed}}
+    {{#slide-figcaption}}
+      &lt;figcaption&gt;
+        {{{slide-figcaption}}}
+        {{#slide-url}}
+          &lt;div class=&quot;talk--slides-link&quot;&gt;
+            &lt;a href=&quot;{{slide-url}}&quot;&gt;View slides online&lt;/a&gt;
+          &lt;/div&gt;
+        {{/slide-url}}
+      &lt;/figcaption&gt;
+    {{/slide-figcaption}}
+  &lt;/figure&gt;
+{{/talk-sample-slide}}

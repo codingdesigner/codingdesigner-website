@@ -1,0 +1,33 @@
+&lt;div class=&quot;relationship-block panes-{{count}} {{#vertical}}panes-vertical{{/vertical}} {{#proportion}}{{proportion}}{{/proportion}} {{#division-option}}{{division-option}}{{/division-option}}&quot;&gt;
+  {{#panes }}
+    &lt;div class=&quot;relationship-block--pane {{bg}} {{#center-content}}center-content{{/center-content}}&quot; {{#bg_image}}style=&quot;background-image: url({{bg_image_value}})&quot;{{/bg_image}}&gt;
+      {{#content_heading}}
+        &lt;h2 class=&quot;pane-title&quot;&gt;{{{content_heading_value}}}&lt;/h2&gt;
+      {{/content_heading}}
+      {{#content_text}}
+        &lt;div class=&quot;pane-text&quot;&gt;{{{content_text_value}}}&lt;/div&gt;
+      {{/content_text}}
+      {{#content_stats}}
+        {{&gt; components-stats-alone }}
+      {{/content_stats}}
+      {{#content_success_story}}
+        {{&gt; components-success-story }}
+      {{/content_success_story}}
+      {{#content_excerpt}}
+        &lt;h2&gt;{{headline.tiny}}&lt;/h2&gt;
+        &lt;p&gt;{{excerpt.short}}&lt;/p&gt;
+      {{/content_excerpt}}
+    &lt;/div&gt;
+  {{/panes}}
+  {{#cta-primary-narrow }}
+    {{&gt;components-cta-big-div}}
+  {{/cta-primary-narrow}}
+  {{#cta-primary-wide }}
+    {{&gt;components-cta-big-div-wide}}
+  {{/cta-primary-wide}}
+  {{#cta-standard}}
+    {{&gt;components-cta-div}}
+  {{/cta-standard}}
+&lt;/div&gt;
+
+{{&gt;atoms-svg-clip-paths}}

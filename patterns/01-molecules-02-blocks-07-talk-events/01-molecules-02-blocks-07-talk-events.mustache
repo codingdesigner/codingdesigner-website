@@ -1,0 +1,20 @@
+&lt;div class=&quot;talk--events&quot;&gt;
+  &lt;h3&gt;Events&lt;/h3&gt;
+  &lt;ul&gt;
+    {{#talk-events}}
+      &lt;li class=&quot;talk--event&quot;&gt;&lt;span class=&quot;talk--event-name&quot;&gt;
+        {{#event-url}}
+          &lt;a href=&quot;{{even08-t-url}}&quot;&gt;{{event-name}}&lt;/a&gt;
+        {{/event-url}}
+        {{^event-url}}
+          {{event-name}}
+        {{/event-url}}
+        &lt;/span&gt;
+        {{#event-emphasis}}
+          &lt;em&gt;{{event-emphasis}}&lt;/em&gt;
+        {{/event-emphasis}}
+        - {{event-location}}
+      &lt;/li&gt;
+    {{/talk-events}}
+  &lt;/ul&gt;
+&lt;/div&gt;
