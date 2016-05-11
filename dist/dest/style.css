@@ -1062,7 +1062,7 @@ svg {
 }
 
 .page--speaking .intro--text {
-  background-image: url("../../src/images/speaking/sass-conf--speaker-panel.jpg");
+  background-image: url("../src/images/speaking/sass-conf--speaker-panel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
