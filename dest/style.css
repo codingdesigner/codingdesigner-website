@@ -2572,37 +2572,37 @@ svg {
 
 @media (max-width: 399px) {
   .po-item--link.reliefweb {
-    background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
   }
   .po-item--link.score {
-    background-image: url(../../src/images/portfolio/originals/score-home-narrow.png);
+    background-image: url(../../../../src/images/portfolio/originals/score-home-narrow.png);
   }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
   .po-item--link.reliefweb {
-    background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
   }
   .po-item--link.score {
-    background-image: url(../../src/images/portfolio/originals/score-home-narrow.png);
+    background-image: url(../../../../src/images/portfolio/originals/score-home-narrow.png);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .po-item--link.reliefweb {
-    background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-med.png);
+    background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-med.png);
   }
   .po-item--link.score {
-    background-image: url(../../src/images/portfolio/originals/score-home-med.png);
+    background-image: url(../../../../src/images/portfolio/originals/score-home-med.png);
   }
 }
 
 @media (min-width: 1024px) {
   .po-item--link.reliefweb {
-    background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-wide.png);
+    background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-wide.png);
   }
   .po-item--link.score {
-    background-image: url(../../src/images/portfolio/originals/score-home-wide.png);
+    background-image: url(../../../../src/images/portfolio/originals/score-home-wide.png);
   }
 }
 
