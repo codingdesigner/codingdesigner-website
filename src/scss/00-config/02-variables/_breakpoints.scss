@@ -12,6 +12,8 @@ $bp--responsive-table: 500px;
 
 // Breakpoints
 ///
+$page-max-width: 1640px;
+///
 $bp--global--inline-title: 480px;
 ///
 $bp-typography-narrow: 650px;
@@ -57,3 +59,13 @@ $bp--page-speaking-5: 1400px;
 $bp--talk-columns: 830px;
 ///
 $bp--talk-event--wide: $bp-typography-narrow;
+///
+$bp--portfolio-overview--narrow: max-width 399px;
+///
+$bp--portfolio-overview--tween: 400px 767px;
+///
+$bp--portfolio-overview--med: 768px 1023px;
+///
+$bp--portfolio-overview--wide: 1024px;
+///
+$bp--page-over-wide: $page-max-width;

@@ -11,38 +11,51 @@
   }
 }
 
-/// @param $side
-/// @param $amount [0.5em]
-@mixin padding-sides($side: both, $amount: 0.5rem) {
-  @if $side == left {
-    padding-left: $amount;
-  } @else if $side == right {
-    padding-right: $amount;
-  } @else {
-    padding-right: $amount;
-    padding-left: $amount;
+/// Compensate for page margins
+/// @param {string} $sides [both] - both, left, right
+@mixin margin-compensation($sides: 'both') {
+  @if ($sides == 'both') {
+    margin-left: -$side-margin;
+    margin-right: -$side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-left: -$side-margin--wide;
+      margin-right: -$side-margin--wide;
+    }
+  } @else if ($sides == 'left') {
+    margin-left: -$side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-left: -$side-margin--wide;
+    }
+  } @else if ($sides == 'right') {
+    margin-right: -$side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-right: -$side-margin--wide;
+    }
   }
 }
 
-/// @param $side
-/// @param $amount [0.5em]
-@mixin margin-sides($side: both, $amount: 0.5rem) {
-  // scss-lint:disable TrailingSemicolon
-  @if $side == left {
-    margin-left: $amount;
-  } @else if $side == right {
-    margin-right: $amount;
-  } @else {
-    margin-right: $amount;
-    margin-left: $amount;
+/// Compensate for page margins in inner items
+/// @param {string} $sides [both] - both, left, right
+@mixin margin-compensation--inner($sides: 'both') {
+  @if ($sides == 'both') {
+    margin-left: $side-margin;
+    margin-right: $side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-left: $side-margin--wide;
+      margin-right: $side-margin--wide;
+    }
+  } @else if ($sides == 'left') {
+    margin-left: $side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-left: $side-margin--wide;
+    }
+  } @else if ($sides == 'right') {
+    margin-right: $side-margin;
+    @include breakpoint($bp-typography-narrow) {
+      margin-right: $side-margin--wide;
+    }
   }
 }
-
-/// Antialiased
-//@mixin antialiased() {
-//  -webkit-font-smoothing: antialiased;
-//  -moz-osx-font-smoothing: grayscale;
-//}
 
 /// Arrow
 /// @param $color [black]
