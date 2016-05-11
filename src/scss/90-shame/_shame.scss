@@ -90,34 +90,34 @@ $bp--page-over-wide: $page-max-width;
   box-shadow: 0 1em 0 0 rgba(color(white), 0.75) inset;
   @include breakpoint($bp--portfolio-overview--narrow) {
     &.reliefweb {
-      background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
     }
     &.score {
-      background-image: url(../../src/images/portfolio/originals/score-home-narrow.png);
+      background-image: url(../src/images/portfolio/originals/score-home-narrow.png);
     }
   }
   @include breakpoint($bp--portfolio-overview--tween) {
     &.reliefweb {
-      background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
     }
     &.score {
-      background-image: url(../../src/images/portfolio/originals/score-home-narrow.png);
+      background-image: url(../src/images/portfolio/originals/score-home-narrow.png);
     }
   }
   @include breakpoint($bp--portfolio-overview--med) {
     &.reliefweb {
-      background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-med.png);
+      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-med.png);
     }
     &.score {
-      background-image: url(../../src/images/portfolio/originals/score-home-med.png);
+      background-image: url(../src/images/portfolio/originals/score-home-med.png);
     }
   }
   @include breakpoint($bp--portfolio-overview--wide) {
     &.reliefweb {
-      background-image: url(../../src/images/portfolio/originals/reliefweb-crisis-wide.png);
+      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-wide.png);
     }
     &.score {
-      background-image: url(../../src/images/portfolio/originals/score-home-wide.png);
+      background-image: url(../src/images/portfolio/originals/score-home-wide.png);
     }
   }
   @include breakpoint($bp--page-over-wide) {
