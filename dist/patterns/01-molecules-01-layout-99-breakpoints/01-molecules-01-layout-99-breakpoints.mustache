@@ -1,0 +1,16 @@
+&lt;div class=&quot;sg-breakpoints&quot;&gt;
+  &lt;ul class=&quot;breakpoints&quot;&gt;
+    {{#breakpoints}}
+      &lt;li style=&quot;left: 0; left: {{value}}&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;{{name}}:&lt;br/&gt;{{value}}&lt;/span&gt;
+      &lt;/li&gt;
+    {{/breakpoints}}
+  &lt;/ul&gt;
+  &lt;ul class=&quot;device_widths&quot;&gt;
+    {{#device_widths}}
+      &lt;li style=&quot;width: 0; width: {{width}}px;&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;{{name}}: {{width}}px&lt;/span&gt;
+      &lt;/li&gt;
+    {{/device_widths}}
+  &lt;/ul&gt;
+&lt;/div&gt;
