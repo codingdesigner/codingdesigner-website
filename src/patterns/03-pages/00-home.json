@@ -8,5 +8,15 @@
         "caption": "FIND A KILLER IMAGE TO GO HERE"
       }
     }
+  ],
+  "portfolio-overview--items": [
+    {
+      "class": "reliefweb",
+      "item-name": "UN OCHA Relief Web"
+    },
+    {
+      "class": "score",
+      "item-name": "SCORE"
+    }
   ]
 }
