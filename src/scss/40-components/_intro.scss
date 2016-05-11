@@ -1,14 +1,16 @@
 .intro {
   margin-bottom: 6em;
-  .page--speaking & {
-    display: flex;
-    flex-wrap: wrap;
-    @include breakpoint(720px) {
-      justify-content: space-between;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint($bp--page-speaking-3) {
+    justify-content: space-between;
   }
 }
+
 .intro--text {
+  @include breakpoint($bp--page-speaking-3) {
+    flex-basis: calc(#{phi-a(100%)} - 1.5em);
+  }
   .page--speaking & {
     background-image: url('../../src/images/speaking/sass-conf--speaker-panel.jpg');
     background-repeat: no-repeat;
@@ -26,7 +28,6 @@
       padding-bottom: 18em;
     }
     @include breakpoint($bp--page-speaking-3) {
-      flex-basis: calc(#{phi-a(100%)} - 1.5em);
       padding-bottom: 25em;
     }
     @include breakpoint($bp--page-speaking-4) {
@@ -57,21 +58,14 @@
     }
   }
 }
+
 .intro-image {
   margin-bottom: 2em;
   @include breakpoint($bp--page-speaking-3) {
     flex-basis: calc(#{phi-b(100%)} - 1.5em);
   }
-
   img {
     border: 1px solid color(black);
   }
 }
 
-//.intro-image-2 {
-//  margin-bottom: 2em;
-//  max-width: 468px;
-//  img {
-//    border: 1px solid color(black);
-//  }
-//}

@@ -24,3 +24,131 @@
 //  background-size: 2em 2em, 2em 2em, 2em 2em, 2em 2em;
 //  background-position: 0, 0, 1em 0, 1em 0;
 //}
+
+.page-content {
+  //margin-bottom: 100vh;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.my-name {
+  font-weight: 200;
+  font-style: normal;
+  @include try-all();
+  .no-break {
+    @include breakpoint(max-width 366px) {
+      display: block;
+      white-space: normal;
+    }
+  }
+}
+
+
+.intro-name {
+  display: inline-block;
+  border-width: 0 0 1px;
+  border-style: dashed;
+  border-color: color(black);
+  width: initial;
+  min-width: 14em;
+  font-weight: 800;
+  //@include try-all-type;
+}
+
+.portfolio-overview {
+  /*display: flex;*/
+  margin-bottom: 25vh;
+  .section-title {
+    @include h1();
+    margin-bottom: 1em;
+  }
+}
+
+.portfolio-overview--item {
+  border-top: 2px solid color(black);
+  border-bottom: 2px solid color(black);
+  margin: 0 -0.5em 5em;
+  flex: 1;
+}
+
+$bp--portfolio-overview--narrow: max-width 399px;
+$bp--portfolio-overview--tween: 400px 767px;
+$bp--portfolio-overview--med: 768px 1023px;
+$bp--portfolio-overview--wide: 1024px;
+$bp--page-over-wide: $page-max-width;
+
+.po-item--link {
+  @include unset-background-links();
+  display: block;
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: repeat-y;
+  box-shadow: 0 1em 0 0 rgba(color(white), 0.75) inset;
+  @include breakpoint($bp--portfolio-overview--narrow) {
+    &.reliefweb {
+      background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    }
+    &.score {
+      background-image: url(../../../../src/images/portfolio/originals/score-home-narrow.png);
+    }
+  }
+  @include breakpoint($bp--portfolio-overview--tween) {
+    &.reliefweb {
+      background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    }
+    &.score {
+      background-image: url(../../../../src/images/portfolio/originals/score-home-narrow.png);
+    }
+  }
+  @include breakpoint($bp--portfolio-overview--med) {
+    &.reliefweb {
+      background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-med.png);
+    }
+    &.score {
+      background-image: url(../../../../src/images/portfolio/originals/score-home-med.png);
+    }
+  }
+  @include breakpoint($bp--portfolio-overview--wide) {
+    &.reliefweb {
+      background-image: url(../../../../src/images/portfolio/originals/reliefweb-crisis-wide.png);
+    }
+    &.score {
+      background-image: url(../../../../src/images/portfolio/originals/score-home-wide.png);
+    }
+  }
+  @include breakpoint($bp--page-over-wide) {
+    background-size: $page-max-width;
+    background-position: top center;
+  }
+}
+.po-item--name {
+  background-color: color(black);
+  color: color(white);
+  padding: 0.125em 1em 0.125em 0.5em;
+  margin: -0.5em 0.5em 0;
+  display: inline-block;
+  text-transform: none;
+  border: 1px solid color(white);
+  box-shadow: 0 0 0 4px color(black);
+  position: relative;
+  &:before {
+    @include arrow($color: color(black), $arrow-length: 0.33em, $arrow-breadth: 0.33em * 3) {
+      right: 0.41em;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+  }
+  &:after {
+    @include arrow($color: color(white), $arrow-length: 0.33em) {
+      right: 0.25em;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+}

@@ -57,7 +57,7 @@
   height: 0;
   border-style: solid;
   color: transparent;
-  content: '.';
+  content: '';
   @if $direction == right {
     border: {
       width: $arrow-breadth-half 0 $arrow-breadth-half $arrow-length;
@@ -82,6 +82,7 @@
       color: $color transparent transparent transparent;
     }
   }
+  @content;
 }
 
 /// Plus
