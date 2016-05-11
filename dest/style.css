@@ -599,7 +599,7 @@ input[type="submit"] a:focus,
   transition-timing-function: ease-in-out;
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../../src/images/headers/space-helmet.jpg");
+  background-image: url("../src/images/headers/space-helmet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
