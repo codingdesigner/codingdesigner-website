@@ -1,16 +1,12 @@
 .portfolio-overview {
-  /*display: flex;*/
-  margin-bottom: 25vh;
+  margin-bottom: 5vh;
   .section-title {
     @include h1();
-    margin-bottom: 1em;
   }
 }
 
 .portfolio-overview--item {
   @include margin-compensation();
-  border-top: 2px solid color(black);
-  border-bottom: 2px solid color(black);
   margin-bottom: 5em;
   flex: 1;
 }
@@ -24,6 +20,12 @@
   background-size: cover;
   background-repeat: repeat-y;
   box-shadow: 0 1em 0 0 rgba(color(white), 0.75) inset;
+  border-top: 2px solid color(black);
+  border-bottom: 2px solid color(black);
+  &.touch-detected {
+    background-attachment: scroll;
+    height: 150vh;
+  }
   @include breakpoint($bp--portfolio-overview--narrow) {
     &.reliefweb {
       background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
@@ -67,12 +69,13 @@
   background-color: color(black);
   color: color(white);
   padding: 0.125em 1em 0.125em 0.5em;
-  margin-top: -0.5em;
   display: inline-block;
   text-transform: none;
   border: 1px solid color(white);
   box-shadow: 0 0 0 4px color(black);
   position: relative;
+  margin-bottom: 0;
+  transform: translateY(0.25em);
   &:before {
     @include arrow($color: color(black), $arrow-length: 0.33em, $arrow-breadth: 0.33em * 3) {
       right: 0.41em;
@@ -88,5 +91,8 @@
       transform: translateY(-50%);
       z-index: 1;
     }
+  }
+  a {
+    @include link-knockout();
   }
 }

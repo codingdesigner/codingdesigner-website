@@ -1,6 +1,4 @@
 {
-  "portfolio-overview--item": {
-    "class": "reliefweb",
-    "item-name": "UN OCHA Relief Web"
-  }
+  "class": "reliefweb",
+  "item-name": "UN OCHA Relief Web"
 }

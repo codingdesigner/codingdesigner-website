@@ -52,6 +52,15 @@
     }
   };
 
+  Drupal.behaviors.detect_touch = {
+    attach: function(context, settings) {
+      if(Modernizr.touch) {
+        // this browser claims to support touch, so remove fixed background
+        $('.po-item--link').addClass('touch-detected');
+      }
+    }
+  };
+
 
 })(jQuery, Drupal);
 

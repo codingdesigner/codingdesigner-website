@@ -1,10 +1,6 @@
 <div class="portfolio-overview">
   <h2 class="section-title"><a href="">Portfolio</a></h2>
   {{#portfolio-overview--items}}
-    <div class="portfolio-overview--item">
-      <a href="" class="po-item--link {{class}}">
-        <h3 class="po-item--name">{{item-name}}</h3>
-      </a>
-    </div>
+    {{>molecules-portfolio-overview-item}}
   {{/portfolio-overview--items}}
 </div>
