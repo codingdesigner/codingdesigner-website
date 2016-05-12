@@ -46,7 +46,7 @@
 
   Drupal.behaviors.menu_auto_show = {
     attach: function(context, settings) {
-      if ($('.nav-primary').css("position") == "relative") {
+      if ($('.nav-primary').css("z-index") == 3) {
         $('#nav-primary-trigger').click();
       }
     }

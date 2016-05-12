@@ -22,8 +22,8 @@ $navigation-count: 7;
   z-index: 2;
   position: relative;
   @include breakpoint($bp--navigation--wide) {
-    position: relative;
     top: -1em;
+    z-index: 3;
   }
   .nav-item {}
   .site-header & {}
