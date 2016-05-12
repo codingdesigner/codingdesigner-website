@@ -19,6 +19,8 @@ $navigation-count: 7;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 2;
+  position: relative;
   @include breakpoint($bp--navigation--wide) {
     position: relative;
     top: -1em;
@@ -32,10 +34,16 @@ $navigation-count: 7;
   @include icon(menu, $text-replace: true);
   margin: 0;
   letter-spacing: 0;
+  z-index: 1;
+}
+
+.button-logo {
+  opacity: 0.8;
 }
 
 .site-header {
   @include margin-compensation();
+  position: relative;
   @include breakpoint($bp--navigation--wide) {
     display: flex;
     justify-content: flex-start;
