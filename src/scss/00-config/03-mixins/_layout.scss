@@ -13,6 +13,12 @@
   }
 }
 
+/// Limit content dimensions
+@mixin content-limiter() {
+  max-width: $page-max-width;
+  margin: 0 auto;
+}
+
 // Mixin - Full Container
 // ========================================================================== */
 

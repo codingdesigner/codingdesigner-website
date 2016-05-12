@@ -1,0 +1,66 @@
+.page-footer {
+  @include margin-compensation();
+  padding: 2em $side-margin;
+  border-top: 2em dotted color(black);
+  border-bottom: 4em dotted color(black);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: visible;
+  @include breakpoint($bp--footer-small-text) {
+    font-size: fontsize-rem(ms(-1));
+  }
+  @include breakpoint($bp-typography-narrow) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em $side-margin--wide;
+    .contact {
+      flex-basis: calc(75% - 1.5em);
+    }
+    .monogram-wrapper {
+      flex-basis: calc(25% - 1.5em);
+    }
+  }
+}
+
+.monogram-wrapper {
+  margin-top: -6em;
+  @include breakpoint($bp-typography-narrow) {
+    margin-top: -7em;
+  }
+}
+
+.monogram {
+  margin-bottom: 1rem;
+  @include breakpoint($bp-typography-narrow) {
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  .icon-link {
+    @include unset-background-links
+  }
+}
+
+.copyright {
+  width: 100%;
+  p {
+    margin-bottom: 0;
+  }
+}

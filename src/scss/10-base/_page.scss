@@ -1,4 +1,7 @@
 .page-content {
-  max-width: $page-max-width;
-  margin: 0 auto;
+  @include content-limiter();
+}
+
+.footer-content {
+  @include content-limiter();
 }

@@ -12,7 +12,10 @@
   height: 2em;
   border-radius: 50%;
   position: relative;
-  //font-style: italic;
+  @include breakpoint($bp-typography-narrow) {
+    margin-bottom: 0;
+    font-size: fontsize-rem(ms(7));
+  }
 }
 
 .monogram--initial {
