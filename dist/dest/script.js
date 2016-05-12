@@ -49,8 +49,17 @@
 
   Drupal.behaviors.menu_auto_show = {
     attach: function attach(context, settings) {
-      if ($('.nav-primary').css("position") == "relative") {
+      if ($('.nav-primary').css("z-index") == 3) {
         $('#nav-primary-trigger').click();
+      }
+    }
+  };
+
+  Drupal.behaviors.detect_touch = {
+    attach: function attach(context, settings) {
+      if (Modernizr.touch) {
+        // this browser claims to support touch, so remove fixed background
+        $('.po-item--link').addClass('touch-detected');
       }
     }
   };
