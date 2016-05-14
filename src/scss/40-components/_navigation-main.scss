@@ -10,7 +10,7 @@ $navigation-count: 7;
     font-size: fontsize-rem(ms(1));
   }
   @include breakpoint($bp--navigation--fully-wide) {
-    letter-spacing: 1em;
+    //letter-spacing: 1em;
   }
 }
 
@@ -98,10 +98,6 @@ $navigation-count: 7;
       border-bottom: 2px solid color(gray, light);
       margin-right: -0.5em;
     }
-    a {
-      @include unset-background-links();
-      display: block;
-    }
     #nav-primary-trigger:checked ~ & {
       max-height: 10em;
       padding-top: 0.5em;
@@ -135,6 +131,13 @@ $navigation-count: 7;
       );
       opacity: 1;
     }
+    a {
+      border-bottom: 1px solid color(black);
+    }
+  }
+  a {
+    @include unset-background-links();
+    display: block;
   }
 }
 

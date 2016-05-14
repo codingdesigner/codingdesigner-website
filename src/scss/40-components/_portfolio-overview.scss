@@ -36,10 +36,10 @@
   }
   @include breakpoint($bp--portfolio-overview--tween) {
     &.reliefweb {
-      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-tween.png);
     }
     &.score {
-      background-image: url(../src/images/portfolio/originals/score-home-narrow.png);
+      background-image: url(../src/images/portfolio/originals/score-home-tween.png);
     }
   }
   @include breakpoint($bp--portfolio-overview--med) {

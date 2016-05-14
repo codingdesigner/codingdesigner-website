@@ -12,9 +12,15 @@
   height: 2em;
   border-radius: 50%;
   position: relative;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
   @include breakpoint($bp-typography-narrow) {
     margin-bottom: 0;
     font-size: fontsize-rem(ms(7));
+  }
+  &:hover {
+    transform: rotate(540deg);
   }
 }
 
