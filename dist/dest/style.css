@@ -1564,6 +1564,11 @@ svg {
   height: 2em;
   border-radius: 50%;
   position: relative;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 @media (min-width: 650px) {
@@ -1571,6 +1576,12 @@ svg {
     margin-bottom: 0;
     font-size: 4.77778rem;
   }
+}
+
+.monogram:hover {
+  -webkit-transform: rotate(540deg);
+      -ms-transform: rotate(540deg);
+          transform: rotate(540deg);
 }
 
 .monogram--initial {
@@ -1628,12 +1639,6 @@ svg {
 @media (min-width: 650px) {
   .nav-primary-trigger--label {
     font-size: 1.27778rem;
-  }
-}
-
-@media (min-width: 740px) {
-  .nav-primary-trigger--label {
-    letter-spacing: 1em;
   }
 }
 
@@ -1726,12 +1731,6 @@ svg {
   }
 }
 
-@media (min-width: 740px) {
-  .nav-primary--fan {
-    letter-spacing: 1em;
-  }
-}
-
 @media (max-width: 649px) {
   .nav-primary--fan {
     text-align: right;
@@ -1759,28 +1758,6 @@ svg {
   .nav-primary--fan:nth-of-type(1n+2) {
     border-bottom: 2px solid #e5e5e5;
     margin-right: -0.5em;
-  }
-  .nav-primary--fan a {
-    text-decoration: none;
-    text-shadow: none;
-    background-image: none;
-    display: block;
-  }
-  .nav-primary--fan a:visited {
-    text-shadow: none;
-    background-image: none;
-  }
-  .nav-primary--fan a:focus {
-    text-shadow: none;
-    background-image: none;
-  }
-  .nav-primary--fan a:hover {
-    text-shadow: none;
-    background-image: none;
-  }
-  .nav-primary--fan a:active {
-    text-shadow: none;
-    background-image: none;
   }
   #nav-primary-trigger:checked ~ .nav-primary--fan {
     max-height: 10em;
@@ -1870,6 +1847,36 @@ svg {
         -ms-transform: rotate(25deg);
             transform: rotate(25deg);
   }
+  .nav-primary--fan a {
+    border-bottom: 1px solid black;
+  }
+}
+
+.nav-primary--fan a {
+  text-decoration: none;
+  text-shadow: none;
+  background-image: none;
+  display: block;
+}
+
+.nav-primary--fan a:visited {
+  text-shadow: none;
+  background-image: none;
+}
+
+.nav-primary--fan a:focus {
+  text-shadow: none;
+  background-image: none;
+}
+
+.nav-primary--fan a:hover {
+  text-shadow: none;
+  background-image: none;
+}
+
+.nav-primary--fan a:active {
+  text-shadow: none;
+  background-image: none;
 }
 
 #nav-primary-trigger {
@@ -2441,10 +2448,10 @@ svg {
 
 @media (min-width: 400px) and (max-width: 767px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-tween.png);
   }
   .po-item--link.score {
-    background-image: url(../src/images/portfolio/originals/score-home-narrow.png);
+    background-image: url(../src/images/portfolio/originals/score-home-tween.png);
   }
 }
 
