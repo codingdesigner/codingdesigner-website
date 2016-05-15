@@ -2,31 +2,31 @@
   "pn--nav-list": [
     {
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/score-home-thumb.png",
-      "pn--nav-list-item--name": "SCORE"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum"
     },
     {
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
-      "pn--nav-list-item--name": "UN OCHA ReliefWeb"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum Dolor"
     },{
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/score-home-thumb.png",
-      "pn--nav-list-item--name": "SCORE"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum Dolor Sit"
     },
     {
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
-      "pn--nav-list-item--name": "UN OCHA ReliefWeb"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum"
     },{
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/score-home-thumb.png",
-      "pn--nav-list-item--name": "SCORE"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum"
     },
     {
       "pn--nav-list-item--link": "#",
-      "pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
-      "pn--nav-list-item--name": "UN OCHA ReliefWeb"
+      "pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+      "pn--nav-list-item--name": "Lorum Ipsum"
     }
   ]
 }

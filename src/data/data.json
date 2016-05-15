@@ -180,5 +180,8 @@
 		{ },
 		{ },
 		{ }
-	]
+	],
+	"pn--nav-list-item--link": "#",
+	"pn--nav-list-item--image": "../../../../src/images/fpo_square.png",
+	"pn--nav-list-item--name": "Lorum Ipsum"
 }
