@@ -2388,7 +2388,6 @@ svg {
 }
 
 .pn--nav-list {
-  list-style-type: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2398,7 +2397,9 @@ svg {
 }
 
 .pn--nav-list-item {
+  list-style-type: none;
   min-width: 4em;
+  max-width: 6em;
   margin-right: 1em;
   margin-bottom: 1em;
 }
