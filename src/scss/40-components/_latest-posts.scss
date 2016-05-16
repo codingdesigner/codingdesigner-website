@@ -1,0 +1,55 @@
+.post-list {
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+.post-teaser--li {
+  list-style-type: none;
+}
+
+.post-teaser {
+  border-top: 1px solid color(black);
+  display: flex;
+  flex-direction: column;
+  .post-teaser--li:last-of-type & {
+    border-bottom: 1px solid color(black);
+  }
+  @include breakpoint($bp--post-teaser--columns) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-spart;
+  }
+}
+
+.post-teaser--text {
+  order: 2;
+  @include breakpoint($bp--post-teaser--columns) {
+    order: inherit;
+    flex-basis: phi-a(100%);
+    .no-image & {
+      flex-basis: 100%;
+    }
+  }
+}
+.post-teaser--thumb {
+  order: 1;
+  max-height: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  @include breakpoint($bp--post-teaser--columns) {
+    order: inherit;
+    max-height: none;
+    margin-left: 2em;
+    align-items: flex-start;
+    flex-basis: phi-b(100%);
+    max-height: 22em;
+  }
+  @include breakpoint($bp--post-teaser--re-center-image) {
+    align-items: center;
+  }
+}
+
+.post-teaser--image-link {
+  @include unset-background-links();
+}

@@ -115,28 +115,35 @@ $link-background-bkg-default: $cs-link-background-bkg !default;
   }
 }
 
-@mixin background-link-gradient($background-color, $line-color, $size) {
-  $offset: 0;
+@mixin background-link-gradient($background-color, $line-color, $size, $offset: 0) {
   background-image: linear-gradient(to top, $background-color $offset, $line-color ($size + $offset), $background-color ($size + $offset));
 }
 
 // Set a background as the underline on a link, with a text shadow on the text.
 // Allows the decenders to "break" the underline
-@mixin set-background-links($link-background-normal: $link-background-normal-default, $link-background-hover: $link-background-hover-default, $link-background-active: $link-background-active-default, $link-background-visited: $link-background-visited-default, $link-background-focus: $link-background-focus-default, $link-background-size: $link-background-size-default, $bkg: $link-background-bkg-default) {
+@mixin set-background-links(
+  $link-background-normal: $link-background-normal-default,
+  $link-background-hover: $link-background-hover-default,
+  $link-background-active: $link-background-active-default,
+  $link-background-visited: $link-background-visited-default,
+  $link-background-focus: $link-background-focus-default,
+  $link-background-size: $link-background-size-default,
+  $bkg: $link-background-bkg-default,
+  $offset: 0) {
   $bkg-gradient: transparent;
   text-shadow: $bkg -1px 1px 0, $bkg 0 1px 0, $bkg 1px 1px 0;
-  @include background-link-gradient($bkg-gradient, $link-background-normal, $link-background-size);
+  @include background-link-gradient($bkg-gradient, $link-background-normal, $link-background-size, $offset);
   &:visited {
-    @include background-link-gradient($bkg-gradient, $link-background-visited, $link-background-size);
+    @include background-link-gradient($bkg-gradient, $link-background-visited, $link-background-size, $offset);
   }
   &:focus {
-    @include background-link-gradient($bkg-gradient, $link-background-focus, $link-background-size);
+    @include background-link-gradient($bkg-gradient, $link-background-focus, $link-background-size, $offset);
   }
   &:hover {
-    @include background-link-gradient($bkg-gradient, $link-background-hover, $link-background-size);
+    @include background-link-gradient($bkg-gradient, $link-background-hover, $link-background-size, $offset);
   }
   &:active {
-    @include background-link-gradient($bkg-gradient, $link-background-active, $link-background-size);
+    @include background-link-gradient($bkg-gradient, $link-background-active, $link-background-size, $offset);
   }
   text-decoration: none;
   background-position: 100% 100%;
@@ -201,6 +208,10 @@ $link-background-bkg-default: $cs-link-background-bkg !default;
     $link-underline-visited: color(white),
     $link-underline-focus: color(gray, light)
   );
+}
+
+@mixin link-standard-heading($offset: 0) {
+  @include set-background-links($offset: $offset);
 }
 
 //@mixin link-on-light-gray() {

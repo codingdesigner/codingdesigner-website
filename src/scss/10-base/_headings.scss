@@ -130,6 +130,12 @@ h2 {
     display: block;
     max-width: 20em;
   }
+  a {
+    @include link-standard-heading($offset: 4px);
+    @include breakpoint($bp-typography-narrow) {
+      @include link-standard-heading($offset: 7px);
+    }
+  }
 }
 
 h3 {

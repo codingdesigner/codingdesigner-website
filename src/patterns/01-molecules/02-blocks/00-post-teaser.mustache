@@ -1,0 +1,15 @@
+<div class="post-teaser {{^teaser-img}}no-image{{/teaser-img}}">
+  <div class="post-teaser--text">
+    <h2 class="post-teaser--title"><a href="{{ teaser-url }}" class="post-teaser--link">{{ teaser-headline }}</a></h2>
+    <div class="post-teaser--excerpt">
+      <p>{{ teaser-excerpt }}</p>
+    </div>
+  </div>
+  {{#teaser-img}}
+    <div class="post-teaser--thumb">
+      <a href="{{ teaser-url }}" class="post-teaser--image-link">
+        <img src="{{ teaser-img.src }}" alt="{{ teaser-img.alt }}"/>
+      </a>
+    </div>
+  {{/teaser-img}}
+</div>
