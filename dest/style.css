@@ -900,6 +900,7 @@ input[type="submit"] a:focus,
 .page-footer {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+  margin-top: 8em;
   padding: 2em 0.5rem;
   border-top: 2em dotted black;
   border-bottom: 4em dotted black;
@@ -2864,6 +2865,10 @@ svg {
 .po-item--name a:active {
   text-shadow: none;
   background-image: none;
+}
+
+.footer-date {
+  font-style: italic;
 }
 
 .tab-set--body {
