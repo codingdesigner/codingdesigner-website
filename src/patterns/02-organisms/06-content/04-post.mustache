@@ -1,0 +1,29 @@
+<h1 class="page-title">Balancing Ideal Sass and Ideal CSS</h1>
+<article class="page">
+  <div class="feature-image">
+    {{>atoms-landscape-16x9}}
+  </div>
+  <p>Sass makes <span class="caps">CSS</span> fun again, right? Well yeah, but that also makes it easy to forget that we’re still writing <span class="caps">CSS</span>. We can get caught up in all the new tools and tricks that Sass lets us do so easily that we lose sight of some <span class="caps">CSS</span> that might not be as awesome as we think it is. Last night at the <a href="http://www.meetup.com/Philadelphia-SASS-Meetup-Group/">Philadelphia Sass Meetup</a> I set out to talk about the finer points of using mixins and extendable selectors, and ended up exploring how we can find the balance between a great Sass codebase and close-to-ideal compiled <span class="caps">CSS</span>.</p>
+  <h2>Balancing Ideal Sass and Ideal <span class="caps">CSS</span> -&nbsp;Buttons</h2>
+  <ol>
+    <li>Let’s just style a button. - <a href="http://sassmeister.com/gist/6131724">Sassmeister&nbsp;Example</a></li>
+    <li>Create a mixin. <span class="caps">DRY</span> Sass, but bloated <span class="caps">CSS</span> - <a href="http://sassmeister.com/gist/6131748">Sassmeister&nbsp;Example</a></li>
+    <li>Convert to an extended class. <span class="caps">DRY</span> Sass and small <span class="caps">CSS</span> - <a href="http://sassmeister.com/gist/6131756">Sassmeister&nbsp;Example</a></li>
+    <li>Convert that extended class to a silent extendable. Even better! - <a href="http://sassmeister.com/gist/6131765">Sassmeister&nbsp;Example</a></li>
+    <li>Maybe we need an alternate version of the button? Let’s try some manual overrides. Good <span class="caps">CSS</span>, but we could have <span class="caps">DRY</span>er Sass - <a href="http://sassmeister.com/gist/6131774">Sassmeister&nbsp;Example</a></li>
+    <li>We’ll try creating a new silent extendable that calls our mixin with a new argument. Better Sass but now our <span class="caps">CSS</span> is starting to bloat. - <a href="http://sassmeister.com/gist/6131792">Sassmeister&nbsp;Example</a></li>
+    <li>So now we’ll split our mixin into a ‘base’ mixin for the styles that are common to all buttons, and a ‘colors’ mixin to handle our alternate colors. We’ll create a %button extendable by calling both mixins, and a %button-cta extendable that extends %button and calls the button-colors mixin for its overrides. Clean Sass and clean <span class="caps">CSS</span>! <a href="http://sassmeister.com/gist/6131805">Sassmeister&nbsp;Example</a></li>
+    <li>What about <span class="caps">RWD</span>? Well it gets trickier. Extendables need to be scoped to their media query, so we need to redefine our extendables within a media query. The <span class="caps">CSS</span> is pretty clean but now the Sass is becoming a little hard to work with. - <a href="http://sassmeister.com/gist/6131833">Sassmeister&nbsp;Example</a></li>
+    <li>Instead of worrying about scoping those media queries we’ll call the mixins within the selector nest. This creates more css than we need, but the Sass is much easier to work with. - <a href="http://sassmeister.com/gist/6131901">Sassmeister&nbsp;Example</a></li>
+  </ol>
+
+  <h2>Don’t extend native&nbsp;elements</h2>
+
+  <ol>
+    <li>Extending a native element once seems ok. - <a href="http://sassmeister.com/gist/6131927">Sassmeister&nbsp;Example</a></li>
+    <li>But if we keep going we see a lot of (probably) unintended comma-separated selectors start to pile up. In a real project this gets pretty obsene. - <a href="http://sassmeister.com/gist/6131934">Sassmeister&nbsp;Example</a></li>
+    <li>So instead let’s define some silent extendables and then use them to define our native element styles as well as any extensions to them. Managable Sass and clean <span class="caps">CSS</span>! - <a href="http://sassmeister.com/gist/6131957">Sassmeister&nbsp;Example</a></li>
+  </ol>
+  <footer class="footer-date">
+    Posted on Thursday, August 1st, 2013    </footer>
+</article>
