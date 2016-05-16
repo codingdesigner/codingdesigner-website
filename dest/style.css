@@ -233,6 +233,52 @@ h2 .width-limiter {
   max-width: 20em;
 }
 
+h2 a {
+  text-shadow: white -1px 1px 0, white 0 1px 0, white 1px 1px 0;
+  background-image: linear-gradient(to top, transparent 4px, black 6px, transparent 6px);
+  text-decoration: none;
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+}
+
+h2 a:visited {
+  background-image: linear-gradient(to top, transparent 4px, black 6px, transparent 6px);
+}
+
+h2 a:focus {
+  background-image: linear-gradient(to top, transparent 4px, grey 6px, transparent 6px);
+}
+
+h2 a:hover {
+  background-image: linear-gradient(to top, transparent 4px, grey 6px, transparent 6px);
+}
+
+h2 a:active {
+  background-image: linear-gradient(to top, transparent 4px, black 6px, transparent 6px);
+}
+
+@media (min-width: 650px) {
+  h2 a {
+    text-shadow: white -1px 1px 0, white 0 1px 0, white 1px 1px 0;
+    background-image: linear-gradient(to top, transparent 7px, black 9px, transparent 9px);
+    text-decoration: none;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+  h2 a:visited {
+    background-image: linear-gradient(to top, transparent 7px, black 9px, transparent 9px);
+  }
+  h2 a:focus {
+    background-image: linear-gradient(to top, transparent 7px, grey 9px, transparent 9px);
+  }
+  h2 a:hover {
+    background-image: linear-gradient(to top, transparent 7px, grey 9px, transparent 9px);
+  }
+  h2 a:active {
+    background-image: linear-gradient(to top, transparent 7px, black 9px, transparent 9px);
+  }
+}
+
 h3 {
   font-family: Surveyor Fine A, Surveyor Fine B, Georgia, serif;
   font-weight: 500;
@@ -1486,6 +1532,133 @@ svg {
 
 .intro-image img {
   border: 1px solid black;
+}
+
+.post-list {
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+.post-teaser--li {
+  list-style-type: none;
+}
+
+.post-teaser {
+  border-top: 1px solid black;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-teaser--li:last-of-type .post-teaser {
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  .post-teaser {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: flex-spart;
+        -ms-flex-align: flex-spart;
+                -ms-grid-row-align: flex-spart;
+            align-items: flex-spart;
+  }
+}
+
+.post-teaser--text {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 600px) {
+  .post-teaser--text {
+    -webkit-order: inherit;
+        -ms-flex-order: inherit;
+            order: inherit;
+    -webkit-flex-basis: 61.8034%;
+        -ms-flex-preferred-size: 61.8034%;
+            flex-basis: 61.8034%;
+  }
+  .no-image .post-teaser--text {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+
+.post-teaser--thumb {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  max-height: 8em;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .post-teaser--thumb {
+    -webkit-order: inherit;
+        -ms-flex-order: inherit;
+            order: inherit;
+    max-height: none;
+    margin-left: 2em;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    -webkit-flex-basis: 38.1966%;
+        -ms-flex-preferred-size: 38.1966%;
+            flex-basis: 38.1966%;
+    max-height: 22em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .post-teaser--thumb {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+}
+
+.post-teaser--image-link {
+  text-decoration: none;
+  text-shadow: none;
+  background-image: none;
+}
+
+.post-teaser--image-link:visited {
+  text-shadow: none;
+  background-image: none;
+}
+
+.post-teaser--image-link:focus {
+  text-shadow: none;
+  background-image: none;
+}
+
+.post-teaser--image-link:hover {
+  text-shadow: none;
+  background-image: none;
+}
+
+.post-teaser--image-link:active {
+  text-shadow: none;
+  background-image: none;
 }
 
 .site-name {
