@@ -1382,7 +1382,7 @@ svg {
   margin-bottom: 1.5em;
   width: 100%;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid black;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
@@ -1399,20 +1399,6 @@ svg {
 @media (min-width: 1024px) {
   .feature-image {
     width: 50%;
-  }
-}
-
-.columns--2 .column--primary .feature-image {
-  float: none;
-  margin-left: 0;
-  width: 100%;
-}
-
-@media (min-width: 1000px) {
-  .columns--2 .column--primary .feature-image {
-    float: right;
-    margin-left: 2rem;
-    width: 45%;
   }
 }
 
