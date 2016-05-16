@@ -1887,6 +1887,394 @@
               </div>
             </div>
           </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/03-pages-05-post-page&#x2F;03-pages-05-post-page.html" class="patternLink" data-patternpartial="">Post Page</a></h2>
+            <div class="sg-pattern-body">
+              <!-- Begin .header -->
+<header class="site-header" role="banner">
+	<div class="button-logo">
+  <div class="title-curve">The Coding Designer</div>
+  <div class="button-logo--words-wrapper">
+    <div class="button-logo--word word-1">Mason</div>
+    <div class="button-logo--word word-2">Wendell</div>
+  </div>
+</div>
+
+	<nav id="nav-primary" class="nav nav-primary">
+  <input type="checkbox" id="nav-primary-trigger">
+  <div class="nav-primary--fan"><label for="nav-primary-trigger" class="nav-primary-trigger--label">Menu</label></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Home</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Portfolio</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Speaking</a></div>
+  <div class="nav-primary--fan"><a href="https://www.instagram.com/codingdesigner/" class="nav-item">Photos</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Posts</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">About</a></div>
+</nav>
+
+</header>
+<!-- End .header -->
+
+
+<!--HOME PAGE CONTENT-->
+<div class="page--posts-page page-content">
+  <h1 class="page-title">Balancing Ideal Sass and Ideal CSS</h1>
+<article class="page">
+  <div class="feature-image">
+    <img src="..&#x2F;..&#x2F;..&#x2F;..&#x2F;src&#x2F;images&#x2F;fpo_16x9.png" alt="16x9 Image" />
+  </div>
+  <p>Sass makes <span class="caps">CSS</span> fun again, right? Well yeah, but that also makes it easy to forget that we’re still writing <span class="caps">CSS</span>. We can get caught up in all the new tools and tricks that Sass lets us do so easily that we lose sight of some <span class="caps">CSS</span> that might not be as awesome as we think it is. Last night at the <a href="http://www.meetup.com/Philadelphia-SASS-Meetup-Group/">Philadelphia Sass Meetup</a> I set out to talk about the finer points of using mixins and extendable selectors, and ended up exploring how we can find the balance between a great Sass codebase and close-to-ideal compiled <span class="caps">CSS</span>.</p>
+  <h2>Balancing Ideal Sass and Ideal <span class="caps">CSS</span> -&nbsp;Buttons</h2>
+  <ol>
+    <li>Let’s just style a button. - <a href="http://sassmeister.com/gist/6131724">Sassmeister&nbsp;Example</a></li>
+    <li>Create a mixin. <span class="caps">DRY</span> Sass, but bloated <span class="caps">CSS</span> - <a href="http://sassmeister.com/gist/6131748">Sassmeister&nbsp;Example</a></li>
+    <li>Convert to an extended class. <span class="caps">DRY</span> Sass and small <span class="caps">CSS</span> - <a href="http://sassmeister.com/gist/6131756">Sassmeister&nbsp;Example</a></li>
+    <li>Convert that extended class to a silent extendable. Even better! - <a href="http://sassmeister.com/gist/6131765">Sassmeister&nbsp;Example</a></li>
+    <li>Maybe we need an alternate version of the button? Let’s try some manual overrides. Good <span class="caps">CSS</span>, but we could have <span class="caps">DRY</span>er Sass - <a href="http://sassmeister.com/gist/6131774">Sassmeister&nbsp;Example</a></li>
+    <li>We’ll try creating a new silent extendable that calls our mixin with a new argument. Better Sass but now our <span class="caps">CSS</span> is starting to bloat. - <a href="http://sassmeister.com/gist/6131792">Sassmeister&nbsp;Example</a></li>
+    <li>So now we’ll split our mixin into a ‘base’ mixin for the styles that are common to all buttons, and a ‘colors’ mixin to handle our alternate colors. We’ll create a %button extendable by calling both mixins, and a %button-cta extendable that extends %button and calls the button-colors mixin for its overrides. Clean Sass and clean <span class="caps">CSS</span>! <a href="http://sassmeister.com/gist/6131805">Sassmeister&nbsp;Example</a></li>
+    <li>What about <span class="caps">RWD</span>? Well it gets trickier. Extendables need to be scoped to their media query, so we need to redefine our extendables within a media query. The <span class="caps">CSS</span> is pretty clean but now the Sass is becoming a little hard to work with. - <a href="http://sassmeister.com/gist/6131833">Sassmeister&nbsp;Example</a></li>
+    <li>Instead of worrying about scoping those media queries we’ll call the mixins within the selector nest. This creates more css than we need, but the Sass is much easier to work with. - <a href="http://sassmeister.com/gist/6131901">Sassmeister&nbsp;Example</a></li>
+  </ol>
+
+  <h2>Don’t extend native&nbsp;elements</h2>
+
+  <ol>
+    <li>Extending a native element once seems ok. - <a href="http://sassmeister.com/gist/6131927">Sassmeister&nbsp;Example</a></li>
+    <li>But if we keep going we see a lot of (probably) unintended comma-separated selectors start to pile up. In a real project this gets pretty obsene. - <a href="http://sassmeister.com/gist/6131934">Sassmeister&nbsp;Example</a></li>
+    <li>So instead let’s define some silent extendables and then use them to define our native element styles as well as any extensions to them. Managable Sass and clean <span class="caps">CSS</span>! - <a href="http://sassmeister.com/gist/6131957">Sassmeister&nbsp;Example</a></li>
+  </ol>
+  <footer class="footer-date">
+    Posted on Thursday, August 1st, 2013    </footer>
+</article>
+
+</div>
+
+<!-- Begin Footer -->
+<footer class="page-footer" role="contentinfo">
+  <div class="footer-content">
+  <div class="monogram-wrapper"><div class="monogram">
+  <div class="monogram--initial word-1">M</div>
+  <div class="monogram--initial word-2">W</div>
+</div>
+</div>
+  <div class="contact">
+    <div class="contact-item email">
+      <a href="mailto:mason@thecodingdesigner.com" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
+</svg>
+</a>
+      <a href="mailto:mason@thecodingdesigner.com"><span class="text">mason@thecodingdesigner.com</span></a></div>
+    <div class="contact-item twitter">
+      <a href="https://twitter.com/codingdesigner" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"></path>
+</svg>
+</a>
+      <a href="https://twitter.com/codingdesigner"><span class="text">@codingdesigner</span></a></div>
+    <div class="contact-item instagram">
+      <a href="https://www.instagram.com/codingdesigner/" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z"></path>
+</svg>
+</a>
+      <a href="https://www.instagram.com/codingdesigner/"><span class="text">@codingdesigner</span></a></div>
+    <div class="contact-item LinkedIn">
+      <a href="http://www.linkedin.com/in/masonwendell" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M26.625 0h-21.25c-2.956 0-5.375 2.419-5.375 5.375v21.25c0 2.956 2.419 5.375 5.375 5.375h21.25c2.956 0 5.375-2.419 5.375-5.375v-21.25c0-2.956-2.419-5.375-5.375-5.375zM12 26h-4v-14h4v14zM10 10c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM26 26h-4v-8c0-1.105-0.895-2-2-2s-2 0.895-2 2v8h-4v-14h4v2.483c0.825-1.133 2.086-2.483 3.5-2.483 2.485 0 4.5 2.239 4.5 5v9z"></path>
+</svg>
+</a>
+      <a href="http://www.linkedin.com/in/masonwendell"><span class="text">Mason Wendell</span></a></div>
+  </div>
+	<div class="copyright">
+		<p>&copy; 2016 Mason Wendell. All rights reserved.</p>
+	</div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;!-- Begin .header --&gt;
+&lt;header class&#x3D;&quot;site-header&quot; role&#x3D;&quot;banner&quot;&gt;
+	&lt;div class&#x3D;&quot;button-logo&quot;&gt;
+  &lt;div class&#x3D;&quot;title-curve&quot;&gt;The Coding Designer&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;button-logo--words-wrapper&quot;&gt;
+    &lt;div class&#x3D;&quot;button-logo--word word-1&quot;&gt;Mason&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;button-logo--word word-2&quot;&gt;Wendell&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+	&lt;nav id&#x3D;&quot;nav-primary&quot; class&#x3D;&quot;nav nav-primary&quot;&gt;
+  &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;nav-primary-trigger&quot;&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;label for&#x3D;&quot;nav-primary-trigger&quot; class&#x3D;&quot;nav-primary-trigger--label&quot;&gt;Menu&lt;&#x2F;label&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Portfolio&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Speaking&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot; class&#x3D;&quot;nav-item&quot;&gt;Photos&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Posts&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;nav&gt;
+
+&lt;&#x2F;header&gt;
+&lt;!-- End .header --&gt;
+
+
+&lt;!--HOME PAGE CONTENT--&gt;
+&lt;div class&#x3D;&quot;page--posts-page page-content&quot;&gt;
+  &lt;h1 class&#x3D;&quot;page-title&quot;&gt;Balancing Ideal Sass and Ideal CSS&lt;&#x2F;h1&gt;
+&lt;article class&#x3D;&quot;page&quot;&gt;
+  &lt;div class&#x3D;&quot;feature-image&quot;&gt;
+    &lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;..&amp;#x2F;..&amp;#x2F;src&amp;#x2F;images&amp;#x2F;fpo_16x9.png&quot; alt&#x3D;&quot;16x9 Image&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;p&gt;Sass makes &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; fun again, right? Well yeah, but that also makes it easy to forget that we’re still writing &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt;. We can get caught up in all the new tools and tricks that Sass lets us do so easily that we lose sight of some &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; that might not be as awesome as we think it is. Last night at the &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.meetup.com&#x2F;Philadelphia-SASS-Meetup-Group&#x2F;&quot;&gt;Philadelphia Sass Meetup&lt;&#x2F;a&gt; I set out to talk about the finer points of using mixins and extendable selectors, and ended up exploring how we can find the balance between a great Sass codebase and close-to-ideal compiled &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt;.&lt;&#x2F;p&gt;
+  &lt;h2&gt;Balancing Ideal Sass and Ideal &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; -&amp;nbsp;Buttons&lt;&#x2F;h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Let’s just style a button. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131724&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;Create a mixin. &lt;span class&#x3D;&quot;caps&quot;&gt;DRY&lt;&#x2F;span&gt; Sass, but bloated &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131748&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;Convert to an extended class. &lt;span class&#x3D;&quot;caps&quot;&gt;DRY&lt;&#x2F;span&gt; Sass and small &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131756&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;Convert that extended class to a silent extendable. Even better! - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131765&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;Maybe we need an alternate version of the button? Let’s try some manual overrides. Good &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt;, but we could have &lt;span class&#x3D;&quot;caps&quot;&gt;DRY&lt;&#x2F;span&gt;er Sass - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131774&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;We’ll try creating a new silent extendable that calls our mixin with a new argument. Better Sass but now our &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; is starting to bloat. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131792&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;So now we’ll split our mixin into a ‘base’ mixin for the styles that are common to all buttons, and a ‘colors’ mixin to handle our alternate colors. We’ll create a %button extendable by calling both mixins, and a %button-cta extendable that extends %button and calls the button-colors mixin for its overrides. Clean Sass and clean &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt;! &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131805&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;What about &lt;span class&#x3D;&quot;caps&quot;&gt;RWD&lt;&#x2F;span&gt;? Well it gets trickier. Extendables need to be scoped to their media query, so we need to redefine our extendables within a media query. The &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt; is pretty clean but now the Sass is becoming a little hard to work with. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131833&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;Instead of worrying about scoping those media queries we’ll call the mixins within the selector nest. This creates more css than we need, but the Sass is much easier to work with. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131901&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+  &lt;h2&gt;Don’t extend native&amp;nbsp;elements&lt;&#x2F;h2&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Extending a native element once seems ok. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131927&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;But if we keep going we see a lot of (probably) unintended comma-separated selectors start to pile up. In a real project this gets pretty obsene. - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131934&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;li&gt;So instead let’s define some silent extendables and then use them to define our native element styles as well as any extensions to them. Managable Sass and clean &lt;span class&#x3D;&quot;caps&quot;&gt;CSS&lt;&#x2F;span&gt;! - &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;sassmeister.com&#x2F;gist&#x2F;6131957&quot;&gt;Sassmeister&amp;nbsp;Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+  &lt;footer class&#x3D;&quot;footer-date&quot;&gt;
+    Posted on Thursday, August 1st, 2013    &lt;&#x2F;footer&gt;
+&lt;&#x2F;article&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- Begin Footer --&gt;
+&lt;footer class&#x3D;&quot;page-footer&quot; role&#x3D;&quot;contentinfo&quot;&gt;
+  &lt;div class&#x3D;&quot;footer-content&quot;&gt;
+  &lt;div class&#x3D;&quot;monogram-wrapper&quot;&gt;&lt;div class&#x3D;&quot;monogram&quot;&gt;
+  &lt;div class&#x3D;&quot;monogram--initial word-1&quot;&gt;M&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;monogram--initial word-2&quot;&gt;W&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;contact&quot;&gt;
+    &lt;div class&#x3D;&quot;contact-item email&quot;&gt;
+      &lt;a href&#x3D;&quot;mailto:mason@thecodingdesigner.com&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;mailto:mason@thecodingdesigner.com&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;mason@thecodingdesigner.com&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item twitter&quot;&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;twitter.com&#x2F;codingdesigner&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;twitter.com&#x2F;codingdesigner&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;@codingdesigner&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item instagram&quot;&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;@codingdesigner&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item LinkedIn&quot;&gt;
+      &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;masonwendell&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M26.625 0h-21.25c-2.956 0-5.375 2.419-5.375 5.375v21.25c0 2.956 2.419 5.375 5.375 5.375h21.25c2.956 0 5.375-2.419 5.375-5.375v-21.25c0-2.956-2.419-5.375-5.375-5.375zM12 26h-4v-14h4v14zM10 10c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM26 26h-4v-8c0-1.105-0.895-2-2-2s-2 0.895-2 2v8h-4v-14h4v2.483c0.825-1.133 2.086-2.483 3.5-2.483 2.485 0 4.5 2.239 4.5 5v9z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;masonwendell&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;Mason Wendell&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+	&lt;div class&#x3D;&quot;copyright&quot;&gt;
+		&lt;p&gt;&amp;copy; 2016 Mason Wendell. All rights reserved.&lt;&#x2F;p&gt;
+	&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;footer&gt;
+&lt;!-- End Footer --&gt;
+
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/03-pages-06-about-page&#x2F;03-pages-06-about-page.html" class="patternLink" data-patternpartial="">About Page</a></h2>
+            <div class="sg-pattern-body">
+              <!-- Begin .header -->
+<header class="site-header" role="banner">
+	<div class="button-logo">
+  <div class="title-curve">The Coding Designer</div>
+  <div class="button-logo--words-wrapper">
+    <div class="button-logo--word word-1">Mason</div>
+    <div class="button-logo--word word-2">Wendell</div>
+  </div>
+</div>
+
+	<nav id="nav-primary" class="nav nav-primary">
+  <input type="checkbox" id="nav-primary-trigger">
+  <div class="nav-primary--fan"><label for="nav-primary-trigger" class="nav-primary-trigger--label">Menu</label></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Home</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Portfolio</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Speaking</a></div>
+  <div class="nav-primary--fan"><a href="https://www.instagram.com/codingdesigner/" class="nav-item">Photos</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">Posts</a></div>
+  <div class="nav-primary--fan"><a href="#" class="nav-item">About</a></div>
+</nav>
+
+</header>
+<!-- End .header -->
+
+
+<!--HOME PAGE CONTENT-->
+<div class="page--posts-page page-content">
+  <h1 class="page-title">About Mason Wendell</h1>
+<article class="page">
+  <div class="feature-image">
+    <img src="..&#x2F;..&#x2F;..&#x2F;..&#x2F;src&#x2F;images&#x2F;fpo_16x9.png" alt="16x9 Image" />
+  </div>
+  <p>Mason Wendell is a Responsive Web Design, UX and Visual Design, Sass and CSS expert. He's passionate about getting to the core of what a client needs and turning that into the right design solution. He's a pioneer of the technique of using code to create designs directly in the browser. This gives him a unique perspective to find innovative ways to solve design challenges for his clients. </p>
+  <p>He's a leader and innovator in using Sass to write styles. He created the popular Breakpoint tool for responsive web design. He's the co-creator of Sassy Modular Scale which helps to create beautiful typography.</p>
+  <p>He's an active public speaker, and speaks regularly at large and small events about web design, both from a creative and technical point of view.  </p>
+</article>
+
+</div>
+
+<!-- Begin Footer -->
+<footer class="page-footer" role="contentinfo">
+  <div class="footer-content">
+  <div class="monogram-wrapper"><div class="monogram">
+  <div class="monogram--initial word-1">M</div>
+  <div class="monogram--initial word-2">W</div>
+</div>
+</div>
+  <div class="contact">
+    <div class="contact-item email">
+      <a href="mailto:mason@thecodingdesigner.com" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
+</svg>
+</a>
+      <a href="mailto:mason@thecodingdesigner.com"><span class="text">mason@thecodingdesigner.com</span></a></div>
+    <div class="contact-item twitter">
+      <a href="https://twitter.com/codingdesigner" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"></path>
+</svg>
+</a>
+      <a href="https://twitter.com/codingdesigner"><span class="text">@codingdesigner</span></a></div>
+    <div class="contact-item instagram">
+      <a href="https://www.instagram.com/codingdesigner/" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z"></path>
+</svg>
+</a>
+      <a href="https://www.instagram.com/codingdesigner/"><span class="text">@codingdesigner</span></a></div>
+    <div class="contact-item LinkedIn">
+      <a href="http://www.linkedin.com/in/masonwendell" class="icon-link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <path d="M26.625 0h-21.25c-2.956 0-5.375 2.419-5.375 5.375v21.25c0 2.956 2.419 5.375 5.375 5.375h21.25c2.956 0 5.375-2.419 5.375-5.375v-21.25c0-2.956-2.419-5.375-5.375-5.375zM12 26h-4v-14h4v14zM10 10c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM26 26h-4v-8c0-1.105-0.895-2-2-2s-2 0.895-2 2v8h-4v-14h4v2.483c0.825-1.133 2.086-2.483 3.5-2.483 2.485 0 4.5 2.239 4.5 5v9z"></path>
+</svg>
+</a>
+      <a href="http://www.linkedin.com/in/masonwendell"><span class="text">Mason Wendell</span></a></div>
+  </div>
+	<div class="copyright">
+		<p>&copy; 2016 Mason Wendell. All rights reserved.</p>
+	</div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;!-- Begin .header --&gt;
+&lt;header class&#x3D;&quot;site-header&quot; role&#x3D;&quot;banner&quot;&gt;
+	&lt;div class&#x3D;&quot;button-logo&quot;&gt;
+  &lt;div class&#x3D;&quot;title-curve&quot;&gt;The Coding Designer&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;button-logo--words-wrapper&quot;&gt;
+    &lt;div class&#x3D;&quot;button-logo--word word-1&quot;&gt;Mason&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;button-logo--word word-2&quot;&gt;Wendell&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+	&lt;nav id&#x3D;&quot;nav-primary&quot; class&#x3D;&quot;nav nav-primary&quot;&gt;
+  &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;nav-primary-trigger&quot;&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;label for&#x3D;&quot;nav-primary-trigger&quot; class&#x3D;&quot;nav-primary-trigger--label&quot;&gt;Menu&lt;&#x2F;label&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Portfolio&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Speaking&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot; class&#x3D;&quot;nav-item&quot;&gt;Photos&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;Posts&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;nav-primary--fan&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-item&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;nav&gt;
+
+&lt;&#x2F;header&gt;
+&lt;!-- End .header --&gt;
+
+
+&lt;!--HOME PAGE CONTENT--&gt;
+&lt;div class&#x3D;&quot;page--posts-page page-content&quot;&gt;
+  &lt;h1 class&#x3D;&quot;page-title&quot;&gt;About Mason Wendell&lt;&#x2F;h1&gt;
+&lt;article class&#x3D;&quot;page&quot;&gt;
+  &lt;div class&#x3D;&quot;feature-image&quot;&gt;
+    &lt;img src&#x3D;&quot;..&amp;#x2F;..&amp;#x2F;..&amp;#x2F;..&amp;#x2F;src&amp;#x2F;images&amp;#x2F;fpo_16x9.png&quot; alt&#x3D;&quot;16x9 Image&quot; &#x2F;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;p&gt;Mason Wendell is a Responsive Web Design, UX and Visual Design, Sass and CSS expert. He&#39;s passionate about getting to the core of what a client needs and turning that into the right design solution. He&#39;s a pioneer of the technique of using code to create designs directly in the browser. This gives him a unique perspective to find innovative ways to solve design challenges for his clients. &lt;&#x2F;p&gt;
+  &lt;p&gt;He&#39;s a leader and innovator in using Sass to write styles. He created the popular Breakpoint tool for responsive web design. He&#39;s the co-creator of Sassy Modular Scale which helps to create beautiful typography.&lt;&#x2F;p&gt;
+  &lt;p&gt;He&#39;s an active public speaker, and speaks regularly at large and small events about web design, both from a creative and technical point of view.  &lt;&#x2F;p&gt;
+&lt;&#x2F;article&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- Begin Footer --&gt;
+&lt;footer class&#x3D;&quot;page-footer&quot; role&#x3D;&quot;contentinfo&quot;&gt;
+  &lt;div class&#x3D;&quot;footer-content&quot;&gt;
+  &lt;div class&#x3D;&quot;monogram-wrapper&quot;&gt;&lt;div class&#x3D;&quot;monogram&quot;&gt;
+  &lt;div class&#x3D;&quot;monogram--initial word-1&quot;&gt;M&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;monogram--initial word-2&quot;&gt;W&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+  &lt;div class&#x3D;&quot;contact&quot;&gt;
+    &lt;div class&#x3D;&quot;contact-item email&quot;&gt;
+      &lt;a href&#x3D;&quot;mailto:mason@thecodingdesigner.com&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;mailto:mason@thecodingdesigner.com&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;mason@thecodingdesigner.com&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item twitter&quot;&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;twitter.com&#x2F;codingdesigner&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;twitter.com&#x2F;codingdesigner&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;@codingdesigner&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item instagram&quot;&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;codingdesigner&#x2F;&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;@codingdesigner&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+    &lt;div class&#x3D;&quot;contact-item LinkedIn&quot;&gt;
+      &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;masonwendell&quot; class&#x3D;&quot;icon-link&quot;&gt;&lt;svg version&#x3D;&quot;1.1&quot; xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; xmlns:xlink&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xlink&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;32&quot; viewBox&#x3D;&quot;0 0 32 32&quot;&gt;
+  &lt;path d&#x3D;&quot;M26.625 0h-21.25c-2.956 0-5.375 2.419-5.375 5.375v21.25c0 2.956 2.419 5.375 5.375 5.375h21.25c2.956 0 5.375-2.419 5.375-5.375v-21.25c0-2.956-2.419-5.375-5.375-5.375zM12 26h-4v-14h4v14zM10 10c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM26 26h-4v-8c0-1.105-0.895-2-2-2s-2 0.895-2 2v8h-4v-14h4v2.483c0.825-1.133 2.086-2.483 3.5-2.483 2.485 0 4.5 2.239 4.5 5v9z&quot;&gt;&lt;&#x2F;path&gt;
+&lt;&#x2F;svg&gt;
+&lt;&#x2F;a&gt;
+      &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;masonwendell&quot;&gt;&lt;span class&#x3D;&quot;text&quot;&gt;Mason Wendell&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+	&lt;div class&#x3D;&quot;copyright&quot;&gt;
+		&lt;p&gt;&amp;copy; 2016 Mason Wendell. All rights reserved.&lt;&#x2F;p&gt;
+	&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;footer&gt;
+&lt;!-- End Footer --&gt;
+
+
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
       </div> <!--end #sg-patterns-->
 
     </div><!--end .sg-main-->
