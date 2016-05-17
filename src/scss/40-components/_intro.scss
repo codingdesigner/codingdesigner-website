@@ -8,6 +8,7 @@
 }
 
 .intro--text {
+  max-width: 100%;
   @include breakpoint($bp--page-speaking-3) {
     flex-basis: calc(#{phi-a(100%)} - 1.5em);
   }
@@ -60,6 +61,7 @@
 }
 
 .intro-image {
+  max-width: 100%;
   margin-bottom: 2em;
   @include breakpoint($bp--page-speaking-3) {
     flex-basis: calc(#{phi-b(100%)} - 1.5em);
