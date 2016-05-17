@@ -1,8 +1,5 @@
-$button-logo-background-color: color(black);
-$button-logo-foreground-color: color(white);
-
 .button-logo {
-  @include button-logo--base();
+  @include button-logo--base($background-color: $button-logo-background-color, $foreground-color: $button-logo-foreground-color);
   //@include button-logo-image('https://unsplash.it/400/400?random');
   //@include button-logo-image('https://unsplash.it/400/400?image=961');
   //@include button-logo-image('../src/images/headers/aligator-skull.jpg');
@@ -39,17 +36,8 @@ $button-logo-foreground-color: color(white);
     $fade: $button-logo-foreground-color
   );
   //mix-blend-mode: screen;
-  //transform: rotate(-10deg) translateY(-0.25em) translateX(-0.125em); // @todo debug: rotation transforms break multiple text shadows on ios
-  //transform: rotate(10deg) ;
-  &.word-0 {
-    font-weight: 200;
-    font-size: fontsize-rem(ms(1));
-    text-shadow: none;
-    color: $button-logo-foreground-color;
-    align-self: center;
-    //transform: rotate(-10deg) translateY(10px) translateX(-5px); // @todo debug: rotation transforms break multiple text shadows on ios
-    transform: translateY(10px);
-  }
+  //transform: rotate(-10deg) translateY(-0.25em) translateX(-0.125em);
+  transform: rotate(-10deg) ;
 }
 
 .title-curve {
