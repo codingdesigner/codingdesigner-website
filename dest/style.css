@@ -657,24 +657,17 @@ input[type="submit"] a:focus,
   font-family: Surveyor SSm A, Surveyor SSm B, Georgia, serif;
   line-height: 1.2;
   width: 100%;
-  height: 6em;
+  height: 330px;
   position: relative;
   transition-property: border-radius, width;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  background-color: #BBBBBB;
-  background-blend-mode: multiply;
-  background-image: url("../src/images/headers/space-helmet.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 @media (min-width: 650px) {
   .button-logo {
-    font-size: 3.05556rem;
     border-radius: 50%;
-    width: 6em;
+    width: 330px;
   }
 }
 
@@ -689,7 +682,142 @@ input[type="submit"] a:focus,
   border-radius: 0;
 }
 
-.button-logo .button-logo--word {
+.button-logo.image-1 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/space-helmet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-1 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-2 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/aligator-skull.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-2 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-3 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/antler-skull.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-3 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-4 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/snake-skeleton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-4 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-5 {
+  background-color: #EFE07A;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/moon-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-5 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-6 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/rockies-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-6 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-7 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/rockies-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-7 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-8 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/roofs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-8 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-9 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/sc-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-9 .button-logo--word {
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button-logo.image-10 {
+  background-color: #BBBBBB;
+  background-blend-mode: multiply;
+  background-image: url("../src/images/headers/train-kiss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-logo.image-10 .button-logo--word {
   color: black;
   mix-blend-mode: screen;
 }
@@ -719,19 +847,9 @@ input[type="submit"] a:focus,
   font-style: italic;
   font-weight: 800;
   text-shadow: 0.0015em 0.0026em 0 white, 0.003em 0.0052em 0 white, 0.0045em 0.00779em 0 white, 0.006em 0.01039em 0 white, 0.0075em 0.01299em 0 white, 0.009em 0.01559em 0 white, 0.0105em 0.01819em 0 white, 0.012em 0.02078em 0 white, 0.0135em 0.02338em 0 white, 0.015em 0.02598em 0 white, 0.0165em 0.02858em 0 white, 0.018em 0.03118em 0 white, 0.0195em 0.03377em 0 white, 0.021em 0.03637em 0 white, 0.0225em 0.03897em 0 white, 0.024em 0.04157em 0 white, 0.0255em 0.04417em 0 white, 0.027em 0.04677em 0 white, 0.0285em 0.04936em 0 white, 0.03em 0.05196em 0 white, 0.0315em 0.05456em 0 white, 0.033em 0.05716em 0 white, 0.0345em 0.05976em 0 white, 0.036em 0.06235em 0 white, 0.0375em 0.06495em 0 white, 0.039em 0.06755em 0 white, 0.0405em 0.07015em 0 white, 0.042em 0.07275em 0 white, 0.0435em 0.07534em 0 white, 0.045em 0.07794em 0 white, 0.0465em 0.08054em 0 white, 0.048em 0.08314em 0 white, 0.0495em 0.08574em 0 white, 0.051em 0.08833em 0 white, 0.0525em 0.09093em 0 white, 0.054em 0.09353em 0 white, 0.0555em 0.09613em 0 white, 0.057em 0.09873em 0 white, 0.0585em 0.10132em 0 white, 0.06em 0.10392em 0 white, 0.0615em 0.10652em 0 white, 0.063em 0.10912em 0 white, 0.0645em 0.11172em 0 white, 0.066em 0.11432em 0 white, 0.0675em 0.11691em 0 white, 0.069em 0.11951em 0 white, 0.0705em 0.12211em 0 white, 0.072em 0.12471em 0 white, 0.0735em 0.12731em 0 white, 0.075em 0.1299em 0 white, 0.0765em 0.1325em 0 white, 0.078em 0.1351em 0 white, 0.0795em 0.1377em 0 white, 0.081em 0.1403em 0 white, 0.0825em 0.14289em 0 white, 0.084em 0.14549em 0 white, 0.0855em 0.14809em 0 white, 0.087em 0.15069em 0 white, 0.0885em 0.15329em 0 white, 0.09em 0.15588em 0 white, 0.0915em 0.15848em 0 white, 0.093em 0.16108em 0 white, 0.0945em 0.16368em 0 white, 0.096em 0.16628em 0 white, 0.0975em 0.16887em 0 white, 0.099em 0.17147em 0 white, 0.1005em 0.17407em 0 white, 0.102em 0.17667em 0 white, 0.1035em 0.17927em 0 white, 0.105em 0.18187em 0 white, 0.1065em 0.18446em 0 white, 0.108em 0.18706em 0 white, 0.1095em 0.18966em 0 white, 0.111em 0.19226em 0 white, 0.1125em 0.19486em 0 white, 0.114em 0.19745em 0 white, 0.1155em 0.20005em 0 white, 0.117em 0.20265em 0 white, 0.1185em 0.20525em 0 white, 0.12em 0.20785em 0 white, 0.1215em 0.21044em 0 white, 0.123em 0.21304em 0 white, 0.1245em 0.21564em 0 white, 0.126em 0.21824em 0 white, 0.1275em 0.22084em 0 white, 0.129em 0.22343em 0 white, 0.1305em 0.22603em 0 white, 0.132em 0.22863em 0 white, 0.1335em 0.23123em 0 white, 0.135em 0.23383em 0 white, 0.1365em 0.23642em 0 white, 0.138em 0.23902em 0 white, 0.1395em 0.24162em 0 white, 0.141em 0.24422em 0 white, 0.1425em 0.24682em 0 white, 0.144em 0.24942em 0 white, 0.1455em 0.25201em 0 white, 0.147em 0.25461em 0 white, 0.1485em 0.25721em 0 white, 0.15em 0.25981em 0 white;
-}
-
-.button-logo--word.word-0 {
-  font-weight: 200;
-  font-size: 1.27778rem;
-  text-shadow: none;
-  color: white;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  -webkit-transform: translateY(10px);
-      -ms-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .title-curve {
@@ -1191,6 +1309,62 @@ select {
   border-radius: 0 0.25em 0.25em 0;
 }
 
+.site-header {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  position: relative;
+}
+
+@media (min-width: 650px) {
+  .site-header {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .site-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+    min-width: 40em;
+    border-bottom: 0.25em dashed currentColor;
+    border-bottom: 0.33em dotted currentColor;
+    padding-bottom: 5em;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 870px) {
+  .site-header {
+    padding-left: 15%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .site-header {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+  .site-header .button-logo {
+    margin-left: -7em;
+  }
+}
+
+.site-header .button-logo {
+  z-index: 1;
+}
+
 .my-name {
   font-weight: 200;
   font-style: normal;
@@ -1362,8 +1536,11 @@ select {
   border-style: dashed;
   border-color: black;
   width: initial;
-  min-width: 14em;
+  min-width: 12.5em;
+  max-width: 100%;
   font-weight: 800;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 img {
@@ -1418,6 +1595,10 @@ svg {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.intro--text {
+  max-width: 100%;
 }
 
 @media (min-width: 720px) {
@@ -1506,6 +1687,7 @@ svg {
 }
 
 .intro-image {
+  max-width: 100%;
   margin-bottom: 2em;
 }
 
@@ -1818,65 +2000,6 @@ svg {
   color: inherit;
 }
 
-.button-logo {
-  opacity: 0.8;
-}
-
-.site-header {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  position: relative;
-}
-
-@media (min-width: 650px) {
-  .site-header {
-    margin-left: -2rem;
-    margin-right: -2rem;
-  }
-}
-
-@media (min-width: 650px) {
-  .site-header {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 1.5em;
-    margin-bottom: 5em;
-    min-width: 40em;
-    border-bottom: 0.25em dashed currentColor;
-    padding-bottom: 5em;
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width: 870px) {
-  .site-header {
-    padding-left: 15%;
-  }
-}
-
-@media (min-width: 1100px) {
-  .site-header {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0;
-  }
-  .site-header .button-logo {
-    margin-left: -7em;
-  }
-}
-
-.site-header .button-logo {
-  z-index: 1;
-}
-
 .nav-primary--fan {
   font-family: Surveyor SSm A, Surveyor SSm B, Georgia, serif;
   font-weight: 200;
@@ -1917,7 +2040,8 @@ svg {
   }
   .nav-primary--fan:nth-of-type(1n+2) {
     border-bottom: 2px solid #e5e5e5;
-    margin-right: -0.5em;
+    margin-right: 0;
+    padding-right: 0;
   }
   #nav-primary-trigger:checked ~ .nav-primary--fan {
     max-height: 10em;
@@ -2215,7 +2339,6 @@ svg {
   position: fixed;
   top: 0;
   left: 100vw;
-  /*left: 5vw;*/
   background-color: white;
   padding: 1em;
   width: 95vw;
@@ -2424,6 +2547,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 -1em 1em;
+  max-width: 100%;
 }
 
 .pi--images[data-eq-state$='small'] {
@@ -2451,6 +2575,7 @@ svg {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 100%;
 }
 
 .pi--image img {
@@ -2669,9 +2794,10 @@ svg {
   background-position: top left;
   background-size: cover;
   background-repeat: repeat-y;
+  background-clip: padding-box;
   box-shadow: 0 1em 0 0 rgba(255, 255, 255, 0.75) inset;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
 }
 
 .po-item--link:visited {
@@ -3034,6 +3160,11 @@ svg {
   -webkit-flex-basis: calc(50% - 1.5em);
       -ms-flex-preferred-size: calc(50% - 1.5em);
           flex-basis: calc(50% - 1.5em);
+  max-width: 100%;
+}
+
+.talk--video iframe {
+  max-width: 100%;
 }
 
 .video-container--youtube {
