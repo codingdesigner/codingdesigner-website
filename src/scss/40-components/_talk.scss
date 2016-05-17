@@ -66,6 +66,10 @@
 
 .talk--video {
   flex-basis: calc(50% - 1.5em);
+  max-width: 100%;
+  iframe {
+    max-width: 100%;
+  }
 }
 .video-container--youtube {
   position: relative;
