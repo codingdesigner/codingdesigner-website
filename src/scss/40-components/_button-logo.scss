@@ -2,16 +2,37 @@
   @include button-logo--base($background-color: $button-logo-background-color, $foreground-color: $button-logo-foreground-color);
   //@include button-logo-image('https://unsplash.it/400/400?random');
   //@include button-logo-image('https://unsplash.it/400/400?image=961');
-  //@include button-logo-image('../src/images/headers/aligator-skull.jpg');
-  //@include button-logo-image('../src/images/headers/antler-skull.jpg');
-  //@include button-logo-image('../src/images/headers/moon-landing.jpg', $background-color: #EFE07A);
-  //@include button-logo-image('../src/images/headers/rockies-1.jpg');
-  //@include button-logo-image('../src/images/headers/rockies-2.jpg');
-  //@include button-logo-image('../src/images/headers/roofs.jpg');
-  //@include button-logo-image('../src/images/headers/sc-sky.jpg');
-  //@include button-logo-image('../src/images/headers/snake-skeleton.jpg');
-  //@include button-logo-image('../src/images/headers/train-kiss.jpg');
-  @include button-logo-image('../src/images/headers/space-helmet.jpg');
+  &.image-1 {
+    @include button-logo-image('../src/images/headers/space-helmet.jpg');
+    // intentionally empty
+  }
+  &.image-2 {
+    @include button-logo-image('../src/images/headers/aligator-skull.jpg');
+  }
+  &.image-3 {
+    @include button-logo-image('../src/images/headers/antler-skull.jpg');
+  }
+  &.image-4 {
+    @include button-logo-image('../src/images/headers/snake-skeleton.jpg');
+  }
+  &.image-5 {
+    @include button-logo-image('../src/images/headers/moon-landing.jpg', $background-color: #EFE07A);
+  }
+  &.image-6 {
+    @include button-logo-image('../src/images/headers/rockies-1.jpg');
+  }
+  &.image-7 {
+    @include button-logo-image('../src/images/headers/rockies-2.jpg');
+  }
+  &.image-8 {
+    @include button-logo-image('../src/images/headers/roofs.jpg');
+  }
+  &.image-9 {
+    @include button-logo-image('../src/images/headers/sc-sky.jpg');
+  }
+  &.image-10 {
+    @include button-logo-image('../src/images/headers/train-kiss.jpg');
+  }
 }
 
 .button-logo--words-wrapper {

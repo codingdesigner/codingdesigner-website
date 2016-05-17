@@ -61,6 +61,25 @@
     }
   };
 
+  Drupal.behaviors.button_image_cycle = {
+    attach: function(context, settings) {
+      function getRandomIntInclusive(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      var $this_image = getRandomIntInclusive(1, 10);
+      $('.button-logo').addClass('image-' + $this_image);
+    }
+  };
+
+  Drupal.behaviors.batman_audio = {
+    attach: function(context, settings) {
+      var audio = $("#batman")[0];
+      $('#footer-monogram').mouseenter(function() {
+        audio.play();
+      });
+    }
+  };
+
 
 })(jQuery, Drupal);
 
