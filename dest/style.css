@@ -1015,6 +1015,64 @@ input[type="submit"] a:focus,
   }
 }
 
+.favicon {
+  background-color: black;
+  color: white;
+  font-family: Surveyor SSm A, Surveyor SSm B, Georgia, serif;
+  font-weight: 800;
+  line-height: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.favicon .monogram--initial {
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  text-align: center;
+}
+
+.favicon.size-16 {
+  font-size: 9px;
+  width: 16px;
+  height: 16px;
+}
+
+.favicon.size-32 {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+}
+
+.favicon.size-64 {
+  font-size: 36px;
+  width: 64px;
+  height: 64px;
+}
+
+.favicon.size-128 {
+  font-size: 72px;
+  width: 128px;
+  height: 128px;
+}
+
 .page-footer {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
