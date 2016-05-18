@@ -1,0 +1,40 @@
+.favicon {
+  background-color: color(black);
+  color: color(white);
+  font-family: font(surveyor);
+  font-weight: 800;
+  line-height: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  position: relative;
+  .monogram--initial {
+    flex-basis: auto;
+    transform: none;
+    text-align: center;
+  }
+  &.size-16 {
+    font-size: 9px;
+    width: 16px;
+    height: 16px;
+  }
+  &.size-32 {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+  }
+  &.size-64 {
+    font-size: 36px;
+    width: 64px;
+    height: 64px;
+  }
+  &.size-128 {
+    font-size: 72px;
+    width: 128px;
+    height: 128px;
+  }
+}
