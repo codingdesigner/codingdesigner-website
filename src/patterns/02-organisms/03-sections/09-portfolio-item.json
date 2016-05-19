@@ -49,17 +49,17 @@
     },
     {
       "pi--image--classes": "pi--image--medium pi--image--photo",
-      "pi--image--path": "score/score-printing-4.jpg",
-      "pi--image--alt": "Screenshots of Score.org"
-    },
-    {
-      "pi--image--classes": "pi--image--medium pi--image--photo",
       "pi--image--path": "score/score-printing-2.jpg",
       "pi--image--alt": "Screenshots of Score.org"
     },
     {
       "pi--image--classes": "pi--image--medium pi--image--photo",
       "pi--image--path": "score/score-printing.jpg",
+      "pi--image--alt": "Screenshots of Score.org"
+    },
+    {
+      "pi--image--classes": "pi--image--medium pi--image--photo",
+      "pi--image--path": "score/score-printing-4.jpg",
       "pi--image--alt": "Screenshots of Score.org"
     },
     {
