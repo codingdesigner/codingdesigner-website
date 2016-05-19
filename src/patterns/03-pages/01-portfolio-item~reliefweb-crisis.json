@@ -1,0 +1,40 @@
+{
+  "pi--project-name": "Reliefweb Crisis Overview",
+  "pi--overview--text": "Create a <em>data-driven</em> overview of a world crisis",
+  "pi--item-label--client": "<abbr>UN OCHA</abbr> Reliefweb",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://crisis.rwlabs.org",
+  "pi--item-label--link--domain": "crisis.rwlabs.org",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Lead Designer"},
+    {"item": "Presentations"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"}
+  ],
+  "pi--agency": "Phase2",
+  "pi--agency--link": "http://www.phase2technology.com",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "reliefweb-crisis/reliefweb-crisis-home-devices.png",
+      "pi--image--alt": "Screenshots of ReliefWeb"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "reliefweb-crisis/reliefweb-crisis-home-laptop.png",
+      "pi--image--alt": "Screenshots of Score.org"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "reliefweb-crisis/reliefweb-crisis-home-phone.png",
+      "pi--image--alt": "Screenshots of Score.org"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "reliefweb-crisis/reliefweb-crisis-home-tablet.png",
+      "pi--image--alt": "Screenshots of Score.org"
+    }
+  ]
+}

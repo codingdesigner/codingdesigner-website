@@ -193,25 +193,7 @@
 		},
 		{
 			"pn--nav-list-item--link": "#",
-			"pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
-			"pn--nav-list-item--name": "UN OCHA ReliefWeb"
-		},{
-			"pn--nav-list-item--link": "#",
-			"pn--nav-list-item--image": "../../../../src/images/portfolio/originals/score-home-thumb.png",
-			"pn--nav-list-item--name": "SCORE"
-		},
-		{
-			"pn--nav-list-item--link": "#",
-			"pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
-			"pn--nav-list-item--name": "UN OCHA ReliefWeb"
-		},{
-			"pn--nav-list-item--link": "#",
-			"pn--nav-list-item--image": "../../../../src/images/portfolio/originals/score-home-thumb.png",
-			"pn--nav-list-item--name": "SCORE"
-		},
-		{
-			"pn--nav-list-item--link": "#",
-			"pn--nav-list-item--image": "../../../../src/images/portfolio/originals/reliefweb-crisis-thumb.png",
+			"pn--nav-list-item--image": "../../../../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-thumb.png",
 			"pn--nav-list-item--name": "UN OCHA ReliefWeb"
 		}
 	]
