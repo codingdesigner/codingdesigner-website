@@ -1,0 +1,43 @@
+<div class="portfolio-item_pi page-content">
+  <h1 class="pi--project-name page-title">{{pi--project-name}}</h1>
+  <div class="pi--overview">
+    <div class="pi--overview--text">{{{pi--overview--text}}}</div>
+  </div>
+  <div class="pi--details">
+    <input type="checkbox" class="pi--details--trigger hidden" id="pi--details--trigger--score">
+    <label for="pi--details--trigger--score" class="pi--details--trigger-label">What I did</label>
+    <div class="pi--details--offside">
+      <label for="pi--details--trigger--score" class="pi--details--trigger-label--close">X</label>
+      <h3 class="pi--details--title">What I did</h3>
+      <div class="pi--item-description">
+        <h4 class="pi--item-label--client">Client:</h4>
+        <div class="pi--client">{{{pi--item-label--client}}}</div>
+        <a href="{{pi--item-label--link}}" class="pi--item-label--link">{{pi--item-label--link--domain}}</a>
+      </div>
+      <div class="pi--item-description">
+        <h4 class="pi--item-label--about">About:</h4>
+        <div class="pi--about">{{{pi--about}}}</div>
+      </div>
+      <div class="pi--item-description">
+        <h4 class="pi--item-label--responsibilities">Responsibilities:</h4>
+        <ul class="pi--responsibilities">
+          {{#pi--responsibilities}}
+            <li>{{item}}</li>
+          {{/pi--responsibilities}}
+        </ul>
+      </div>
+      <div class="pi--item-description">
+        <h4 class="pi--item-label--agency">Agency:</h4>
+        <div class="pi--agency"><a href="{{pi--agency--link}}">{{pi--agency}}</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="pi--images" data-eq-pts="small: 600, mid: 800, large: 1200">
+    {{#pi--images}}
+      <picture class="pi--image {{pi--image--classes}}">
+        <img src="{{img-portfolio-url}}{{pi--image--path}}" alt="{{pi--image--alt}}">
+      </picture>
+    {{/pi--images}}
+  </div>
+
+</div>

@@ -292,3 +292,9 @@ $flag-color: color(black);
     }
   }
 }
+
+.pi--image--photo {
+  img {
+    border: 1px solid color(black);
+  }
+}

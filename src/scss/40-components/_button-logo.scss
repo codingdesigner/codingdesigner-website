@@ -58,7 +58,7 @@
   );
   //mix-blend-mode: screen;
   //transform: rotate(-10deg) translateY(-0.25em) translateX(-0.125em);
-  transform: rotate(-10deg) ;
+  //transform: rotate(-10deg) ; // @todo debug breaks on ios: words disappear
 }
 
 .title-curve {
