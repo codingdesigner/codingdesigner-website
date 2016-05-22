@@ -15,6 +15,7 @@
     {"item": "Prototyping"}
   ],
   "pi--agency": "Phase2",
+  "pi--link-to-agency": true,
   "pi--agency--link": "http://www.phase2technology.com",
   "pi--images": [
     {

@@ -1,0 +1,31 @@
+{
+  "pi--project-name": "Ars nova Workshop",
+  "pi--overview--text": "Design and build a home for <em>Avant-Garde Jazz</em> in Philadelphia",
+  "pi--item-label--client": "Ars nova Workshop",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://arsnovaworkshop.com/",
+  "pi--item-label--link--domain": "arsnovaworkshop.com",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Presentations"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Drupal Theming"},
+    {"item": "Drupal Build"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "Canary Promotion & Design",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "ars-nova/ars-nova-home-laptop.png",
+      "pi--image--alt": "Ars Nova Workshop Home Page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "ars-nova/ars-nova-events-laptop.png",
+      "pi--image--alt": "Ars Nova Workshop Events Page"
+    }
+  ]
+}

@@ -13,6 +13,7 @@
     {"item": "Front End Development"},
     {"item": "Prototyping"}
   ],
+  "pi--link-to-agency": true,
   "pi--agency": "Phase2",
   "pi--agency--link": "http://www.phase2technology.com",
   "pi--images": [

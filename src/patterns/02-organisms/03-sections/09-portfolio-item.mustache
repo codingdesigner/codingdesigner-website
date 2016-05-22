@@ -28,7 +28,12 @@
       </div>
       <div class="pi--item-description">
         <h4 class="pi--item-label--agency">Agency:</h4>
-        <div class="pi--agency"><a href="{{pi--agency--link}}">{{pi--agency}}</a></div>
+        {{#pi--link-to-agency}}
+          <div class="pi--agency"><a href="{{pi--agency--link}}">{{pi--agency}}</a></div>
+        {{/pi--link-to-agency}}
+        {{^pi--link-to-agency}}
+          <div class="pi--agency">{{pi--agency}}</div>
+        {{/pi--link-to-agency}}
       </div>
     </div>
   </div>
