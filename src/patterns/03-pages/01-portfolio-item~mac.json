@@ -1,0 +1,61 @@
+{
+  "pi--project-name": "MAC Cosmetics",
+  "pi--overview--text": "Responsive design and front end development for one of the largest cosmetics brands",
+  "pi--item-label--client": "MAC Cosmetics",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://www.maccosmetics.com/",
+  "pi--item-label--link--domain": "maccosmetics.com",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Responsive Designs"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Drupal Theming"},
+    {"item": "Presentations"}
+  ],
+  "pi--link-to-agency": true,
+  "pi--agency": "Phase2",
+  "pi--agency--link": "http://www.phase2technology.com",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "mac/mac-home-devices.png",
+      "pi--image--alt": "MAC Cosmetics home page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "mac/mac-home-laptop.png",
+      "pi--image--alt": "MAC Cosmetics home page"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "mac/mac-home-tablet.png",
+      "pi--image--alt": "MAC Cosmetics home page"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "mac/mac-home-phone.png",
+      "pi--image--alt": "MAC Cosmetics home page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "mac/mac-artistry-devices.png",
+      "pi--image--alt": "MAC Cosmetics artistry page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "mac/mac-artistry-laptop.png",
+      "pi--image--alt": "MAC Cosmetics artistry page"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "mac/mac-artistry-tablet.png",
+      "pi--image--alt": "MAC Cosmetics artistry page"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "mac/mac-artistry-phone.png",
+      "pi--image--alt": "MAC Cosmetics artistry page"
+    }
+  ]
+}
