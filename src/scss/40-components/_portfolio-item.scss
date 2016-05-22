@@ -12,9 +12,8 @@ $flag-color: color(black);
     justify-content: space-around;
   }
 }
-.pi--project-name {
-  //
-}
+
+.pi--project-name {}
 
 .pi--overview {
   padding-left: 0.66em;
@@ -26,6 +25,7 @@ $flag-color: color(black);
     padding-left: 10vw;
   }
 }
+
 .pi--overview--text {
   font-size: fontsize-rem(ms(1));
   line-height: 1.4;
@@ -126,12 +126,6 @@ $flag-color: color(black);
   @include breakpoint($bp--portfolio--show-details) {
     display: none;
   }
-  //&:hover {
-  //  color: color(gray);
-  //  &:after {
-  //    border-color: transparent color(gray);
-  //  }
-  //}
   &:after {
     content: "";
     width: 0;
@@ -142,6 +136,7 @@ $flag-color: color(black);
     border-color: transparent $flag-color;
   }
 }
+
 .pi--details--trigger-label--close {
   border-width: 0 1px 1px 1px;
   border-color: color(black);
@@ -171,9 +166,11 @@ $flag-color: color(black);
   text-transform: none;
   font-weight: 800;
 }
+
 .pi--item-description {
   margin-bottom: 2em;
 }
+
 [class^='pi--item-label'] {
   @include h6();
   font-weight: 800;
@@ -182,20 +179,23 @@ $flag-color: color(black);
   margin-right: 0.5em;
   letter-spacing: 2px;
 }
+
 .pi--item-label--client {
   display: inline;
 }
+
 .pi--client {
   display: inline;
   font-weight: 200;
 }
+
+.pi--item-label--link {}
+
 .pi--responsibilities {
   margin-top: 0;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  //justify-content: space-between;
-  //align-items: stretch;
   li {
     font-weight: 200;
     background-color: color(gray, light);
@@ -203,19 +203,13 @@ $flag-color: color(black);
     list-style-type: none;
     margin: 0 0.5em 0.5em 0;
     padding: 0.25em;
-    //&:after {
-    //  content: ', ';
-    //}
-    //&:last-of-type {
-    //  &:after {
-    //    content: '';
-    //  }
-    //}
   }
 }
+
 .pi--item-label--agency {
   display: inline;
 }
+
 .pi--agency {
   display: inline;
 }
@@ -236,6 +230,7 @@ $flag-color: color(black);
     order: 3;
   }
 }
+
 .pi--image {
   margin-bottom: 3em;
   padding: 0 1em;

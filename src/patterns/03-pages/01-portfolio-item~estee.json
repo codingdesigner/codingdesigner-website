@@ -1,31 +1,61 @@
 {
-  "pi--project-name": "Ars nova Workshop",
-  "pi--overview--text": "Design and build a home for <em>Avant-Garde Jazz</em> in Philadelphia",
-  "pi--item-label--client": "Ars nova Workshop",
+  "pi--project-name": "Estée Lauder",
+  "pi--overview--text": "Responsive design and front end development for one of the largest cosmetics brands",
+  "pi--item-label--client": "Estée Lauder",
   "pi--item-label--link--show": "true",
-  "pi--item-label--link": "http://arsnovaworkshop.com/",
-  "pi--item-label--link--domain": "arsnovaworkshop.com",
+  "pi--item-label--link": "http://www.esteelauder.com/",
+  "pi--item-label--link--domain": "esteelauder.com",
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
-    {"item": "Art Direction"},
-    {"item": "Presentations"},
+    {"item": "Responsive Designs"},
     {"item": "Front End Development"},
     {"item": "Prototyping"},
     {"item": "Drupal Theming"},
-    {"item": "Drupal Build"}
+    {"item": "Presentations"}
   ],
-  "pi--link-to-agency": false,
-  "pi--agency": "Canary Promotion & Design",
+  "pi--link-to-agency": true,
+  "pi--agency": "Phase2",
+  "pi--agency--link": "http://www.phase2technology.com",
   "pi--images": [
     {
       "pi--image--classes": "pi--image--wide",
-      "pi--image--path": "ars-nova/ars-nova-home-laptop.png",
-      "pi--image--alt": "Ars Nova Workshop Home Page"
+      "pi--image--path": "estee/estee-home-devices.png",
+      "pi--image--alt": "Estée Lauder home page"
     },
     {
       "pi--image--classes": "pi--image--wide",
-      "pi--image--path": "ars-nova/ars-nova-events-laptop.png",
-      "pi--image--alt": "Ars Nova Workshop Events Page"
+      "pi--image--path": "estee/estee-home-laptop.png",
+      "pi--image--alt": "Estée Lauder home page"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "estee/estee-home-tablet.png",
+      "pi--image--alt": "Estée Lauder home page"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "estee/estee-home-phone.png",
+      "pi--image--alt": "Estée Lauder home page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "estee/estee-stories-devices.png",
+      "pi--image--alt": "Estée Lauder stories page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "estee/estee-stories-laptop.png",
+      "pi--image--alt": "Estée Lauder stories page"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "estee/estee-stories-tablet.png",
+      "pi--image--alt": "Estée Lauder stories page"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "estee/estee-stories-phone.png",
+      "pi--image--alt": "Estée Lauder stories page"
     }
   ]
 }
