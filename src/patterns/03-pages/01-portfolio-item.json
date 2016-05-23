@@ -9,9 +9,11 @@
   "pi--responsibilities": [
     {"item": "Art Direction"},
     {"item": "Lead Designer"},
+    {"item": "Responsive Design"},
     {"item": "Presentations"},
     {"item": "Kick-off lead"},
     {"item": "Front End Development"},
+    {"item": "Styleguide"},
     {"item": "Prototyping"}
   ],
   "pi--agency": "Phase2",

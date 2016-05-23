@@ -9,8 +9,10 @@
   "pi--responsibilities": [
     {"item": "Art Direction"},
     {"item": "Lead Designer"},
+    {"item": "Responsive Design"},
     {"item": "Presentations"},
     {"item": "Front End Development"},
+    {"item": "Styleguide"},
     {"item": "Prototyping"}
   ],
   "pi--link-to-agency": true,

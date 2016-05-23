@@ -1,0 +1,117 @@
+{
+  "pi--project-name": "Thinking Inside the Box Inside the Box Inside the Box",
+  "pi--overview--text": "A web design presentation about <em>styleguides</em> and <em>jazz</em>",
+  "pi--item-label--client": "Mason Wendell",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://codingdesigner.github.io/box/",
+  "pi--item-label--link--domain": "codingdesigner.github.io/box",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Lead Designer"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Writing"},
+    {"item": "Speaking"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "The Coding Designer",
+  "pi--agency--link": "http://www.thecodingdesigner.com",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-1-title-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-2-music-nerd-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-3-design-in-browser-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-4-present-in-browser-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-5-what-are-we-designin-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-6-design-tool-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-7-component-driven-design-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-8-blank-page-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-9-hard-bop-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-10-musical-thinking-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-11-content-content-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-12-component-based-design-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-13-instruments-and-designers-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-14-type-sizes-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-15-color-schemes-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-16-color-schemes-2-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-17-its-time-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-18-unity-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "thinking-box/thinking-box-19-simple-trick-laptop.png",
+      "pi--image--alt": "Thinking Inside the Box Inside the Box Inside the Box"
+    }
+  ]
+}
