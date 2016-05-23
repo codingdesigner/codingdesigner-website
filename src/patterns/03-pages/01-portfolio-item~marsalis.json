@@ -1,0 +1,47 @@
+{
+  "pi--project-name": "Marsalis Music",
+  "pi--overview--text": "Design and build a home for jazz legends <em>Branford Marsalis</em> and <em>Harry Connick, Jr.'s</em> record label",
+  "pi--item-label--client": "Marsalis Music",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://www.marsalismusic.com/",
+  "pi--item-label--link--domain": "marsalismusic.com",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Lead Designer"},
+    {"item": "Presentations"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Drupal Theming"},
+    {"item": "Drupal Build"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "Canary Promotion & Design",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "marsalis/marsalis-home-laptop.png",
+      "pi--image--alt": "Marsalis Music Home Page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "marsalis/marsalis-artists-laptop.png",
+      "pi--image--alt": "Marsalis Music Artists Page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "marsalis/marsalis-artist-laptop.png",
+      "pi--image--alt": "Marsalis Music Artist Page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "marsalis/marsalis-releases-laptop.png",
+      "pi--image--alt": "Marsalis Music Releases Page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "marsalis/marsalis-release-laptop.png",
+      "pi--image--alt": "Marsalis Music Release Page"
+    }
+  ]
+}
