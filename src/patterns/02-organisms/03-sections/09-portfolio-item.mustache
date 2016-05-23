@@ -39,9 +39,18 @@
   </div>
   <div class="pi--images" data-eq-pts="small: 600, mid: 800, large: 1200">
     {{#pi--images}}
-      <picture class="pi--image {{pi--image--classes}}">
-        <img src="{{img-portfolio-url}}{{pi--image--path}}" alt="{{pi--image--alt}}">
-      </picture>
+      {{#pi--image--path}}
+        <picture class="pi--image {{pi--image--classes}}">
+          <img src="{{img-portfolio-url}}{{pi--image--path}}" alt="{{pi--image--alt}}">
+        </picture>
+      {{/pi--image--path}}
+      {{#pi--image--mov}}
+        <video width="1400" controls loop class="pi--image {{pi--image--classes}}">
+          <source src="{{img-portfolio-url}}{{pi--image--mov}}" type="video/mov">
+          <source src="{{img-portfolio-url}}{{pi--image--mp4}}" type="video/mp4">
+          {{pi--image--alt}}
+        </video>
+      {{/pi--image--mov}}
     {{/pi--images}}
   </div>
 

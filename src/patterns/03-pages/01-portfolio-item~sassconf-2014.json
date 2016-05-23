@@ -1,0 +1,158 @@
+{
+  "pi--project-name": "SassConf 2014",
+  "pi--overview--text": "Push the boundaries of <em>Sass</em> and <em>CSS</em>",
+  "pi--item-label--client": "SassConf 2014",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "http://sassconf.thecodingdesigner.com/",
+  "pi--item-label--link--domain": "sassconf.thecodingdesigner.com",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Lead Designer"},
+    {"item": "Presentations"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Speaker"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "The Coding Designer",
+  "pi--agency--link": "http://www.thecodingdesigner.com",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-devices.png",
+      "pi--image--alt": "SassConf 2014 home page"
+    },
+    {
+      "pi--image--classes": "pi--image--wide pi--image--video",
+      "pi--image--mov": "sassconf-2014/sassconf-2014-header.mov",
+      "pi--image--mp4": "sassconf-2014/sassconf-2014-header.mp4",
+      "pi--image--alt": "SassConf 2014 home page header scroll demonstration"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-scroll-devices.png",
+      "pi--image--alt": "SassConf 2014 home page (mid-scroll)"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-footer-laptop.png",
+      "pi--image--alt": "SassConf 2014 footer"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-footer-phone.png",
+      "pi--image--alt": "SassConf 2014 footer"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-footer-tablet.png",
+      "pi--image--alt": "SassConf 2014 footer"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-laptop.png",
+      "pi--image--alt": "SassConf 2014 home"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-menu-phone.png",
+      "pi--image--alt": "SassConf 2014 home"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-phone.png",
+      "pi--image--alt": "SassConf 2014 home"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-scroll-laptop.png",
+      "pi--image--alt": "SassConf 2014 home"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-home-tablet.png",
+      "pi--image--alt": "SassConf 2014 home"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-schedule-devices.png",
+      "pi--image--alt": "SassConf 2014 schedule"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-schedule-laptop.png",
+      "pi--image--alt": "SassConf 2014 schedule"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-schedule-phone.png",
+      "pi--image--alt": "SassConf 2014 schedule"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-schedule-tablet.png",
+      "pi--image--alt": "SassConf 2014 schedule"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-devices.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-group-laptop.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-laptop.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-mason-laptop.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-mason-phone.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-panel-phone.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-panel-tablet.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-workshops-laptop.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-speakers-workshops-tablet.png",
+      "pi--image--alt": "SassConf 2014 speakers"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "sassconf-2014/sassconf-2014-testimonials-laptop.png",
+      "pi--image--alt": "SassConf 2014 testimonials"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "sassconf-2014/sassconf-2014-testimonials-phone.png",
+      "pi--image--alt": "SassConf 2014 testimonials"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "sassconf-2014/sassconf-2014-testimonials-tablet.png",
+      "pi--image--alt": "SassConf 2014 testimonials"
+    }
+  ]
+}
