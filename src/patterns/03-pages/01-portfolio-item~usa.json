@@ -1,0 +1,38 @@
+{
+  "pi--project-name": "USA Network",
+  "pi--overview--text": "A responsive site where <em>characters matter</em>",
+  "pi--item-label--client": "USA Network",
+  "pi--item-label--link--show": false,
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Front End Development"},
+    {"item": "Responsive Design"},
+    {"item": "Prototyping"},
+    {"item": "Drupal Theming"},
+    {"item": "Drupal Build"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "NBC Universal",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "usa/usa-home-devices.png",
+      "pi--image--alt": "USA Network"
+    },
+    {
+      "pi--image--classes": "pi--image--medium",
+      "pi--image--path": "usa/usa-home-tablet.png",
+      "pi--image--alt": "USA Network"
+    },
+    {
+      "pi--image--classes": "pi--image--narrow",
+      "pi--image--path": "usa/usa-home-phone.png",
+      "pi--image--alt": "USA Network"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "usa/usa-home-laptop.png",
+      "pi--image--alt": "USA Network"
+    }
+  ]
+}
