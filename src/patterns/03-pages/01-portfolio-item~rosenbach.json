@@ -1,0 +1,42 @@
+{
+  "pi--project-name": "Rosenbach Museum and Library",
+  "pi--overview--text": "Design and build a home for the home of many of the <em>world's literary treasures.</em>",
+  "pi--item-label--client": "Rosenbach Museum and Library",
+  "pi--item-label--link--show": "true",
+  "pi--item-label--link": "https://www.rosenbach.org/",
+  "pi--item-label--link--domain": "rosenbach.org",
+  "pi--about": "<p>tktktktk</p>",
+  "pi--responsibilities": [
+    {"item": "Art Direction"},
+    {"item": "Lead Designer"},
+    {"item": "Presentations"},
+    {"item": "Front End Development"},
+    {"item": "Prototyping"},
+    {"item": "Drupal Theming"},
+    {"item": "Drupal Build"}
+  ],
+  "pi--link-to-agency": false,
+  "pi--agency": "Canary Promotion & Design",
+  "pi--images": [
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "rosenbach/rosenbach-home-laptop.png",
+      "pi--image--alt": "Rosenbach Museum and Library"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "rosenbach/rosenbach-artists-laptop.png",
+      "pi--image--alt": "Rosenbach Museum and Library"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "rosenbach/rosenbach-collections-laptop.png",
+      "pi--image--alt": "Rosenbach Museum and Library"
+    },
+    {
+      "pi--image--classes": "pi--image--wide",
+      "pi--image--path": "rosenbach/rosenbach-exhibition-laptop.png",
+      "pi--image--alt": "Rosenbach Museum and Library"
+    }
+  ]
+}
