@@ -2886,7 +2886,7 @@ svg {
 
 @media (max-width: 399px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-narrow.png);
   }
   .po-item--link.score {
     background-image: url(../src/images/portfolio/score/score-home-overview-narrow.png);
@@ -2895,7 +2895,7 @@ svg {
 
 @media (min-width: 400px) and (max-width: 767px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-tween.png);
+    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-tween.png);
   }
   .po-item--link.score {
     background-image: url(../src/images/portfolio/score/score-home-overview-tween.png);
@@ -2904,7 +2904,7 @@ svg {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-med.png);
+    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-med.png);
   }
   .po-item--link.score {
     background-image: url(../src/images/portfolio/score/score-home-overview-med.png);
@@ -2913,7 +2913,7 @@ svg {
 
 @media (min-width: 1024px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/originals/reliefweb-crisis-wide.png);
+    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-wide.png);
   }
   .po-item--link.score {
     background-image: url(../src/images/portfolio/score/score-home-overview-wide.png);
@@ -3036,6 +3036,20 @@ svg {
 .po-item--name a:active {
   text-shadow: none;
   background-image: none;
+}
+
+.portfolio--view-full-item {
+  display: inline-block;
+  margin: 1em 0.5em 0.5em;
+}
+
+.portfolio--view-all {
+  margin-top: -5em;
+  width: auto;
+  padding: 1em 0.5em;
+  background-color: #e5e5e5;
+  border-bottom: 2px dashed white;
+  display: table;
 }
 
 .footer-date {
