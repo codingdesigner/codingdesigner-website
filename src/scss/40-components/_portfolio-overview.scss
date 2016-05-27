@@ -29,7 +29,7 @@
   }
   @include breakpoint($bp--portfolio-overview--narrow) {
     &.reliefweb {
-      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-narrow.png);
+      background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-narrow.png);
     }
     &.score {
       background-image: url(../src/images/portfolio/score/score-home-overview-narrow.png);
@@ -37,7 +37,7 @@
   }
   @include breakpoint($bp--portfolio-overview--tween) {
     &.reliefweb {
-      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-tween.png);
+      background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-tween.png);
     }
     &.score {
       background-image: url(../src/images/portfolio/score/score-home-overview-tween.png);
@@ -45,7 +45,7 @@
   }
   @include breakpoint($bp--portfolio-overview--med) {
     &.reliefweb {
-      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-med.png);
+      background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-med.png);
     }
     &.score {
       background-image: url(../src/images/portfolio/score/score-home-overview-med.png);
@@ -53,7 +53,7 @@
   }
   @include breakpoint($bp--portfolio-overview--wide) {
     &.reliefweb {
-      background-image: url(../src/images/portfolio/originals/reliefweb-crisis-wide.png);
+      background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-wide.png);
     }
     &.score {
       background-image: url(../src/images/portfolio/score/score-home-overview-wide.png);
