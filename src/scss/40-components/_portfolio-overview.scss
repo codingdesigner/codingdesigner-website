@@ -97,3 +97,17 @@
     @include link-knockout();
   }
 }
+
+.portfolio--view-full-item {
+  display: inline-block;
+  margin: 1em 0.5em 0.5em;
+}
+
+.portfolio--view-all {
+  margin-top: -5em;
+  width: auto;
+  padding: 1em 0.5em;
+  background-color: color(gray, light);
+  border-bottom: 2px dashed color(white);
+  display: table;
+}
