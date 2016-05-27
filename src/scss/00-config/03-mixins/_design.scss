@@ -160,7 +160,15 @@
   @if ($crop-gravity != null) {
     $args: append($args, "gravity=#{$crop-gravity}");
   }
-  /* background-image: url('http://unsplash.it#{to-string($params)}?#{to-string($args, "&")}'); */
+  $param-string: '';
+  @each $param in $params {
+    $param-string: $param-string + $param;
+  }
+  $arg-string: '';
+  @each $arg in $args {
+    $arg-string: $arg-string + $arg + "&";
+  }
+  /* background-image: url('http://unsplash.it#{$param-string}?#{$arg-string}'); */
 }
 
 /// Try letter spacing.
