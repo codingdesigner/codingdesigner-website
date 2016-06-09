@@ -1,0 +1,378 @@
+&lt;!-- Begin .header --&gt;
+&lt;header class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
+&Tab;&lt;div class=&quot;button-logo&quot;&gt;
+  &lt;div class=&quot;title-curve&quot;&gt;The Coding Designer&lt;/div&gt;
+  &lt;div class=&quot;button-logo--words-wrapper&quot;&gt;
+    &lt;div class=&quot;button-logo--word word-1&quot;&gt;Mason&lt;/div&gt;
+    &lt;div class=&quot;button-logo--word word-2&quot;&gt;Wendell&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&Tab;&lt;nav id=&quot;nav-primary&quot; class=&quot;nav nav-primary&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;nav-primary-trigger&quot;&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;label for=&quot;nav-primary-trigger&quot; class=&quot;nav-primary-trigger--label&quot;&gt;Menu&lt;/label&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;../..&amp;#x2F;patterns&amp;#x2F;03-pages-00-home&amp;#x2F;03-pages-00-home.html&quot; class=&quot;nav-item&quot;&gt;Home&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;../..&amp;#x2F;patterns&amp;#x2F;03-pages-01-portfolio-item&amp;#x2F;03-pages-01-portfolio-item.html&quot; class=&quot;nav-item&quot;&gt;Portfolio&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;../..&amp;#x2F;patterns&amp;#x2F;03-pages-02-speaking&amp;#x2F;03-pages-02-speaking.html&quot; class=&quot;nav-item&quot;&gt;Speaking&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;https://www.instagram.com/codingdesigner/&quot; class=&quot;nav-item&quot; target=&quot;_blank&quot;&gt;Photos&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;../..&amp;#x2F;patterns&amp;#x2F;03-pages-04-posts-feed&amp;#x2F;03-pages-04-posts-feed.html&quot; class=&quot;nav-item&quot;&gt;Posts&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;nav-primary--fan&quot;&gt;&lt;a href=&quot;../..&amp;#x2F;patterns&amp;#x2F;03-pages-06-about-page&amp;#x2F;03-pages-06-about-page.html&quot; class=&quot;nav-item&quot;&gt;About&lt;/a&gt;&lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;/header&gt;
+&lt;!-- End .header --&gt;
+
+
+&lt;!--HOME PAGE CONTENT--&gt;
+&lt;div class=&quot;page--posts-page page-content&quot;&gt;
+  &lt;h1 class=&quot;page-title&quot;&gt;Breakpoint 1.0&lt;/h1&gt;
+  &lt;article class=&quot;page&quot;&gt;
+  &lt;div class=&quot;feature-image&quot;&gt;
+    &lt;img src=&quot;../../../../src/images/posts/Breakpoint-Title-Card.png&quot; alt=&quot;Breakpoint Title Card&quot; /&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Don&CloseCurlyQuote;t feel like reading? &lt;a href=&quot;https://github.com/canarymason/breakpoint&quot;&gt;Go get it&amp;nbsp;now&lt;/a&gt;&lt;/p&gt;
+
+  &lt;hr&gt;
+
+  &lt;p&gt;About a month ago I was working on a responsive site, and trying to do it right. So instead of setting break points to match
+    &lt;a href=&quot;http://bradfrostweb.com/blog/notes/this-is-the-web/&quot;&gt;device dimensions&lt;/a&gt; (for phone, tablet, and desktop) I would set break points when my content and design needed them. Taking this kind of control over your responsive design means two&amp;nbsp;things:
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;You probably have a &lt;span class=&quot;caps&quot;&gt;LOT&lt;/span&gt; more media&amp;nbsp;queries&lt;/li&gt;
+    &lt;li&gt;And you lose track of why you used each&amp;nbsp;one.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;h2&gt;I needed a system to manage media&amp;nbsp;queries.&lt;/h2&gt;
+
+  &lt;p&gt;As anyone who knows me knows, I&CloseCurlyQuote;m a huge &lt;a
+      href=&quot;http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32&quot;&gt;Sass nerd&lt;/a&gt;. Like,
+    &lt;a href=&quot;http://thesassway.com/articles/the-sass-jerk&quot;&gt;huge&lt;/a&gt;. So of course I was already trying to manage my breakpoints with my own system of variables and a super-cool mixin. Well that mixin was quickly growing unweildly, so I knew it was time to make something&amp;nbsp;better.
+  &lt;/p&gt;
+
+  &lt;h2&gt;I started with a few&amp;nbsp;assumptions&lt;/h2&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Most queries test the min-width&amp;nbsp;feature.&lt;/li&gt;
+    &lt;li&gt;Variables are a good way to manage queries in a growing&amp;nbsp;project.&lt;/li&gt;
+    &lt;li&gt;It&CloseCurlyQuote;s nice to have a short easy syntax, that would still allow for complex queries when&amp;nbsp;needed.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;So I started with the syntax and worked it out from there. Since I wanted something simple I settled on using a mixin called &ldquo;breakpoint&CloseCurlyDoubleQuote;. That&CloseCurlyQuote;s easy to remember. And since I&CloseCurlyQuote;m making some assumptions on common use cases I decided to pass that mixin an argument that could contain just a simple numerical value. So, the simplest and most common use of breakpoint goes like&amp;nbsp;this:&lt;/p&gt;
+
+  &lt;h3&gt;Simple&amp;nbsp;use&lt;/h3&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_617332&quot; class=&quot;syntaxhighlighter  scss&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-medium-&lt;/code&gt;&lt;code class=&quot;scss keyword&quot;&gt;width&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;: &lt;/code&gt;&lt;code class=&quot;scss value&quot;&gt;500px&lt;/code&gt;&lt;code class=&quot;scss plain&quot;&gt;;&lt;/code&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;.foo {&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;scss spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;@include breakpoint(&lt;/code&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-medium-width) {...}&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;Which compiles&amp;nbsp;to:&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_688488&quot; class=&quot;syntaxhighlighter  css&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;css plain&quot;&gt;@media (&lt;/code&gt;&lt;code
+                  class=&quot;css keyword&quot;&gt;min-width&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;500px&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) {.foo {...}}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;min/max&amp;nbsp;use&lt;/h3&gt;
+
+  &lt;p&gt;I expanded the syntax to accept numerical pairs, signifying a min/max relationship. The default feature is&amp;nbsp;min/max-width.&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_939142&quot; class=&quot;syntaxhighlighter  scss&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-medium-not-wide: &lt;/code&gt;&lt;code class=&quot;scss value&quot;&gt;500px&lt;/code&gt; &lt;code
+                  class=&quot;scss value&quot;&gt;700px&lt;/code&gt;&lt;code class=&quot;scss plain&quot;&gt;;&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;.baz {&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;scss spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;@include breakpoint(&lt;/code&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-medium-not-wide) {...}&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;Which compiles&amp;nbsp;to:&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_271245&quot; class=&quot;syntaxhighlighter  css&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;css plain&quot;&gt;@media (&lt;/code&gt;&lt;code
+                  class=&quot;css keyword&quot;&gt;min-width&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;500px&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) and (&lt;/code&gt;&lt;code
+                  class=&quot;css keyword&quot;&gt;max-width&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;700px&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) {.baz {...}}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Feature / value&amp;nbsp;pairs&lt;/h3&gt;
+
+  &lt;p&gt;I can&CloseCurlyQuote;t limit this to just one kind of feature test, so if you pass in a feature name and a value it knows what to&amp;nbsp;do.&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_803750&quot; class=&quot;syntaxhighlighter  scss&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-not-too-wide: max-width &lt;/code&gt;&lt;code class=&quot;scss value&quot;&gt;700px&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;;&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;.wtf {&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;scss spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;@include breakpoint(&lt;/code&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-not-too-wide) {...}&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;Which compiles&amp;nbsp;to:&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_723905&quot; class=&quot;syntaxhighlighter  css&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;css plain&quot;&gt;@media (&lt;/code&gt;&lt;code
+                  class=&quot;css keyword&quot;&gt;max-width&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;700px&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) {.wtf {...}}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h3&gt;Stack &lsquo;em&amp;nbsp;up&lt;/h3&gt;
+
+  &lt;p&gt;Since I want to be able to create as complex a query as needed you can stack these up in a comma-separated list. You can even use one-sided tests like&amp;nbsp;monochrome&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_448374&quot; class=&quot;syntaxhighlighter  scss&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+            &lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;
+            &lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;
+            &lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-wide-portrait-&lt;/code&gt;&lt;code class=&quot;scss color1&quot;&gt;mono&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;: max-width &lt;/code&gt;&lt;code class=&quot;scss value&quot;&gt;700px&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;, orientation &lt;/code&gt;&lt;code class=&quot;scss value&quot;&gt;portrait&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;, monochrome;&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;.zztop {&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;scss spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;@include breakpoint(&lt;/code&gt;&lt;code class=&quot;scss variable&quot;&gt;$breakpoint&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;-wide-portrait-&lt;/code&gt;&lt;code class=&quot;scss color1&quot;&gt;mono&lt;/code&gt;&lt;code
+                  class=&quot;scss plain&quot;&gt;) {...}&lt;/code&gt;&lt;/div&gt;
+              &lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;scss plain&quot;&gt;}&lt;/code&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;Which compiles&amp;nbsp;to:&lt;/p&gt;
+
+  &lt;div&gt;
+    &lt;div id=&quot;highlighter_248485&quot; class=&quot;syntaxhighlighter  css&quot;&gt;
+      &lt;div class=&quot;toolbar&quot;&gt;&lt;span&gt;&lt;a href=&quot;#&quot; class=&quot;toolbar_item command_help help&quot;&gt;?&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;gutter&quot;&gt;
+            &lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;css plain&quot;&gt;@media (&lt;/code&gt;&lt;code
+                  class=&quot;css keyword&quot;&gt;max-width&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;700px&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) and (orientation: &lt;/code&gt;&lt;code
+                  class=&quot;css value&quot;&gt;portrait&lt;/code&gt;&lt;code class=&quot;css plain&quot;&gt;) and (monochrome) {.zztop {...}}&lt;/code&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p&gt;I use this a lot. All over the place. Giving my breakpoint variable names that make sense keeps me organized, and the syntax makes me faster.&amp;nbsp;Yay!&lt;/p&gt;
+
+  &lt;h2&gt;Collaborate, refine, add&amp;nbsp;features&lt;/h2&gt;
+
+  &lt;p&gt;I told my friends about this, and one in particular practically pounced on it. My good buddy &lt;a
+      href=&quot;https://twitter.com/#!/snugug&quot;&gt;@snugug&lt;/a&gt; had been working on &lt;a
+      href=&quot;https://github.com/Snugug/respond-to&quot;&gt;another solution&lt;/a&gt; to managing media queries and decided that Breakpoint would be a good engine for his syntax as well as the default one. And once he gets his claws in something he doesn&CloseCurlyQuote;t let go. And that&CloseCurlyQuote;s awesome, because now I can very happily say that Breakpoint is ready for prime&amp;nbsp;time.
+  &lt;/p&gt;
+
+  &lt;p&gt;You want configuration options? You got&amp;nbsp;&lsquo;em.&lt;/p&gt;
+
+  &lt;p&gt;You want to use ems instead of pixels? (&lt;a
+      href=&quot;http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/&quot;&gt;You should.&lt;/a&gt;) Now Breakpoint can do the calculation for&amp;nbsp;you.
+  &lt;/p&gt;
+
+  &lt;p&gt;You want to use &lt;code&gt;device-pixel-ratio&lt;/code&gt;? (&lt;a
+      href=&quot;http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/&quot;&gt;You shouldn&CloseCurlyQuote;t.&lt;/a&gt;) Breakpoint will convert those to
+    &lt;code&gt;resolution&lt;/code&gt; for&amp;nbsp;you.
+  &lt;/p&gt;
+
+  &lt;p&gt;Sam added these features as well as a ton of refinements to the code base. Everyone, thank Sam, &lt;span
+      class=&quot;caps&quot;&gt;OK&lt;/span&gt;? He&CloseCurlyQuote;s pretty&amp;nbsp;rad.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Add a break point at the point where it&amp;nbsp;breaks.&lt;/h2&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/canarymason/breakpoint&quot;&gt;Go get it&amp;nbsp;now!&lt;/a&gt;&lt;/p&gt;
+  &lt;footer class=&quot;footer-date&quot;&gt;
+    Posted on Wednesday, June 27th, 2012
+  &lt;/footer&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+
+&lt;!-- Begin Footer --&gt;
+&lt;footer class=&quot;page-footer&quot; role=&quot;contentinfo&quot;&gt;
+  &lt;div class=&quot;footer-content&quot;&gt;
+  &lt;div class=&quot;monogram-wrapper&quot; id=&quot;footer-monogram&quot;&gt;&lt;div class=&quot;monogram&quot;&gt;
+  &lt;div class=&quot;monogram--initial word-1&quot;&gt;M&lt;/div&gt;
+  &lt;div class=&quot;monogram--initial word-2&quot;&gt;W&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;contact&quot;&gt;
+    &lt;div class=&quot;contact-item email&quot;&gt;
+      &lt;a href=&quot;mailto:mason@thecodingdesigner.com&quot; class=&quot;icon-link&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+  &lt;path d=&quot;M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+      &lt;a href=&quot;mailto:mason@thecodingdesigner.com&quot;&gt;&lt;span class=&quot;text&quot;&gt;mason@thecodingdesigner.com&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;contact-item twitter&quot;&gt;
+      &lt;a href=&quot;https://twitter.com/codingdesigner&quot; class=&quot;icon-link&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+  &lt;path d=&quot;M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+      &lt;a href=&quot;https://twitter.com/codingdesigner&quot;&gt;&lt;span class=&quot;text&quot;&gt;@codingdesigner&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;contact-item instagram&quot;&gt;
+      &lt;a href=&quot;https://www.instagram.com/codingdesigner/&quot; class=&quot;icon-link&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+  &lt;path d=&quot;M26.688 0h-21.375c-2.922 0-5.313 2.391-5.313 5.313v21.375c0 2.922 2.391 5.313 5.313 5.313h21.375c2.922 0 5.313-2.391 5.313-5.313v-21.375c0-2.922-2.391-5.313-5.313-5.313zM10.244 14h11.513c0.218 0.627 0.337 1.3 0.337 2 0 3.36-2.734 6.094-6.094 6.094s-6.094-2.734-6.094-6.094c0-0.7 0.119-1.373 0.338-2zM28 14.002v11.998c0 1.1-0.9 2-2 2h-20c-1.1 0-2-0.9-2-2v-12h3.128c-0.145 0.644-0.222 1.313-0.222 2 0 5.014 4.079 9.094 9.094 9.094s9.094-4.079 9.094-9.094c0-0.687-0.077-1.356-0.222-2l3.128 0.002zM28 7c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-2c0-0.55 0.45-1 1-1h2c0.55 0 1 0.45 1 1v2z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+      &lt;a href=&quot;https://www.instagram.com/codingdesigner/&quot;&gt;&lt;span class=&quot;text&quot;&gt;@codingdesigner&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&quot;contact-item LinkedIn&quot;&gt;
+      &lt;a href=&quot;http://www.linkedin.com/in/masonwendell&quot; class=&quot;icon-link&quot;&gt;&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot;&gt;
+  &lt;path d=&quot;M26.625 0h-21.25c-2.956 0-5.375 2.419-5.375 5.375v21.25c0 2.956 2.419 5.375 5.375 5.375h21.25c2.956 0 5.375-2.419 5.375-5.375v-21.25c0-2.956-2.419-5.375-5.375-5.375zM12 26h-4v-14h4v14zM10 10c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM26 26h-4v-8c0-1.105-0.895-2-2-2s-2 0.895-2 2v8h-4v-14h4v2.483c0.825-1.133 2.086-2.483 3.5-2.483 2.485 0 4.5 2.239 4.5 5v9z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+      &lt;a href=&quot;http://www.linkedin.com/in/masonwendell&quot;&gt;&lt;span class=&quot;text&quot;&gt;Mason Wendell&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&Tab;&lt;div class=&quot;copyright&quot;&gt;
+&Tab;&Tab;&lt;p&gt;&amp;copy; 2016 Mason Wendell. All rights reserved.&lt;/p&gt;
+&Tab;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;audio preload=&quot;auto&quot; id=&quot;batman&quot; &gt;
+  &lt;source src=&quot;../../../../src/images/audio/batman.mp3&quot;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+&lt;!-- End Footer --&gt;
+
