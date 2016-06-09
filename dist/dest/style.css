@@ -1634,6 +1634,10 @@ svg {
   }
 }
 
+.feature-image.organic img {
+  border-radius: 61.8034% 38.1966% / 38.1966% 61.8034%;
+}
+
 .intro {
   margin-bottom: 6em;
   display: -webkit-flex;
