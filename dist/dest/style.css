@@ -1560,7 +1560,7 @@ select {
   /* background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)); */
   /* background-image: linear-gradient(to bottom right, black, #1d1616); */
   /* background-image: linear-gradient(to bottom right, #141414, #352727); */
-  /* background-image: url('http://unsplash.itto-string("/1600" "/900")?to-string("random", "&")'); */
+  /* background-image: url('http://unsplash.it/1600/900?random&'); */
   /* letter-spacing: 0px; */
   /* letter-spacing: 0.2px; */
   /* letter-spacing: 0.4px; */
