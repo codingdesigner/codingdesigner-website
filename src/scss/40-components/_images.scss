@@ -22,4 +22,9 @@ svg {
   @include breakpoint(1024px) {
     width: 50%;
   }
+  &.organic {
+    img {
+      border-radius: #{phi-a(100%)} #{phi-b(100%)} / #{phi-b(100%)} #{phi-a(100%)};
+    }
+  }
 }
