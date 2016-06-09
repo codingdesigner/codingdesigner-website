@@ -1073,6 +1073,7 @@ input[type="submit"] a:focus,
 .page-footer {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+  clear: both;
   margin-top: 8em;
   padding: 2em 0.5rem;
   border-top: 2em dotted black;
@@ -1614,7 +1615,6 @@ svg {
   margin-bottom: 1.5em;
   width: 100%;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid black;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
