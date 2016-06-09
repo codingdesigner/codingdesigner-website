@@ -1,5 +1,6 @@
 .page-footer {
   @include margin-compensation();
+  clear: both;
   margin-top: 8em;
   padding: 2em $side-margin;
   border-top: 2em dotted color(black);
