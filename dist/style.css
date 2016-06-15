@@ -685,7 +685,7 @@ input[type="submit"] a:focus,
 .button-logo.image-1 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/space-helmet.jpg");
+  background-image: url("src/images/headers/space-helmet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -699,7 +699,7 @@ input[type="submit"] a:focus,
 .button-logo.image-2 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/aligator-skull.jpg");
+  background-image: url("src/images/headers/aligator-skull.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -713,7 +713,7 @@ input[type="submit"] a:focus,
 .button-logo.image-3 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/antler-skull.jpg");
+  background-image: url("src/images/headers/antler-skull.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -727,7 +727,7 @@ input[type="submit"] a:focus,
 .button-logo.image-4 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/snake-skeleton.jpg");
+  background-image: url("src/images/headers/snake-skeleton.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -741,7 +741,7 @@ input[type="submit"] a:focus,
 .button-logo.image-5 {
   background-color: #EFE07A;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/moon-landing.jpg");
+  background-image: url("src/images/headers/moon-landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -755,7 +755,7 @@ input[type="submit"] a:focus,
 .button-logo.image-6 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/rockies-1.jpg");
+  background-image: url("src/images/headers/rockies-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -769,7 +769,7 @@ input[type="submit"] a:focus,
 .button-logo.image-7 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/rockies-2.jpg");
+  background-image: url("src/images/headers/rockies-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -783,7 +783,7 @@ input[type="submit"] a:focus,
 .button-logo.image-8 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/roofs.jpg");
+  background-image: url("src/images/headers/roofs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -797,7 +797,7 @@ input[type="submit"] a:focus,
 .button-logo.image-9 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/sc-sky.jpg");
+  background-image: url("src/images/headers/sc-sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -811,7 +811,7 @@ input[type="submit"] a:focus,
 .button-logo.image-10 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/train-kiss.jpg");
+  background-image: url("src/images/headers/train-kiss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1669,7 +1669,7 @@ svg {
 }
 
 .page--speaking .intro--text {
-  background-image: url("../src/images/speaking/sass-conf--speaker-panel.jpg");
+  background-image: url("src/images/speaking/sass-conf--speaker-panel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
@@ -2890,37 +2890,37 @@ svg {
 
 @media (max-width: 399px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-narrow.png);
+    background-image: url(src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-narrow.png);
   }
   .po-item--link.score {
-    background-image: url(../src/images/portfolio/score/score-home-overview-narrow.png);
+    background-image: url(src/images/portfolio/score/score-home-overview-narrow.png);
   }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-tween.png);
+    background-image: url(src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-tween.png);
   }
   .po-item--link.score {
-    background-image: url(../src/images/portfolio/score/score-home-overview-tween.png);
+    background-image: url(src/images/portfolio/score/score-home-overview-tween.png);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-med.png);
+    background-image: url(src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-med.png);
   }
   .po-item--link.score {
-    background-image: url(../src/images/portfolio/score/score-home-overview-med.png);
+    background-image: url(src/images/portfolio/score/score-home-overview-med.png);
   }
 }
 
 @media (min-width: 1024px) {
   .po-item--link.reliefweb {
-    background-image: url(../src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-wide.png);
+    background-image: url(src/images/portfolio/reliefweb-crisis/reliefweb-crisis-overview-wide.png);
   }
   .po-item--link.score {
-    background-image: url(../src/images/portfolio/score/score-home-overview-wide.png);
+    background-image: url(src/images/portfolio/score/score-home-overview-wide.png);
   }
 }
 
