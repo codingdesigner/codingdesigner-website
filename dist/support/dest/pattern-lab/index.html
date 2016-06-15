@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html id="patternlab-html">
+<head id="patternlab-head">
+	<title id="title">Pattern Lab</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="styleguide/css/styleguide.css" media="all" />
+	<link rel="stylesheet" href="styleguide/css/styleguide-specific.css" media="all" />
+	<link rel="stylesheet" href="styleguide/css/vendor/typeahead.css" media="all" />
+	<link rel="stylesheet" href="styleguide/css/vendor/prism.css" media="all" />
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../src/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../src/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../src/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../src/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../src/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../src/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../src/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../src/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../src/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="../../src/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../../src/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="../../src/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="../../src/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="../../src/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../../src/images/favicons/manifest.json">
+  <link rel="mask-icon" href="../../src/images/favicons/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="../../src/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="styleguide/js/vendor/jquery.js"><\/script>')</script>
+</head>
+<body  id="patternlab-body">>
+	<!--Style Guide Header-->
+	<header class="sg-header" role="banner">
+		<a href="#sg-nav-container" class="sg-nav-toggle">Menu</a>
+		<div class="sg-nav-container" id="sg-nav-container">
+<ol class="sg-nav">
+		<li class="sg-nav-atoms"><a class="sg-acc-handle">Atoms</a><ol class="sg-acc-panel">
+			<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-01-global-00-colors&#x2F;00-atoms-01-global-00-colors.html" class="sg-pop  " data-patternpartial="atoms-colors">Colors</a></li>
+			<li><a href="patterns/00-atoms-01-global-01-fonts&#x2F;00-atoms-01-global-01-fonts.html" class="sg-pop  " data-patternpartial="atoms-fonts">Fonts</a></li>
+			<li><a href="patterns/00-atoms-01-global-02-font-sizes&#x2F;00-atoms-01-global-02-font-sizes.html" class="sg-pop  " data-patternpartial="atoms-font-sizes">Font Sizes</a></li>
+			<li><a href="patterns/00-atoms-01-global&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-global">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-02-text-00-headings&#x2F;00-atoms-02-text-00-headings.html" class="sg-pop  " data-patternpartial="atoms-headings">Headings</a></li>
+			<li><a href="patterns/00-atoms-02-text-01-paragraph&#x2F;00-atoms-02-text-01-paragraph.html" class="sg-pop  " data-patternpartial="atoms-paragraph">Paragraph</a></li>
+			<li><a href="patterns/00-atoms-02-text-02-blockquote&#x2F;00-atoms-02-text-02-blockquote.html" class="sg-pop  " data-patternpartial="atoms-blockquote">Blockquote</a></li>
+			<li><a href="patterns/00-atoms-02-text-03-inline-elements&#x2F;00-atoms-02-text-03-inline-elements.html" class="sg-pop  " data-patternpartial="atoms-inline-elements">Inline Elements</a></li>
+			<li><a href="patterns/00-atoms-02-text-06-hr&#x2F;00-atoms-02-text-06-hr.html" class="sg-pop  " data-patternpartial="atoms-hr">Hr</a></li>
+			<li><a href="patterns/00-atoms-02-text-07-headings-and-paragraphs&#x2F;00-atoms-02-text-07-headings-and-paragraphs.html" class="sg-pop  " data-patternpartial="atoms-headings-and-paragraphs">Headings And Paragraphs</a></li>
+			<li><a href="patterns/00-atoms-02-text&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-text">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-lists"><a class="sg-acc-handle">Lists</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-03-lists-00-unordered&#x2F;00-atoms-03-lists-00-unordered.html" class="sg-pop  " data-patternpartial="atoms-unordered">Unordered</a></li>
+			<li><a href="patterns/00-atoms-03-lists-01-ordered&#x2F;00-atoms-03-lists-01-ordered.html" class="sg-pop  " data-patternpartial="atoms-ordered">Ordered</a></li>
+			<li><a href="patterns/00-atoms-03-lists-02-definition&#x2F;00-atoms-03-lists-02-definition.html" class="sg-pop  " data-patternpartial="atoms-definition">Definition</a></li>
+			<li><a href="patterns/00-atoms-03-lists&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-lists">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-images"><a class="sg-acc-handle">Images</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-04-images-00-icon-mail&#x2F;00-atoms-04-images-00-icon-mail.html" class="sg-pop  " data-patternpartial="atoms-icon-mail">Icon Mail</a></li>
+			<li><a href="patterns/00-atoms-04-images-01-icon-instagram&#x2F;00-atoms-04-images-01-icon-instagram.html" class="sg-pop  " data-patternpartial="atoms-icon-instagram">Icon Instagram</a></li>
+			<li><a href="patterns/00-atoms-04-images-02-icon-linkedin&#x2F;00-atoms-04-images-02-icon-linkedin.html" class="sg-pop  " data-patternpartial="atoms-icon-linkedin">Icon Linkedin</a></li>
+			<li><a href="patterns/00-atoms-04-images-03-icon-twitter&#x2F;00-atoms-04-images-03-icon-twitter.html" class="sg-pop  " data-patternpartial="atoms-icon-twitter">Icon Twitter</a></li>
+			<li><a href="patterns/00-atoms-04-images-04-icon-menu&#x2F;00-atoms-04-images-04-icon-menu.html" class="sg-pop  " data-patternpartial="atoms-icon-menu">Icon Menu</a></li>
+			<li><a href="patterns/00-atoms-04-images-07-favicon&#x2F;00-atoms-04-images-07-favicon.html" class="sg-pop  " data-patternpartial="atoms-favicon">Favicon</a></li>
+			<li><a href="patterns/00-atoms-04-images-icons&#x2F;00-atoms-04-images-icons.html" class="sg-pop  " data-patternpartial="atoms-icons">Icons</a></li>
+			<li><a href="patterns/00-atoms-04-images&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-images">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-buttons"><a class="sg-acc-handle">Buttons</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-05-buttons-01-btn&#x2F;00-atoms-05-buttons-01-btn.html" class="sg-pop  " data-patternpartial="atoms-btn">Btn</a></li>
+			<li><a href="patterns/00-atoms-05-buttons&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-buttons">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-06-forms-01-select-menu&#x2F;00-atoms-06-forms-01-select-menu.html" class="sg-pop  " data-patternpartial="atoms-select-menu">Select Menu</a></li>
+			<li><a href="patterns/00-atoms-06-forms-01-textarea&#x2F;00-atoms-06-forms-01-textarea.html" class="sg-pop  " data-patternpartial="atoms-textarea">Textarea</a></li>
+			<li><a href="patterns/00-atoms-06-forms-01-textfield&#x2F;00-atoms-06-forms-01-textfield.html" class="sg-pop  " data-patternpartial="atoms-textfield">Textfield</a></li>
+			<li><a href="patterns/00-atoms-06-forms-02-checkbox&#x2F;00-atoms-06-forms-02-checkbox.html" class="sg-pop  " data-patternpartial="atoms-checkbox">Checkbox</a></li>
+			<li><a href="patterns/00-atoms-06-forms-02-checkboxes&#x2F;00-atoms-06-forms-02-checkboxes.html" class="sg-pop  " data-patternpartial="atoms-checkboxes">Checkboxes</a></li>
+			<li><a href="patterns/00-atoms-06-forms-03-radio-buttons&#x2F;00-atoms-06-forms-03-radio-buttons.html" class="sg-pop  " data-patternpartial="atoms-radio-buttons">Radio Buttons</a></li>
+			<li><a href="patterns/00-atoms-06-forms-04-submit&#x2F;00-atoms-06-forms-04-submit.html" class="sg-pop  " data-patternpartial="atoms-submit">Submit</a></li>
+			<li><a href="patterns/00-atoms-06-forms-06-file-upload&#x2F;00-atoms-06-forms-06-file-upload.html" class="sg-pop  " data-patternpartial="atoms-file-upload">File Upload</a></li>
+			<li><a href="patterns/00-atoms-06-forms-06-managed-file&#x2F;00-atoms-06-forms-06-managed-file.html" class="sg-pop  " data-patternpartial="atoms-managed-file">Managed File</a></li>
+			<li><a href="patterns/00-atoms-06-forms-10-fieldset&#x2F;00-atoms-06-forms-10-fieldset.html" class="sg-pop  " data-patternpartial="atoms-fieldset">Fieldset</a></li>
+			<li><a href="patterns/00-atoms-06-forms-11-star-rating&#x2F;00-atoms-06-forms-11-star-rating.html" class="sg-pop  " data-patternpartial="atoms-star-rating">Star Rating</a></li>
+			<li><a href="patterns/00-atoms-06-forms&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-forms">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-tables"><a class="sg-acc-handle">Tables</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-07-tables-00-table&#x2F;00-atoms-07-tables-00-table.html" class="sg-pop  " data-patternpartial="atoms-table">Table</a></li>
+			<li><a href="patterns/00-atoms-07-tables&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-tables">View All</a></li>
+			<li><a href="patterns/00-atoms-08-media&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-media">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-ligatures"><a class="sg-acc-handle">Ligatures</a><ol class="sg-acc-panel">
+			<li><a href="patterns/00-atoms-09-ligatures-00-ligatures&#x2F;00-atoms-09-ligatures-00-ligatures.html" class="sg-pop  " data-patternpartial="atoms-ligatures">Ligatures</a></li>
+			<li><a href="patterns/00-atoms-09-ligatures&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-atoms-ligatures">View All</a></li>
+			</ol></li>
+		</ol></li>
+		<li class="sg-nav-molecules"><a class="sg-acc-handle">Molecules</a><ol class="sg-acc-panel">
+			<li class="sg-nav-text"><a class="sg-acc-handle">Text</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-00-text-00-byline&#x2F;01-molecules-00-text-00-byline.html" class="sg-pop  " data-patternpartial="molecules-byline">Byline</a></li>
+			<li><a href="patterns/01-molecules-00-text-01-address&#x2F;01-molecules-00-text-01-address.html" class="sg-pop  " data-patternpartial="molecules-address">Address</a></li>
+			<li><a href="patterns/01-molecules-00-text-02-heading-group&#x2F;01-molecules-00-text-02-heading-group.html" class="sg-pop  " data-patternpartial="molecules-heading-group">Heading Group</a></li>
+			<li><a href="patterns/01-molecules-00-text-03-blockquote-with-citation&#x2F;01-molecules-00-text-03-blockquote-with-citation.html" class="sg-pop  " data-patternpartial="molecules-blockquote-with-citation">Blockquote With Citation</a></li>
+			<li><a href="patterns/01-molecules-00-text-04-intro-text&#x2F;01-molecules-00-text-04-intro-text.html" class="sg-pop  " data-patternpartial="molecules-intro-text">Intro Text</a></li>
+			<li><a href="patterns/01-molecules-00-text-05-talk-title&#x2F;01-molecules-00-text-05-talk-title.html" class="sg-pop  " data-patternpartial="molecules-talk-title">Talk Title</a></li>
+			<li><a href="patterns/01-molecules-00-text-06-talk-description&#x2F;01-molecules-00-text-06-talk-description.html" class="sg-pop  " data-patternpartial="molecules-talk-description">Talk Description</a></li>
+			<li><a href="patterns/01-molecules-00-text&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-text">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-layout"><a class="sg-acc-handle">Layout</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-01-layout-00-one-up&#x2F;01-molecules-01-layout-00-one-up.html" class="sg-pop  " data-patternpartial="molecules-one-up">One Up</a></li>
+			<li><a href="patterns/01-molecules-01-layout-01-two-up&#x2F;01-molecules-01-layout-01-two-up.html" class="sg-pop  " data-patternpartial="molecules-two-up">Two Up</a></li>
+			<li><a href="patterns/01-molecules-01-layout-02-three-up&#x2F;01-molecules-01-layout-02-three-up.html" class="sg-pop  " data-patternpartial="molecules-three-up">Three Up</a></li>
+			<li><a href="patterns/01-molecules-01-layout-03-four-up&#x2F;01-molecules-01-layout-03-four-up.html" class="sg-pop  " data-patternpartial="molecules-four-up">Four Up</a></li>
+			<li><a href="patterns/01-molecules-01-layout-99-breakpoints&#x2F;01-molecules-01-layout-99-breakpoints.html" class="sg-pop  " data-patternpartial="molecules-breakpoints">Breakpoints</a></li>
+			<li><a href="patterns/01-molecules-01-layout&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-layout">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-blocks"><a class="sg-acc-handle">Blocks</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-02-blocks-00-post-teaser&#x2F;01-molecules-02-blocks-00-post-teaser.html" class="sg-pop  " data-patternpartial="molecules-post-teaser">Post Teaser</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-01-block-headline-byline&#x2F;01-molecules-02-blocks-01-block-headline-byline.html" class="sg-pop  " data-patternpartial="molecules-block-headline-byline">Block Headline Byline</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-01-tweet-rwd-hard&#x2F;01-molecules-02-blocks-01-tweet-rwd-hard.html" class="sg-pop  " data-patternpartial="molecules-tweet-rwd-hard">Tweet Rwd Hard</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-02-block-hero&#x2F;01-molecules-02-blocks-02-block-hero.html" class="sg-pop  " data-patternpartial="molecules-block-hero">Block Hero</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-03-block-thumb-headline&#x2F;01-molecules-02-blocks-03-block-thumb-headline.html" class="sg-pop  " data-patternpartial="molecules-block-thumb-headline">Block Thumb Headline</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-04-block-headline&#x2F;01-molecules-02-blocks-04-block-headline.html" class="sg-pop  " data-patternpartial="molecules-block-headline">Block Headline</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-05-block-inset&#x2F;01-molecules-02-blocks-05-block-inset.html" class="sg-pop  " data-patternpartial="molecules-block-inset">Block Inset</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-06-intro-image&#x2F;01-molecules-02-blocks-06-intro-image.html" class="sg-pop  " data-patternpartial="molecules-intro-image">Intro Image</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-07-talk-events&#x2F;01-molecules-02-blocks-07-talk-events.html" class="sg-pop  " data-patternpartial="molecules-talk-events">Talk Events</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-08-talk-sample-slide&#x2F;01-molecules-02-blocks-08-talk-sample-slide.html" class="sg-pop  " data-patternpartial="molecules-talk-sample-slide">Talk Sample Slide</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-08-talk-sample-slide-slideshare&#x2F;01-molecules-02-blocks-08-talk-sample-slide-slideshare.html" class="sg-pop  " data-patternpartial="molecules-talk-sample-slide-slideshare">Talk Sample Slide Slideshare</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-09-talk-video&#x2F;01-molecules-02-blocks-09-talk-video.html" class="sg-pop  " data-patternpartial="molecules-talk-video">Talk Video</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-09-talk-video-vimeo&#x2F;01-molecules-02-blocks-09-talk-video-vimeo.html" class="sg-pop  " data-patternpartial="molecules-talk-video-vimeo">Talk Video Vimeo</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-10-talk-slides&#x2F;01-molecules-02-blocks-10-talk-slides.html" class="sg-pop  " data-patternpartial="molecules-talk-slides">Talk Slides</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-11-talk-reactions&#x2F;01-molecules-02-blocks-11-talk-reactions.html" class="sg-pop  " data-patternpartial="molecules-talk-reactions">Talk Reactions</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-12-portfolio-overview-item&#x2F;01-molecules-02-blocks-12-portfolio-overview-item.html" class="sg-pop  " data-patternpartial="molecules-portfolio-overview-item">Portfolio Overview Item</a></li>
+			<li><a href="patterns/01-molecules-02-blocks-13-portfolio-navigation-item&#x2F;01-molecules-02-blocks-13-portfolio-navigation-item.html" class="sg-pop  " data-patternpartial="molecules-portfolio-navigation-item">Portfolio Navigation Item</a></li>
+			<li><a href="patterns/01-molecules-02-blocks&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-blocks">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-media"><a class="sg-acc-handle">Media</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-03-media-00-figure-with-caption&#x2F;01-molecules-03-media-00-figure-with-caption.html" class="sg-pop  " data-patternpartial="molecules-figure-with-caption">Figure With Caption</a></li>
+			<li><a href="patterns/01-molecules-03-media&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-media">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-forms"><a class="sg-acc-handle">Forms</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-04-forms-00-search&#x2F;01-molecules-04-forms-00-search.html" class="sg-pop  " data-patternpartial="molecules-search">Search</a></li>
+			<li><a href="patterns/01-molecules-04-forms-01-comment-form&#x2F;01-molecules-04-forms-01-comment-form.html" class="sg-pop  " data-patternpartial="molecules-comment-form">Comment Form</a></li>
+			<li><a href="patterns/01-molecules-04-forms&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-forms">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-navigation"><a class="sg-acc-handle">Navigation</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-05-navigation-00-primary-nav&#x2F;01-molecules-05-navigation-00-primary-nav.html" class="sg-pop  " data-patternpartial="molecules-primary-nav">Primary Nav</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-01-footer-nav&#x2F;01-molecules-05-navigation-01-footer-nav.html" class="sg-pop  " data-patternpartial="molecules-footer-nav">Footer Nav</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-01-tool-nav&#x2F;01-molecules-05-navigation-01-tool-nav.html" class="sg-pop  " data-patternpartial="molecules-tool-nav">Tool Nav</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-02-breadcrumbs&#x2F;01-molecules-05-navigation-02-breadcrumbs.html" class="sg-pop  " data-patternpartial="molecules-breadcrumbs">Breadcrumbs</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-02-footer-nav&#x2F;01-molecules-05-navigation-02-footer-nav.html" class="sg-pop  " data-patternpartial="molecules-footer-nav">Footer Nav</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-03-pagination&#x2F;01-molecules-05-navigation-03-pagination.html" class="sg-pop  " data-patternpartial="molecules-pagination">Pagination</a></li>
+			<li><a href="patterns/01-molecules-05-navigation-04-tabs&#x2F;01-molecules-05-navigation-04-tabs.html" class="sg-pop  " data-patternpartial="molecules-tabs">Tabs</a></li>
+			<li><a href="patterns/01-molecules-05-navigation&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-navigation">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-components"><a class="sg-acc-handle">Components</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-06-components-00-social-share&#x2F;01-molecules-06-components-00-social-share.html" class="sg-pop  " data-patternpartial="molecules-social-share">Social Share</a></li>
+			<li><a href="patterns/01-molecules-06-components-01-accordion&#x2F;01-molecules-06-components-01-accordion.html" class="sg-pop  " data-patternpartial="molecules-accordion">Accordion</a></li>
+			<li><a href="patterns/01-molecules-06-components-02-single-comment&#x2F;01-molecules-06-components-02-single-comment.html" class="sg-pop  " data-patternpartial="molecules-single-comment">Single Comment</a></li>
+			<li><a href="patterns/01-molecules-06-components&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-components">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-messaging"><a class="sg-acc-handle">Messaging</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-07-messaging-00-alert&#x2F;01-molecules-07-messaging-00-alert.html" class="sg-pop  " data-patternpartial="molecules-alert">Alert</a></li>
+			<li><a href="patterns/01-molecules-07-messaging&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-messaging">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-branding"><a class="sg-acc-handle">Branding</a><ol class="sg-acc-panel">
+			<li><a href="patterns/01-molecules-08-branding-00-site-name&#x2F;01-molecules-08-branding-00-site-name.html" class="sg-pop  " data-patternpartial="molecules-site-name">Site Name</a></li>
+			<li><a href="patterns/01-molecules-08-branding-01-site-subtitle&#x2F;01-molecules-08-branding-01-site-subtitle.html" class="sg-pop  " data-patternpartial="molecules-site-subtitle">Site Subtitle</a></li>
+			<li><a href="patterns/01-molecules-08-branding-02-lock-up&#x2F;01-molecules-08-branding-02-lock-up.html" class="sg-pop  " data-patternpartial="molecules-lock-up">Lock Up</a></li>
+			<li><a href="patterns/01-molecules-08-branding-03-monogram&#x2F;01-molecules-08-branding-03-monogram.html" class="sg-pop  " data-patternpartial="molecules-monogram">Monogram</a></li>
+			<li><a href="patterns/01-molecules-08-branding-04-button-logo-name-title&#x2F;01-molecules-08-branding-04-button-logo-name-title.html" class="sg-pop  " data-patternpartial="molecules-button-logo-name-title">Button Logo Name Title</a></li>
+			<li><a href="patterns/01-molecules-08-branding-05-button-logo-name-title-rectangle&#x2F;01-molecules-08-branding-05-button-logo-name-title-rectangle.html" class="sg-pop  " data-patternpartial="molecules-button-logo-name-title-rectangle">Button Logo Name Title Rectangle</a></li>
+			<li><a href="patterns/01-molecules-08-branding-06-button-logo-name&#x2F;01-molecules-08-branding-06-button-logo-name.html" class="sg-pop  " data-patternpartial="molecules-button-logo-name">Button Logo Name</a></li>
+			<li><a href="patterns/01-molecules-08-branding-07-button-logo-title&#x2F;01-molecules-08-branding-07-button-logo-title.html" class="sg-pop  " data-patternpartial="molecules-button-logo-title">Button Logo Title</a></li>
+			<li><a href="patterns/01-molecules-08-branding-08-favicon&#x2F;01-molecules-08-branding-08-favicon.html" class="sg-pop  " data-patternpartial="molecules-favicon">Favicon</a></li>
+			<li><a href="patterns/01-molecules-08-branding&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-molecules-branding">View All</a></li>
+			</ol></li>
+		</ol></li>
+		<li class="sg-nav-organisms"><a class="sg-acc-handle">Organisms</a><ol class="sg-acc-panel">
+			<li class="sg-nav-global"><a class="sg-acc-handle">Global</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-00-global-00-header&#x2F;02-organisms-00-global-00-header.html" class="sg-pop  " data-patternpartial="organisms-header">Header</a></li>
+			<li><a href="patterns/02-organisms-00-global-01-footer&#x2F;02-organisms-00-global-01-footer.html" class="sg-pop  " data-patternpartial="organisms-footer">Footer</a></li>
+			<li><a href="patterns/02-organisms-00-global&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-global">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-article"><a class="sg-acc-handle">Article</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-01-article-00-article-body&#x2F;02-organisms-01-article-00-article-body.html" class="sg-pop  " data-patternpartial="organisms-article-body">Article Body</a></li>
+			<li><a href="patterns/02-organisms-01-article&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-article">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-comments"><a class="sg-acc-handle">Comments</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-02-comments-00-comment-thread&#x2F;02-organisms-02-comments-00-comment-thread.html" class="sg-pop  " data-patternpartial="organisms-comment-thread">Comment Thread</a></li>
+			<li><a href="patterns/02-organisms-02-comments&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-comments">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-sections"><a class="sg-acc-handle">Sections</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-03-sections-00-latest-posts&#x2F;02-organisms-03-sections-00-latest-posts.html" class="sg-pop  " data-patternpartial="organisms-latest-posts">Latest Posts</a></li>
+			<li><a href="patterns/02-organisms-03-sections-00-latest-posts-manual&#x2F;02-organisms-03-sections-00-latest-posts-manual.html" class="sg-pop  " data-patternpartial="organisms-latest-posts-manual">Latest Posts Manual</a></li>
+			<li><a href="patterns/02-organisms-03-sections-01-recent-tweets&#x2F;02-organisms-03-sections-01-recent-tweets.html" class="sg-pop  " data-patternpartial="organisms-recent-tweets">Recent Tweets</a></li>
+			<li><a href="patterns/02-organisms-03-sections-02-related-posts&#x2F;02-organisms-03-sections-02-related-posts.html" class="sg-pop  " data-patternpartial="organisms-related-posts">Related Posts</a></li>
+			<li><a href="patterns/02-organisms-03-sections-03-clipped-images&#x2F;02-organisms-03-sections-03-clipped-images.html" class="sg-pop  " data-patternpartial="organisms-clipped-images">Clipped Images</a></li>
+			<li><a href="patterns/02-organisms-03-sections-04-clipped-portfolio-landing&#x2F;02-organisms-03-sections-04-clipped-portfolio-landing.html" class="sg-pop  " data-patternpartial="organisms-clipped-portfolio-landing">Clipped Portfolio Landing</a></li>
+			<li><a href="patterns/02-organisms-03-sections-05-intro&#x2F;02-organisms-03-sections-05-intro.html" class="sg-pop  " data-patternpartial="organisms-intro">Intro</a></li>
+			<li><a href="patterns/02-organisms-03-sections-06-talk&#x2F;02-organisms-03-sections-06-talk.html" class="sg-pop  " data-patternpartial="organisms-talk">Talk</a></li>
+			<li><a href="patterns/02-organisms-03-sections-07-portfolio-overview&#x2F;02-organisms-03-sections-07-portfolio-overview.html" class="sg-pop  " data-patternpartial="organisms-portfolio-overview">Portfolio Overview</a></li>
+			<li><a href="patterns/02-organisms-03-sections-08-portfolio-navigation&#x2F;02-organisms-03-sections-08-portfolio-navigation.html" class="sg-pop  " data-patternpartial="organisms-portfolio-navigation">Portfolio Navigation</a></li>
+			<li><a href="patterns/02-organisms-03-sections-08-portfolio-navigation-manual&#x2F;02-organisms-03-sections-08-portfolio-navigation-manual.html" class="sg-pop  " data-patternpartial="organisms-portfolio-navigation-manual">Portfolio Navigation Manual</a></li>
+			<li><a href="patterns/02-organisms-03-sections-09-portfolio-item&#x2F;02-organisms-03-sections-09-portfolio-item.html" class="sg-pop  " data-patternpartial="organisms-portfolio-item">Portfolio Item</a></li>
+			<li><a href="patterns/02-organisms-03-sections&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-sections">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-view-modes"><a class="sg-acc-handle">View Modes</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-04-view-modes-01-teaser&#x2F;02-organisms-04-view-modes-01-teaser.html" class="sg-pop  " data-patternpartial="organisms-teaser">Teaser</a></li>
+			<li><a href="patterns/02-organisms-04-view-modes&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-view-modes">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-plan-builder"><a class="sg-acc-handle">Plan Builder</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-05-plan-builder-00-plan-details&#x2F;02-organisms-05-plan-builder-00-plan-details.html" class="sg-pop  " data-patternpartial="organisms-plan-details">Plan Details</a></li>
+			<li><a href="patterns/02-organisms-05-plan-builder&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-plan-builder">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-content"><a class="sg-acc-handle">Content</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-06-content-00-about&#x2F;02-organisms-06-content-00-about.html" class="sg-pop  " data-patternpartial="organisms-about">About</a></li>
+			<li><a href="patterns/02-organisms-06-content-01-experiment&#x2F;02-organisms-06-content-01-experiment.html" class="sg-pop  " data-patternpartial="organisms-experiment">Experiment</a></li>
+			<li><a href="patterns/02-organisms-06-content-02-speaking&#x2F;02-organisms-06-content-02-speaking.html" class="sg-pop  " data-patternpartial="organisms-speaking">Speaking</a></li>
+			<li><a href="patterns/02-organisms-06-content-03-video&#x2F;02-organisms-06-content-03-video.html" class="sg-pop  " data-patternpartial="organisms-video">Video</a></li>
+			<li><a href="patterns/02-organisms-06-content-04-post&#x2F;02-organisms-06-content-04-post.html" class="sg-pop  " data-patternpartial="organisms-post">Post</a></li>
+			<li><a href="patterns/02-organisms-06-content-04-post-breakpoint-1&#x2F;02-organisms-06-content-04-post-breakpoint-1.html" class="sg-pop  " data-patternpartial="organisms-post-breakpoint-1">Post Breakpoint 1</a></li>
+			<li><a href="patterns/02-organisms-06-content-04-post-fixing-h-fj&#x2F;02-organisms-06-content-04-post-fixing-h-fj.html" class="sg-pop  " data-patternpartial="organisms-post-fixing-h-fj">Post Fixing H Fj</a></li>
+			<li><a href="patterns/02-organisms-06-content-04-post-responsive-drupal&#x2F;02-organisms-06-content-04-post-responsive-drupal.html" class="sg-pop  " data-patternpartial="organisms-post-responsive-drupal">Post Responsive Drupal</a></li>
+			<li><a href="patterns/02-organisms-06-content&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms-content">View All</a></li>
+			</ol></li>
+			<li class="sg-nav-relationships"><a class="sg-acc-handle">Relationships</a><ol class="sg-acc-panel">
+			<li><a href="patterns/02-organisms-104-relationships-00-relationship&#x2F;02-organisms-104-relationships-00-relationship.html" class="sg-pop  " data-patternpartial="organisms-relationship">Relationship</a></li>
+			<li><a href="patterns/02-organisms-104-relationships&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-organisms--relationships">View All</a></li>
+			</ol></li>
+		</ol></li>
+		<li class="sg-nav-pages"><a class="sg-acc-handle">Pages</a><ol class="sg-acc-panel">
+			<li class="sg-nav-content-strategy"><a class="sg-acc-handle">Content Strategy</a><ol class="sg-acc-panel">
+			<li><a href="patterns/03-pages-90-content-strategy-01-cs&#x2F;03-pages-90-content-strategy-01-cs.html" class="sg-pop  " data-patternpartial="pages-cs">Cs</a></li>
+			<li><a href="patterns/03-pages-90-content-strategy-02-art-direction&#x2F;03-pages-90-content-strategy-02-art-direction.html" class="sg-pop  " data-patternpartial="pages-art-direction">Art Direction</a></li>
+			<li><a href="patterns/03-pages-90-content-strategy&#x2F;index.html" class="sg-pop  " data-patternpartial="viewall-pages-content-strategy">View All</a></li>
+			</ol></li>
+			<li><a href="patterns/03-pages-00-home&#x2F;03-pages-00-home.html" class="sg-pop "" data-patternpartial="pages-home">Home</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item&#x2F;03-pages-01-portfolio-item.html" class="sg-pop "" data-patternpartial="pages-portfolio-item">Portfolio Item</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-ars-nova&#x2F;03-pages-01-portfolio-item-ars-nova.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-ars-nova">Portfolio Item Ars Nova</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-estee&#x2F;03-pages-01-portfolio-item-estee.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-estee">Portfolio Item Estee</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-mac&#x2F;03-pages-01-portfolio-item-mac.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-mac">Portfolio Item Mac</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-marsalis&#x2F;03-pages-01-portfolio-item-marsalis.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-marsalis">Portfolio Item Marsalis</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-reliefweb-crisis&#x2F;03-pages-01-portfolio-item-reliefweb-crisis.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-reliefweb-crisis">Portfolio Item Reliefweb Crisis</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-rosenbach&#x2F;03-pages-01-portfolio-item-rosenbach.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-rosenbach">Portfolio Item Rosenbach</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-sassconf-2014&#x2F;03-pages-01-portfolio-item-sassconf-2014.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-sassconf-2014">Portfolio Item Sassconf 2014</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-thinking-box&#x2F;03-pages-01-portfolio-item-thinking-box.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-thinking-box">Portfolio Item Thinking Box</a></li>
+			<li><a href="patterns/03-pages-01-portfolio-item-usa&#x2F;03-pages-01-portfolio-item-usa.html" class="sg-pop "" data-patternpartial="pages-portfolio-item-usa">Portfolio Item Usa</a></li>
+			<li><a href="patterns/03-pages-02-speaking&#x2F;03-pages-02-speaking.html" class="sg-pop "" data-patternpartial="pages-speaking">Speaking</a></li>
+			<li><a href="patterns/03-pages-04-posts-feed&#x2F;03-pages-04-posts-feed.html" class="sg-pop "" data-patternpartial="pages-posts-feed">Posts Feed</a></li>
+			<li><a href="patterns/03-pages-05-post-page&#x2F;03-pages-05-post-page.html" class="sg-pop "" data-patternpartial="pages-post-page">Post Page</a></li>
+			<li><a href="patterns/03-pages-05-post-page-breakpoint-1&#x2F;03-pages-05-post-page-breakpoint-1.html" class="sg-pop "" data-patternpartial="pages-post-page-breakpoint-1">Post Page Breakpoint 1</a></li>
+			<li><a href="patterns/03-pages-05-post-page-fixing-hfj&#x2F;03-pages-05-post-page-fixing-hfj.html" class="sg-pop "" data-patternpartial="pages-post-page-fixing-hfj">Post Page Fixing Hfj</a></li>
+			<li><a href="patterns/03-pages-05-post-page-responsive-drupal&#x2F;03-pages-05-post-page-responsive-drupal.html" class="sg-pop "" data-patternpartial="pages-post-page-responsive-drupal">Post Page Responsive Drupal</a></li>
+			<li><a href="patterns/03-pages-06-about-page&#x2F;03-pages-06-about-page.html" class="sg-pop "" data-patternpartial="pages-about-page">About Page</a></li>
+		</ol></li>
+	<li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>
+</ol>
+<!--sg-controls-->
+<div class="sg-controls" id="sg-controls">
+		<div class="sg-control-content">
+			<ul class="sg-control">
+				<li class="sg-size">
+					<div class="sg-current-size">
+						<form id="sg-form">
+							Size <input type="text" class="sg-input sg-size-px" value="---">px /
+							<input type="text" class="sg-input sg-size-em" value="---">em
+						</form><!--end #sg-form-->
+					</div><!--end #sg-current-size-->
+					<ul class="sg-acc-panel sg-size-options">
+						<li><a href="#" id="sg-size-s">S</a></li>
+						<li><a href="#" id="sg-size-m">M</a></li>
+						<li><a href="#" id="sg-size-l">L</a></li>
+						<li><a href="#" id="sg-size-full">Full</a></li>
+						<li><a href="#" id="sg-size-random">Random</a></li>
+						<li><a href="#" class="mode-link" id="sg-size-disco">Disco</a></li>
+						<li><a href="#" class="mode-link" id="sg-size-hay">Hay!</a></li>
+					</ul>
+				</li>
+				<li class="sg-mqs">
+					<a href="#" class="mode-link sg-acc-handle" id="sg-size-mq" title="Media queries in stylesheet">MQ</a>
+					<ul class="sg-acc-panel sg-left" id="sg-mq">
+					</ul>
+				</li>
+				<li class="sg-find">
+					<a href="#" class="sg-acc-handle sg-control-trigger sg-icon sg-icon-search" id="sg-f-toggle" title="Search Patterns"><span class="is-vishidden">Search Patterns</span></a>
+					<ul class="sg-view sg-acc-panel sg-right sg-checklist" id="sg-find" style="margin-top: 33px;">
+							<li><input class="typeahead" id="typeahead" type="text" placeholder="search for a pattern..."></li>
+					</ul>
+				</li>
+				<li class="sg-view">
+					<a href="#" class="sg-acc-handle sg-control-trigger sg-icon sg-icon-eye" id="sg-t-toggle" title="View"><span class="is-vishidden">View</span></a>
+					<ul class="sg-view sg-acc-panel sg-right sg-checklist" id="sg-view">
+						<li><a href="#" class="sg-checkbox" id="sg-t-annotations">Annotations</a></li>
+						<li><a href="#" class="sg-checkbox" id="sg-t-code">Code</a></li>
+						<li><a href="#" target="_blank" id="sg-raw" class="sg-icon-link">Open in new window</a></li>
+					</ul>
+				</li>
+				<li class="sg-tools">
+					<a href="#" class="sg-acc-handle sg-tools-toggle sg-icon sg-icon-cog" id="sg-tools-toggle" title="Tools"><span class="is-vishidden">Tools</span></a>
+					<ul class="sg-acc-panel sg-right sg-checklist">
+						<li><a href="http://localhost:3001" target="_blank" id="syncButton" class="sg-checkbox sg-auto-reload" data-state="off">BrowserSync UI</a></li>
+						<li><a href="http://pattern-lab.info/docs/advanced-keyboard-shortcuts.html" class="sg-icon-keyboard" target="_blank">Keyboard Shortcuts</a>
+						<li><a href="http://pattern-lab.info/docs/" class="sg-icon-file" target="_blank">Pattern Lab Docs</a>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+</div>
+<!--End #sg-controls-->
+		</div>
+	</header>
+	<!--End Style Guide Header-->
+
+	<!-- Iframe -->
+	<div id="sg-vp-wrap">
+		<div id="sg-cover"></div>
+		<div id="sg-gen-container">
+			<iframe id="sg-viewport" sandbox="allow-same-origin allow-scripts"></iframe>
+			<div id="sg-rightpull-container">
+				<div id="sg-rightpull"></div>
+			</div>
+		</div>
+	</div>
+	<!--end iFrame-->
+
+	<!-- the template for the code view slider -->
+	<script type="text/html" id="code-template">
+		<div id="sg-code-close" class="sg-view-close">
+			<a href="#" id="sg-code-close-btn" class="sg-view-close-btn">Close</a>
+		</div>
+		<div id="sg-code-loader">
+			<div class="spinner"></div>
+			Loading pattern...
+		</div>
+		<div id="sg-code-patternstate" style="display: none;">
+			<p>
+				The state of the <span id="sg-code-patternstate-patternname" class="sg-code-patternname"></span> pattern is: <span id="sg-code-patternstate-fill"></span>
+			</p>
+		</div>
+		<div id="sg-code-lineage" style="display: none;">
+			<p>
+				The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern contains the following patterns: <span id="sg-code-lineage-fill"></span>
+			</p>
+		</div>
+		<div id="sg-code-lineager" style="display: none;">
+			<p>
+				The <span id="sg-code-lineager-patternname" class="sg-code-patternname"></span> pattern is included in the following patterns: <span id="sg-code-lineager-fill"></span>
+			</p>
+		</div>
+		<div id="sg-code-markup">
+			<ul id="sg-code-tabs">
+				<li id="sg-code-title-html" class="sg-code-title-active">HTML</li>
+				<li id="sg-code-title-mustache">Mustache</li>
+				<li id="sg-code-title-css" style="display: none;">CSS</li>
+			</ul>
+			<div class="clear">
+				<pre><code id="sg-code-fill"></code></pre>
+			</div>
+		</div>
+	</script>
+
+	<!-- the template for the annotations viewer slider -->
+	<script type="text/html" id="annotations-template">
+		<div id="sg-annotation-close" class="sg-view-close">
+			<a href="#" id="sg-annotation-close-btn" class="sg-view-close-btn">Close</a>
+		</div>
+		<div id="sg-comments-container"></div>
+	</script>
+
+	<script src="styleguide/js/vendor/prism.js"></script>
+	<script src="styleguide/js/vendor/jwerty.js"></script>
+	<script src="styleguide/js/vendor/typeahead.bundle.min.js"></script>
+	<script src="styleguide/js/data-saver.js"></script>
+<script>
+	var patternPaths = {"atoms":{"colors":"00-atoms/01-global/00-colors","fonts":"00-atoms/01-global/01-fonts","font-sizes":"00-atoms/01-global/02-font-sizes","_02-animations":"00-atoms/01-global/_02-animations","headings":"00-atoms/02-text/00-headings","paragraph":"00-atoms/02-text/01-paragraph","blockquote":"00-atoms/02-text/02-blockquote","inline-elements":"00-atoms/02-text/03-inline-elements","hr":"00-atoms/02-text/06-hr","headings-and-paragraphs":"00-atoms/02-text/07-headings-and-paragraphs","unordered":"00-atoms/03-lists/00-unordered","ordered":"00-atoms/03-lists/01-ordered","definition":"00-atoms/03-lists/02-definition","icon-mail":"00-atoms/04-images/00-icon-mail","icon-instagram":"00-atoms/04-images/01-icon-instagram","icon-linkedin":"00-atoms/04-images/02-icon-linkedin","icon-twitter":"00-atoms/04-images/03-icon-twitter","icon-menu":"00-atoms/04-images/04-icon-menu","favicon":"00-atoms/04-images/07-favicon","_00-logo-svg-file":"00-atoms/04-images/_00-logo-svg-file","_00-svg-clip-paths":"00-atoms/04-images/_00-svg-clip-paths","_01-landscape-4x3":"00-atoms/04-images/_01-landscape-4x3","_01-logo-svg-inline":"00-atoms/04-images/_01-logo-svg-inline","_02-landscape-16x9":"00-atoms/04-images/_02-landscape-16x9","_02-logo-png-file":"00-atoms/04-images/_02-logo-png-file","_03-logo-card-green":"00-atoms/04-images/_03-logo-card-green","_03-square":"00-atoms/04-images/_03-square","_04-avatar":"00-atoms/04-images/_04-avatar","_04-logo-card-blue":"00-atoms/04-images/_04-logo-card-blue","_06-loading-icon":"00-atoms/04-images/_06-loading-icon","_08-clipping-svg":"00-atoms/04-images/_08-clipping-svg","icons":"00-atoms/04-images/icons","btn":"00-atoms/05-buttons/01-btn","select-menu":"00-atoms/06-forms/01-select-menu","textarea":"00-atoms/06-forms/01-textarea","textfield":"00-atoms/06-forms/01-textfield","checkbox":"00-atoms/06-forms/02-checkbox","checkboxes":"00-atoms/06-forms/02-checkboxes","radio-buttons":"00-atoms/06-forms/03-radio-buttons","submit":"00-atoms/06-forms/04-submit","file-upload":"00-atoms/06-forms/06-file-upload","managed-file":"00-atoms/06-forms/06-managed-file","fieldset":"00-atoms/06-forms/10-fieldset","star-rating":"00-atoms/06-forms/11-star-rating","_20-submit-search":"00-atoms/06-forms/_20-submit-search","table":"00-atoms/07-tables/00-table","_00-video":"00-atoms/08-media/_00-video","_01-audio":"00-atoms/08-media/_01-audio","ligatures":"00-atoms/09-ligatures/00-ligatures"},"molecules":{"byline":"01-molecules/00-text/00-byline","address":"01-molecules/00-text/01-address","heading-group":"01-molecules/00-text/02-heading-group","blockquote-with-citation":"01-molecules/00-text/03-blockquote-with-citation","intro-text":"01-molecules/00-text/04-intro-text","talk-title":"01-molecules/00-text/05-talk-title","talk-description":"01-molecules/00-text/06-talk-description","one-up":"01-molecules/01-layout/00-one-up","two-up":"01-molecules/01-layout/01-two-up","three-up":"01-molecules/01-layout/02-three-up","four-up":"01-molecules/01-layout/03-four-up","breakpoints":"01-molecules/01-layout/99-breakpoints","post-teaser":"01-molecules/02-blocks/00-post-teaser","block-headline-byline":"01-molecules/02-blocks/01-block-headline-byline","tweet-rwd-hard":"01-molecules/02-blocks/01-tweet-rwd-hard","block-hero":"01-molecules/02-blocks/02-block-hero","block-thumb-headline":"01-molecules/02-blocks/03-block-thumb-headline","block-headline":"01-molecules/02-blocks/04-block-headline","block-inset":"01-molecules/02-blocks/05-block-inset","intro-image":"01-molecules/02-blocks/06-intro-image","talk-events":"01-molecules/02-blocks/07-talk-events","talk-sample-slide":"01-molecules/02-blocks/08-talk-sample-slide","talk-sample-slide-slideshare":"01-molecules/02-blocks/08-talk-sample-slide-slideshare","talk-video":"01-molecules/02-blocks/09-talk-video","talk-video-vimeo":"01-molecules/02-blocks/09-talk-video-vimeo","talk-slides":"01-molecules/02-blocks/10-talk-slides","talk-reactions":"01-molecules/02-blocks/11-talk-reactions","portfolio-overview-item":"01-molecules/02-blocks/12-portfolio-overview-item","portfolio-navigation-item":"01-molecules/02-blocks/13-portfolio-navigation-item","figure-with-caption":"01-molecules/03-media/00-figure-with-caption","search":"01-molecules/04-forms/00-search","comment-form":"01-molecules/04-forms/01-comment-form","primary-nav":"01-molecules/05-navigation/00-primary-nav","footer-nav":"01-molecules/05-navigation/02-footer-nav","tool-nav":"01-molecules/05-navigation/01-tool-nav","breadcrumbs":"01-molecules/05-navigation/02-breadcrumbs","pagination":"01-molecules/05-navigation/03-pagination","tabs":"01-molecules/05-navigation/04-tabs","social-share":"01-molecules/06-components/00-social-share","accordion":"01-molecules/06-components/01-accordion","single-comment":"01-molecules/06-components/02-single-comment","alert":"01-molecules/07-messaging/00-alert","site-name":"01-molecules/08-branding/00-site-name","site-subtitle":"01-molecules/08-branding/01-site-subtitle","lock-up":"01-molecules/08-branding/02-lock-up","monogram":"01-molecules/08-branding/03-monogram","button-logo-name-title":"01-molecules/08-branding/04-button-logo-name-title","button-logo-name-title-rectangle":"01-molecules/08-branding/05-button-logo-name-title-rectangle","button-logo-name":"01-molecules/08-branding/06-button-logo-name","button-logo-title":"01-molecules/08-branding/07-button-logo-title","favicon":"01-molecules/08-branding/08-favicon"},"organisms":{"header":"02-organisms/00-global/00-header","footer":"02-organisms/00-global/01-footer","article-body":"02-organisms/01-article/00-article-body","comment-thread":"02-organisms/02-comments/00-comment-thread","latest-posts":"02-organisms/03-sections/00-latest-posts","latest-posts-manual":"02-organisms/03-sections/00-latest-posts-manual","recent-tweets":"02-organisms/03-sections/01-recent-tweets","related-posts":"02-organisms/03-sections/02-related-posts","clipped-images":"02-organisms/03-sections/03-clipped-images","clipped-portfolio-landing":"02-organisms/03-sections/04-clipped-portfolio-landing","intro":"02-organisms/03-sections/05-intro","talk":"02-organisms/03-sections/06-talk","portfolio-overview":"02-organisms/03-sections/07-portfolio-overview","portfolio-navigation":"02-organisms/03-sections/08-portfolio-navigation","portfolio-navigation-manual":"02-organisms/03-sections/08-portfolio-navigation-manual","portfolio-item":"02-organisms/03-sections/09-portfolio-item","teaser":"02-organisms/04-view-modes/01-teaser","plan-details":"02-organisms/05-plan-builder/00-plan-details","about":"02-organisms/06-content/00-about","experiment":"02-organisms/06-content/01-experiment","speaking":"02-organisms/06-content/02-speaking","video":"02-organisms/06-content/03-video","post":"02-organisms/06-content/04-post","post-breakpoint-1":"02-organisms/06-content/04-post-breakpoint-1","post-fixing-h-fj":"02-organisms/06-content/04-post-fixing-h-fj","post-responsive-drupal":"02-organisms/06-content/04-post-responsive-drupal","relationship":"02-organisms/104-relationships/00-relationship"},"pages":{"home":"03-pages/00-home","portfolio-item":"03-pages/01-portfolio-item","portfolio-item-ars-nova":"03-pages/01-portfolio-item-ars-nova","portfolio-item-estee":"03-pages/01-portfolio-item-estee","portfolio-item-mac":"03-pages/01-portfolio-item-mac","portfolio-item-marsalis":"03-pages/01-portfolio-item-marsalis","portfolio-item-reliefweb-crisis":"03-pages/01-portfolio-item-reliefweb-crisis","portfolio-item-rosenbach":"03-pages/01-portfolio-item-rosenbach","portfolio-item-sassconf-2014":"03-pages/01-portfolio-item-sassconf-2014","portfolio-item-thinking-box":"03-pages/01-portfolio-item-thinking-box","portfolio-item-usa":"03-pages/01-portfolio-item-usa","speaking":"03-pages/02-speaking","posts-feed":"03-pages/04-posts-feed","post-page":"03-pages/05-post-page","post-page-breakpoint-1":"03-pages/05-post-page-breakpoint-1","post-page-fixing-hfj":"03-pages/05-post-page-fixing-hfj","post-page-responsive-drupal":"03-pages/05-post-page-responsive-drupal","about-page":"03-pages/06-about-page","cs":"03-pages/90-content-strategy/01-cs","art-direction":"03-pages/90-content-strategy/02-art-direction"}}
+</script><script>
+	var viewAllPaths = {"atoms":{"global":"00-atoms-01-global","text":"00-atoms-02-text","lists":"00-atoms-03-lists","images":"00-atoms-04-images","buttons":"00-atoms-05-buttons","forms":"00-atoms-06-forms","tables":"00-atoms-07-tables","media":"00-atoms-08-media","ligatures":"00-atoms-09-ligatures"},"molecules":{"text":"01-molecules-00-text","layout":"01-molecules-01-layout","blocks":"01-molecules-02-blocks","media":"01-molecules-03-media","forms":"01-molecules-04-forms","navigation":"01-molecules-05-navigation","components":"01-molecules-06-components","messaging":"01-molecules-07-messaging","branding":"01-molecules-08-branding"},"organisms":{"global":"02-organisms-00-global","article":"02-organisms-01-article","comments":"02-organisms-02-comments","sections":"02-organisms-03-sections","view-modes":"02-organisms-04-view-modes","plan-builder":"02-organisms-05-plan-builder","content":"02-organisms-06-content","-relationships":"02-organisms-104-relationships"},"pages":{"pages":"03-pages","content-strategy":"03-pages-90-content-strategy"}}
+</script>	<script src="styleguide/js/url-handler.js"></script>
+	<script src="styleguide/js/styleguide.js"></script>
+	<script src="styleguide/js/annotations-viewer.js "></script>
+	<script src="styleguide/js/code-viewer.js "></script>
+	<script src="styleguide/js/pattern-finder.js"></script>
+
+</body>
+</html>
