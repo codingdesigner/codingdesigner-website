@@ -1,0 +1,26 @@
+&lt;h1 class=&quot;page-title&quot;&gt;Balancing Ideal Sass and Ideal CSS&lt;/h1&gt;
+&lt;article class=&quot;page&quot;&gt;
+  &lt;p&gt;Sass makes &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; fun again, right? Well yeah, but that also makes it easy to forget that we&CloseCurlyQuote;re still writing &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;. We can get caught up in all the new tools and tricks that Sass lets us do so easily that we lose sight of some &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; that might not be as awesome as we think it is. Last night at the &lt;a href=&quot;http://www.meetup.com/Philadelphia-SASS-Meetup-Group/&quot;&gt;Philadelphia Sass Meetup&lt;/a&gt; I set out to talk about the finer points of using mixins and extendable selectors, and ended up exploring how we can find the balance between a great Sass codebase and close-to-ideal compiled &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;.&lt;/p&gt;
+  &lt;h2&gt;Balancing Ideal Sass and Ideal &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; -&amp;nbsp;Buttons&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Let&CloseCurlyQuote;s just style a button. - &lt;a href=&quot;http://sassmeister.com/gist/6131724&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Create a mixin. &lt;span class=&quot;caps&quot;&gt;DRY&lt;/span&gt; Sass, but bloated &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; - &lt;a href=&quot;http://sassmeister.com/gist/6131748&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Convert to an extended class. &lt;span class=&quot;caps&quot;&gt;DRY&lt;/span&gt; Sass and small &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; - &lt;a href=&quot;http://sassmeister.com/gist/6131756&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Convert that extended class to a silent extendable. Even better! - &lt;a href=&quot;http://sassmeister.com/gist/6131765&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Maybe we need an alternate version of the button? Let&CloseCurlyQuote;s try some manual overrides. Good &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;, but we could have &lt;span class=&quot;caps&quot;&gt;DRY&lt;/span&gt;er Sass - &lt;a href=&quot;http://sassmeister.com/gist/6131774&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;We&CloseCurlyQuote;ll try creating a new silent extendable that calls our mixin with a new argument. Better Sass but now our &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; is starting to bloat. - &lt;a href=&quot;http://sassmeister.com/gist/6131792&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;So now we&CloseCurlyQuote;ll split our mixin into a &lsquo;base&CloseCurlyQuote; mixin for the styles that are common to all buttons, and a &lsquo;colors&CloseCurlyQuote; mixin to handle our alternate colors. We&CloseCurlyQuote;ll create a %button extendable by calling both mixins, and a %button-cta extendable that extends %button and calls the button-colors mixin for its overrides. Clean Sass and clean &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;! &lt;a href=&quot;http://sassmeister.com/gist/6131805&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;What about &lt;span class=&quot;caps&quot;&gt;RWD&lt;/span&gt;? Well it gets trickier. Extendables need to be scoped to their media query, so we need to redefine our extendables within a media query. The &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; is pretty clean but now the Sass is becoming a little hard to work with. - &lt;a href=&quot;http://sassmeister.com/gist/6131833&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Instead of worrying about scoping those media queries we&CloseCurlyQuote;ll call the mixins within the selector nest. This creates more css than we need, but the Sass is much easier to work with. - &lt;a href=&quot;http://sassmeister.com/gist/6131901&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;h2&gt;Don&CloseCurlyQuote;t extend native&amp;nbsp;elements&lt;/h2&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Extending a native element once seems ok. - &lt;a href=&quot;http://sassmeister.com/gist/6131927&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;But if we keep going we see a lot of (probably) unintended comma-separated selectors start to pile up. In a real project this gets pretty obsene. - &lt;a href=&quot;http://sassmeister.com/gist/6131934&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;So instead let&CloseCurlyQuote;s define some silent extendables and then use them to define our native element styles as well as any extensions to them. Managable Sass and clean &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;! - &lt;a href=&quot;http://sassmeister.com/gist/6131957&quot;&gt;Sassmeister&amp;nbsp;Example&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;footer class=&quot;footer-date&quot;&gt;
+    Posted on Thursday, August 1st, 2013    &lt;/footer&gt;
+&lt;/article&gt;
