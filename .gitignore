@@ -20,5 +20,5 @@ node_modules
 atlassian-ide-plugin.xml
 
 # exceptions
-!dist/dest
-!dist/bower_components
+!dist/support/dest
+!dist/support/bower_components
