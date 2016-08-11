@@ -5,6 +5,7 @@
   "pi--item-label--link--show": "true",
   "pi--item-label--link": "http://sassconf.thecodingdesigner.com/",
   "pi--item-label--link--domain": "sassconf.thecodingdesigner.com",
+  "pi--about--show": false,
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
     {"item": "Art Direction"},

@@ -3,6 +3,7 @@
   "pi--overview--text": "A responsive site where <em>characters matter</em>",
   "pi--item-label--client": "USA Network",
   "pi--item-label--link--show": false,
+  "pi--about--show": false,
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
     {"item": "Front End Development"},

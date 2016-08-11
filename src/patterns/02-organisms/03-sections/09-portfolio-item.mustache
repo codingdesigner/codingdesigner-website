@@ -16,10 +16,12 @@
           <div class="pi--item-label--link"><a href="{{pi--item-label--link}}">{{pi--item-label--link--domain}}</a></div>
         {{/pi--item-label--link--show}}
       </div>
-      <div class="pi--item-description">
-        <h4 class="pi--item-label--about">About:</h4>
-        <div class="pi--about">{{{pi--about}}}</div>
-      </div>
+      {{#pi--about--show}}
+        <div class="pi--item-description">
+          <h4 class="pi--item-label--about">About:</h4>
+          <div class="pi--about">{{{pi--about}}}</div>
+        </div>
+      {{/pi--about--show}}
       <div class="pi--item-description">
         <h4 class="pi--item-label--responsibilities">Responsibilities:</h4>
         <ul class="pi--responsibilities">

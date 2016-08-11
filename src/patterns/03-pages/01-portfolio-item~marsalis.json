@@ -5,6 +5,7 @@
   "pi--item-label--link--show": "true",
   "pi--item-label--link": "http://www.marsalismusic.com/",
   "pi--item-label--link--domain": "marsalismusic.com",
+  "pi--about--show": false,
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
     {"item": "Art Direction"},

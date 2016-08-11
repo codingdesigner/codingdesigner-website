@@ -5,6 +5,7 @@
   "pi--item-label--link--show": "true",
   "pi--item-label--link": "https://www.rosenbach.org/",
   "pi--item-label--link--domain": "rosenbach.org",
+  "pi--about--show": false,
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
     {"item": "Art Direction"},

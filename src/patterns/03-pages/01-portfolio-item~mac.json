@@ -5,6 +5,7 @@
   "pi--item-label--link--show": "true",
   "pi--item-label--link": "http://www.maccosmetics.com/",
   "pi--item-label--link--domain": "maccosmetics.com",
+  "pi--about--show": false,
   "pi--about": "<p>tktktktk</p>",
   "pi--responsibilities": [
     {"item": "Responsive Designs"},
