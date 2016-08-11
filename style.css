@@ -2121,6 +2121,8 @@ svg {
 @media (min-width: 650px) {
   .nav-primary--fan {
     position: absolute;
+    left: 0;
+    right: 0;
     list-style-type: none;
     margin-left: -9em;
     padding-left: 10em;
