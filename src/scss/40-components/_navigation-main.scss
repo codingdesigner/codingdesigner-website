@@ -58,6 +58,8 @@
   }
   @include breakpoint($bp--navigation--wide) {
     position: absolute;
+    left: 0;
+    right: 0;
     list-style-type: none;
     margin-left: -9em;
     padding-left: 10em;
