@@ -811,7 +811,7 @@ input[type="submit"] a:focus,
 .button-logo.image-10 {
   background-color: #BBBBBB;
   background-blend-mode: multiply;
-  background-image: url("../src/images/headers/train-kiss.jpg");
+  background-image: url("../src/images/headers/bridge-lights.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3058,6 +3058,7 @@ svg {
 
 .footer-date {
   font-style: italic;
+  display: none;
 }
 
 .tab-set--body {

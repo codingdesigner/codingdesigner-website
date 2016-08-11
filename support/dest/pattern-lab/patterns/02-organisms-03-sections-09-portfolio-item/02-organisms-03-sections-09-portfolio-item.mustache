@@ -16,10 +16,12 @@
           &lt;div class=&quot;pi--item-label--link&quot;&gt;&lt;a href=&quot;{{pi--item-label--link}}&quot;&gt;{{pi--item-label--link--domain}}&lt;/a&gt;&lt;/div&gt;
         {{/pi--item-label--link--show}}
       &lt;/div&gt;
-      &lt;div class=&quot;pi--item-description&quot;&gt;
-        &lt;h4 class=&quot;pi--item-label--about&quot;&gt;About:&lt;/h4&gt;
-        &lt;div class=&quot;pi--about&quot;&gt;{{{pi--about}}}&lt;/div&gt;
-      &lt;/div&gt;
+      {{#pi--about--show}}
+        &lt;div class=&quot;pi--item-description&quot;&gt;
+          &lt;h4 class=&quot;pi--item-label--about&quot;&gt;About:&lt;/h4&gt;
+          &lt;div class=&quot;pi--about&quot;&gt;{{{pi--about}}}&lt;/div&gt;
+        &lt;/div&gt;
+      {{/pi--about--show}}
       &lt;div class=&quot;pi--item-description&quot;&gt;
         &lt;h4 class=&quot;pi--item-label--responsibilities&quot;&gt;Responsibilities:&lt;/h4&gt;
         &lt;ul class=&quot;pi--responsibilities&quot;&gt;
