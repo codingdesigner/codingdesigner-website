@@ -1212,6 +1212,14 @@ input[type="submit"] a:focus,
   margin-bottom: 0;
 }
 
+.styleguide {
+  width: 100%;
+}
+
+.styleguide p {
+  margin-bottom: 0;
+}
+
 form {
   max-width: 50em;
 }
